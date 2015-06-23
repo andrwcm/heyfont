@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			heyFont - The easy way to preview your google fonts
+		</title>
+
+		<meta charset="UTF-8">
+
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimal-ui" />
+		<meta name="description" content="The easy way to preview your google fonts"  />
+		<meta name="author" content="Made by andrw <eyandrw@gmail.com" />
+		<meta name="keywords" content="google, fonts, preview, branding, web, metrics, desing, web design, ui desing" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="transparent" />
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="apple-touch-icon" href="favicon.png"/>
+		<link rel="icon" href="favicon.png"/>
+
+		<!-- Twitter Card data -->
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="@heyfont">
+		<meta name="twitter:title" content="heyFont">
+		<meta name="twitter:description" content="The easy way to preview your google fonts">
+		<meta name="twitter:creator" content="@heyandrw">
+		<meta name="twitter:image" content="https://eyfont.herokuapp.com/assets/tw-card.png">
+
+		<!-- Open Graph data -->
+		<meta property="og:title" content="heyFont" />
+		<meta property="og:type" content="article" />
+		<meta property="og:url" content="http://www.heyfont.com/" />
+		<meta property="og:image" content="https://eyfont.herokuapp.com/assets/fb-card.png" />
+		<meta property="og:description" content="The easy way to preview your google fonts" />
+
+
+		<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+		<!-- estilos -->
+		<link rel="stylesheet" type="text/css" href="styles/general.css">
+		<link rel="stylesheet" type="text/css" href="styles/styles.css">
+		<link rel="stylesheet" type="text/css" href="styles/demoTools.css">
+
+		<!-- js -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/actions.js"></script>
+		<script type="text/javascript" src="js/type.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#content").load("demo/demo-web.html");
+
+				//clicks
+				$("ul#tool-options li a").click(function(){
+					var page = $ (this).attr("href");
+					$("#content").load("demo/" + page + ".html");
+					return false;
+				});
+
+			});
+
+			$(function(){
+				$('#userInput').typeahead({
+					name: 'fonts',
+					prefetch: 'data/fonts.json',
+					limit: 10
+				});
+			});
+		</script>
+
+	</head>
+
+	<body>
+
+		<div id="preloader">
+		   <div id="status">
+		   		<img src="assets/load.gif"/>
+		   </div>
+		 </div><!-- Preloader -->
+
+
+
+		<ul id="nav">
+			<a href="http://twitter.com/share?text=ey! check your google fonts &url=https://eyfont.herokuapp.com/index.html&hashtags=fonts,design,eyFont" target="_blank">
+				<li class="divider">
+					eyShare
+				</li>
+			</a>
+
+			<a href="#">
+				<li>
+					Give feedback
+				</li>
+			</a>
+
+		</ul>
+
+		<section id="home">
+			<div class="logo">
+				<img src="assets/eyfont.png">
+			</div>
+			<p>
+				<h1>The easy way to preview your google fonts</h1>
+				<span class="description">
+					Just type below the name of the font and enjoy the preview
+					<p>
+						<img src="assets/arrow.png">
+					</p>
+				</span>
+			</p>
+		</section>
+
+
+		<div id="searchWrap">
+			<input type="text" id="userInput" class="typo" placeholder="Example: Lobster" autofocus>
+			<input type="button" class="btn" value="GO!" onclick='changeText2()' id="buttonFont">
+		</div>
+
+		<div class="figure">
+			<span class="triangle"></span>
+		</div>
+
+		<section id="about">
+
+			<h2>
+				What it does?
+			</h2>
+			<div id="wrap">
+				<div>
+					<img src="assets/web_icon.svg">
+					<h3>
+						Live web preview
+					</h3>
+					<p class="info">
+						Watch the font on web content like a real website
+					</p>
+				</div>
+				<div>
+					<img src="assets/branding_icon.svg">
+					<h3>
+						Branding mockup
+					</h3>
+					<p class="info">
+						Try diferent branding elements
+					</p>
+				</div>
+				<div>
+					<img src="assets/metric_icon.svg">
+					<h3>
+						Metrics
+					</h3>
+					<p class="info">
+						Discover the better use for your font metrics
+					</p>
+				</div>
+				<div>
+					<img src="assets/content_icon.svg">
+					<h3>
+						Editable content
+					</h3>
+					<p class="info">
+						All the text of the previews are editable
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div id="made">
+				<span>Created a developed with</span>
+				<a href="http://andrwcm.hol.es" target="_blank">
+					<img src="assets/logo_andrw.png">
+				</a>
+				<a href="https://twitter.com/holandrw" target="_blank">
+					<img src="assets/twitter.png">
+				</a>
+				<a href="https://www.facebook.com/andrescarrenomonroy" target="_blank">
+					<img src="assets/facebook.png">
+				</a>
+
+			</div>
+		</footer>
+
+		<nav id="tools">
+			<span class="eyfont">
+				<a href="index.html">
+					<img src="assets/eyfont.png">
+				</a>
+			</span>
+
+			<ul id="tool-options" >
+				<li>
+					<a href="demo-web" class="active">
+						Web
+					</a>
+				</li>
+
+
+				<li>
+					<a href="branding">
+						Branding
+					</a>
+				</li>
+				<li>
+					<a href="metrics">
+						Metrics
+					</a>
+				</li>
+			</ul>
+
+
+		</nav>
+
+		<div id="content">
+
+		</div>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+			    $("li.drop-down").click(function(){
+			        $("li.drop-down > ul#tool-options").toggleClass("visible");
+			    });
+			});
+		</script>
+
+
+	</body>
+</html>

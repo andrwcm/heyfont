@@ -1,0 +1,242 @@
+@import url(//fonts.googleapis.com/css?family=Asap:400,700);
+
+@font-face {
+    font-family: 'Asap', sans-serif;
+}
+
+
+.branding{
+	background: #ff2626;
+	background-size: cover;
+	width: 100%;
+	margin: 0px;
+	text-align: center;
+	height: 2300px;
+}
+
+.branding h3{
+	font-family: 'Asap', sans-serif;
+	font-size: 40px;
+	margin:auto;
+	position: relative;
+	top: 80px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: white;
+}
+
+.branding h3:before{
+	content: url(../assets/arrow.png);
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	margin:auto;
+	top: 40px;
+}
+
+#body_demo{
+	text-align: center;
+	position: relative;
+}
+
+
+/* ---------------------------------------------------------------------- LETTER */
+
+#body_demo .a4wrap{
+	width: 100%;
+	height:600px;
+	text-align: center;
+	margin:150px auto;
+}
+
+#body_demo .a4wrap img{
+	width: 1000px;
+	height: auto;
+	margin: auto;
+}
+
+#body_demo .letterText{
+	width: 310px;
+	font-size: 13px;
+	text-align: left;
+	position: absolute;
+	color: #424241;
+	left: -40px;
+	right: 0px;
+	margin: auto;
+	top: 175px;
+	transform:rotate(-18deg);
+}
+
+#body_demo .letterText p {
+	margin: 15px;
+}
+
+
+/* ---------------------------------------------------------------------- CARDS */
+
+
+
+#body_demo .cards{
+	width: 250px;
+	height: 320px;
+	position: absolute;
+	left: 350px;
+	right: 0px;
+	top: 500px;
+	margin: auto;
+	z-index: 9999;
+}
+
+#body_demo .cards div.front, div.back{
+	display: block;
+	width: 245px;
+	height: 150px;
+	box-shadow: 10px 30px 40px rgba(0,0,0,.5);
+}
+
+#body_demo .cards div.front{
+	background: white;
+	margin-bottom: 10px;
+	border: solid 1px #cac9c9;
+}
+
+#body_demo .cards div.back{
+	background: #ff2626;
+	border: solid 1px #0fc587;
+}
+
+#body_demo .cards div.front span.companyName{
+	font-size: 25px;
+	color: #ff2626;
+	position: relative;
+	top: 55px;
+}
+
+#body_demo .cards div.front span.companyName:before{
+	content: "";
+	display: block;
+	width: 30px;
+	height: 1px;
+	background: #ff2626;
+	position: absolute;
+	right: 0px;
+	left: 0px;
+	margin: auto;
+	top: 40px;
+}
+
+#body_demo .cards div.back span.contact{
+	text-align: left;
+	color: white;
+	position: relative;
+	left: 30px;
+	top: 18px;
+	display: block;
+	width: 70%;
+}
+
+#body_demo .cards div.back span.contact p{
+	margin: 5px;
+}
+
+#body_demo .cards div.back span.contact p:nth-child(1){
+	font-size: 20px;
+	font-weight: 700;
+}
+
+#body_demo .cards div.back span.contact p:nth-child(2){
+	font-size: 13px;
+}
+
+#body_demo .cards div.back span.contact p:nth-child(3){
+	font-size: 15px;
+	margin-top: 18px;
+}
+
+#body_demo .cards div.back span.contact p:nth-child(4){
+	font-size: 14px;
+	margin-top: -2px;
+}
+
+
+/* ---------------------------------------------------------------------- SHIRTS*/
+
+#body_demo .shirts{
+	width: 850px;
+	height: auto;
+	position: relative;
+	margin:auto;
+	overflow: hidden;
+	z-index: 5;
+}
+
+#body_demo .shirts span.white{
+	display: block;
+	float: left;
+	position: relative;
+	transform:rotate(-18deg);
+}
+
+#body_demo .shirts span.black{
+	display: block;
+	right: 0px;
+	position: absolute;
+	transform:rotate(18deg);
+}
+
+ .text{
+	width: 270px;
+	font-weight: 700;
+	font-size: 70px;
+	left: 0px;
+	right: 0px;
+	top: 150px;
+	margin: auto;
+	position: absolute;
+}
+
+ .text p{
+ 	margin: -10px;
+ }
+
+ #body_demo .shirts span.white  .text{
+ 	color: #ff2626;
+ }
+
+  #body_demo .shirts span.black  .text{
+ 	color: rgba(255,244,113,.5);
+ }
+
+ /* ---------------------------------------------------------------------- bag*/
+
+.bag{
+	position: relative;
+	top: -76px;
+	z-index: 3;
+}
+
+.bag .textBag{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	font-size: 65px;
+	top: 450px;
+	width: 200px;
+	height: auto;
+	display: block;
+	color: #ff2626;
+}
+
+.bag .textBag p{
+	margin: -23px;
+}
+
+/* ---------------------------------------------------------------------- EDITABLE CONTENT */
+[contenteditable="true"]:hover{
+	border: dotted 1px #e55e3f;
+}
+
+
+

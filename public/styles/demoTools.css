@@ -1,0 +1,125 @@
+#tools{
+	background: #f7f7f7;
+	width: 100%;
+	height: 100px;
+	font-family: 'Asap', sans-serif;
+	position: fixed;
+	z-index: 99999999;
+	display: none;
+	top: 0px;
+	border-bottom: 1px #e1e1e1 solid;
+}
+
+#tools .eyfont{
+	display: block;
+	width: 130px;
+	position: relative;
+	top: 10px;
+	left: 10px;
+	height: 90px;
+}
+
+#tools .eyfont img{
+	  cursor: pointer !important;
+	  width: 144px;
+	  height: auto;
+	  position: relative;
+	  top: 13px;
+}
+
+.tools-fixed{
+	position: fixed !important;
+	top: 0px;
+}
+
+/* ---------------------------------------------------------------------- WEB DEMOS UL */
+
+ul.webdemos{
+	width: 470px;
+	height: 90px;
+	position: relative;
+	padding: 0px;
+	top: 0px;
+	left: 0px;
+	float: left;
+}
+
+ul.webdemos li{
+	cursor: pointer;
+	display: inline-block;
+	list-style: none;
+	width: 100px;
+	margin: 15px;
+	color: #e55e3f;
+	font-size: 14px;
+	text-align: center;
+	border-radius: 2px;
+	border: solid 1px #e55e3f;
+	height: 16px;
+	padding: 10px;
+}
+
+ul.webdemos li {
+	text-decoration: none;
+	color:#e55e3f;
+}
+
+
+.active-demo{
+	background: #e55e3f !important;
+	color: white !important;
+
+}
+
+/* ----------------------------------------------------------------------  UL TOOLS */
+
+
+ul#tool-options{
+	width: 450px;
+	height: 50px;
+	position: absolute;
+	top: 10px;
+	float: left;
+	left: 200px;
+	padding: 0px;
+	display: block;
+}
+
+ul#tool-options li{
+	display: block;
+	margin: -1px;
+	display:inline-block;
+	text-align: center;
+	position: relative;
+	z-index: 3;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+ul#tool-options li a{
+	text-decoration: none;
+	color: gray;
+	border:solid 1px #ff2626;
+	border-radius: 3px;
+	height: 35px;
+	color: #ff2626;
+	display: block;
+	width: 125px;
+	padding-top: 15px;
+}
+
+ul#tool-options li a:hover{
+	background: #ff2626;
+	color: white;
+}
+
+ul#tool-options li a.active{
+	background: #ff2626;
+	color: white;
+}
+
+li.drop-down ul li:hover a{
+	color: white !important;
+}
+
+

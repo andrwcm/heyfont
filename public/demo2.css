@@ -1,0 +1,335 @@
+#window{
+	width: 95%;
+	height: 2710px;
+	margin: auto;
+	border: solid 1px #e55e3f;
+	padding: 0px;
+	position: relative;
+	top: 100px;
+	box-shadow: 0px 0px 7px rgba(0,0,0,.4);
+}
+
+#body_demo{
+	background: white;
+	width: 100%;
+	margin: 0px;
+	height: 2710px;
+	text-align: center;
+	position: relative;
+}
+
+/* ---------------------------------------------------------------------- FOLD */
+
+#demoFold{
+	background: url(assets/demos/demo-2/bg_demo2.jpg) center fixed;
+	background-size: cover;
+	width: 100%;
+	height: 400px;
+	margin: auto;
+	padding-top: 200px;
+	text-align: center;
+}
+
+#demoFold .tittleDemo{
+	color: white;
+	font-size: 40px;
+	font-weight: bolder;
+	text-transform: uppercase;
+	text-align: left;
+	position: relative;
+	top: 80px;
+	left: 0px;
+}
+
+#demoFold p.description{
+	color: white;
+	width: 420px;
+	font-weight: lighter;
+	margin: 20px auto;
+	position: relative;
+	font-size: 19px;
+	position: relative;
+	top: 80px;
+	line-height: 30px;
+}
+
+#demoFold p.description:before{
+	content: "";
+	display: block;
+	width: 170px;
+	height: 170px;
+	background: url(assets/demos/demo-2/logo.jpg) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	border-radius: 50%;
+	margin-top: -250px;
+	margin-left:30%;
+}
+
+#demoFold .btnDemo{
+	cursor: pointer;
+	display: block;
+	border: solid 1px white;
+	background: white;
+	color: #e55e3f;
+	margin: auto;
+	font-size: 15px;
+	border-radius: 100px;
+	width: 150px;
+	position: relative;
+	top: 100px;
+	padding-top: 18px;
+	height: 38px;
+}
+
+/* ---------------------------------------------------------------------- NAV */
+
+#demoNav{
+	position:absolute;
+	background: transparent;
+	width: 100%;
+	height: 80px;
+}
+
+#demoNav ul{
+	padding: 0px;
+	top: 15px;
+	float: right;
+	right: 30px;
+	position: relative;
+}
+
+#demoNav ul a{
+	text-decoration: none;
+}
+
+#demoNav ul li{
+	margin-left: 15px;
+	font-size: 17px;
+	margin-right: 15px;
+	border-bottom: solid 1px white;
+	color: white;
+	list-style: none;
+	display: inline-block;
+	-webkit-transition-duration:.5s;
+}
+
+#demoNav ul li:hover{
+	border-bottom: solid 2px white;
+	padding-bottom: 5px;
+}
+
+div.iconlogo{
+	display: none;
+}
+
+div.iconlogo img{
+	width: 50px;
+	height: auto;
+}
+
+/* ---------------------------------------------------------------------- CONTENT */
+
+#content1{
+	width: 750px;
+	margin: 100px auto;
+	height: 500px;
+}
+#content1 .text{
+	width:700px;
+	margin:auto;
+	color: #44432D;
+	text-align: center;
+	font-size: 17px;
+	position: relative;
+	z-index: 3;
+}
+
+#content1 .text a{
+	color: #10baf2;
+}
+
+#content1  .text:before{
+	content: 'ABOUT US';
+	font-size: 30px;
+	position:relative;
+	margin: auto;
+	z-index: 0;
+	top: -30px;
+	color: #e55e3f;
+	font-weight: 700;
+	border-bottom: solid 2px #e55e3f;
+	padding-bottom: 5px;
+}
+
+#content1 .img{
+	height: 350px;
+	overflow: hidden;
+	width: 100%;
+	padding: 0px;
+	float: left;
+	left: -10px;
+	margin: 60px auto;
+	position: absolute;
+}
+
+#content1 .img img{
+	width: 120%;
+	height: auto;
+}
+
+#content1 .img .overlay{
+	position: absolute;
+	width: 100%;
+	height: 190px;
+	color: white;
+	font-size: 20px;
+	padding-top: 160px;
+	background: rgba(229,94,63,.9);
+	-webkit-transition-duration:.5s;
+}
+
+#content1 .img:hover .overlay{
+	opacity: 1;
+}
+
+
+#content2{
+	width: 500px;
+	margin: 200px auto 0px auto;
+	height: 500px;
+}
+
+#content2 .img{
+	width: 100%;
+	height: auto;
+	border-radius: 100px;
+	overflow: hidden;
+	position: relative;
+	top: 60px;
+}
+#content2 .img img{
+	width: 100%;
+	height: auto;
+}
+
+#content2 .text{
+	font-size: 18px;
+	color: #606060;
+	margin: 100px auto;
+}
+
+
+/* ----------------------------------------------------------------------  ARTICLE TEAM */
+
+article#team .tittle2{
+	font-size: 30px;
+	font-weight: 700;
+	margin: 40px auto;
+	position: relative;
+	top: 30px;
+	border-bottom: solid 2px #e55e3f;
+	padding-bottom: 5px;
+	color: #e55e3f;
+}
+
+
+ul.teamPersons{
+	width:890px;
+	height: 300px;
+	margin:70px auto;
+	padding: 0px;
+}
+
+ul.teamPersons li{
+	width: 250px;
+	margin: 22px;
+	overflow: hidden;
+	list-style: none;
+	text-align: center;
+	display: inline-block;
+}
+
+span.infoPerson{
+	overflow: hidden;
+	display: block;
+	color: #606060;
+	width: 240px;
+	padding: 4px;
+	height: 150px;
+}
+
+ul.teamPersons li .person{
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	margin: 20px auto;
+	position: relative;
+}
+
+ul.teamPersons li .person img {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	top: -33px;
+	left: -70px;
+}
+
+ul.teamPersons li .btnDemo2{
+	width: 150px;
+	cursor: pointer;
+	display: block;
+	height: 35px;
+	apareance: none;
+	background: transparent;
+	border: solid 1px #e55e3f;
+	border-radius: 100px;
+	color: #e55e3f;
+	text-transform: uppercase;
+	margin: 30px auto;
+	padding-top: 18px;
+	font-size: 13px;
+}
+
+ul.teamPersons li .btnDemo2:hover{
+	background: #e55e3f;
+	color: white;
+}
+
+
+
+/* ---------------------------------------------------------------------- FOOTER */
+
+.demoFooter{
+	width: 100%;
+  	height: 170px;
+  	margin: 20px auto 0px auto;
+  	background: #e55e3f;
+  	padding-top: 50px;
+}
+
+.demoFooter label{
+	color: white;
+	font-size: 17px;
+
+}
+
+.demoFooter  input{
+	width:400px;
+	height: 20px;
+	border: none;
+	padding: 15px;
+	font-size: 15px;
+}
+
+
+
+
+
+/* ---------------------------------------------------------------------- EDITABLE CONTENT */
+[contenteditable="true"]:hover{
+	border: dotted 1px #e55e3f;
+}
+

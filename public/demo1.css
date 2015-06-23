@@ -1,0 +1,306 @@
+#window{
+	width: 95%;
+	height: 2710px;
+	margin: auto;
+	border: solid 1px #e55e3f;
+	padding: 0px;
+	position: relative;
+	top: 100px;
+	box-shadow: 0px 0px 7px rgba(0,0,0,.4);
+}
+
+#body_demo{
+	background: #e2e2e2;
+	width: 100%;
+	margin: 0px;
+	height: 2710px;
+	text-align: center;
+	position: relative;
+}
+
+/* ---------------------------------------------------------------------- FOLD */
+
+#demoFold{
+	background: url(assets/demos/demo-1/bg_demo1.jpg) center fixed;
+	background-size: cover;
+	width: 100%;
+	height: 400px;
+	margin: auto;
+	padding-top: 200px;
+	text-align: center;
+}
+
+#demoFold .tittleDemo{
+	color: #10baf2;
+	font-size: 50px;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+
+#demoFold p.description{
+	color: white;
+	width: 420px;
+	font-weight: lighter;
+	margin: 20px auto;
+	text-align: center;
+	font-size: 19px;
+	line-height: 30px;
+}
+
+#demoFold .btnDemo{
+	cursor: pointer;
+	display: block;
+	padding: 15px 10px 5px 10px;
+	border: solid 1px white;
+	background: transparent;
+	color: white;
+	font-size: 15px;
+	width: 120px;
+	margin: 70px auto 0px auto;
+	height: 32px;
+}
+
+/* ---------------------------------------------------------------------- NAV */
+
+#demoNav{
+	position:absolute;
+	background: rgba(0,0,0,.4);
+	width: 100%;
+	height: 80px;
+}
+
+#demoNav ul{
+	padding: 0px;
+	top: 15px;
+	float: right;
+	right: 30px;
+	position: relative;
+}
+
+#demoNav ul a{
+	text-decoration: none;
+}
+
+#demoNav ul li{
+	margin-left: 15px;
+	font-size: 17px;
+	margin-right: 15px;
+	color: white;
+	list-style: none;
+	display: inline-block;
+}
+
+#demoNav ul li:hover {
+	color: #10baf2;
+}
+
+div.logo{
+	position: absolute;
+	left: 50px;
+	top: 12px;
+	float: left;
+}
+
+div.logo img{
+	width: 50px;
+	height: auto;
+}
+
+/* ---------------------------------------------------------------------- CONTENT */
+
+#content1{
+	width: 750px;
+	margin: 100px auto;
+	height: 500px;
+}
+#content1 .text{
+	width:700px;
+	margin:auto;
+	color: #44432D;
+	text-align: center;
+	font-size: 19px;
+	position: relative;
+	z-index: 3;
+}
+
+#content1 .text a{
+	color: #10baf2;
+}
+
+#content1  .text:before{
+	content: '"';
+	font-size: 100px;
+	position:relative;
+	float: right;
+	left:-50%;
+	margin: auto;
+	z-index: 0;
+	top: -60px;
+	color: #bcbcbc;
+}
+
+#content1 .img{
+	height: 350px;
+	overflow: hidden;
+	width: 100%;
+	padding: 0px;
+	float: left;
+	left: -10px;
+	margin: 60px auto;
+	position: absolute;
+}
+
+#content1 .img img{
+	width: 120%;
+	height: auto;
+}
+
+#content1 .img .overlay{
+	opacity: 0;
+	position: absolute;
+	width: 100%;
+	height: 190px;
+	color: white;
+	font-size: 20px;
+	padding-top: 160px;
+	background: rgba(0,0,0,.7);
+	-webkit-transition-duration:.5s;
+}
+
+#content1 .img:hover .overlay{
+	opacity: 1;
+}
+
+
+#content2{
+	width: 850px;
+	margin: 200px auto 0px auto;
+	height: 500px;
+}
+
+#content2 .img{
+	width: 100%;
+	height: 400px;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+	top: 60px;
+}
+#content2 .img img{
+	width: 100%;
+	height: auto;
+}
+
+#content2 .text{
+	font-size: 18px;
+	color: gray;
+	margin: 100px auto;
+}
+
+
+/* ----------------------------------------------------------------------  ARTICLE TEAM */
+
+article#team .tittle2{
+	font-size: 30px;
+	color: #10baf2;
+	font-weight: 700;
+	margin: 40px auto;
+	position: relative;
+	top: 40px;
+}
+
+
+ul.teamPersons{
+	width:890px;
+	height: 300px;
+	margin:70px auto;
+	padding: 0px;
+}
+
+ul.teamPersons li{
+	width: 250px;
+	margin: 22px;
+	overflow: hidden;
+	list-style: none;
+	text-align: center;
+	display: inline-block;
+}
+
+span.infoPerson{
+	overflow: hidden;
+	display: block;
+	width: 240px;
+	padding: 4px;
+	height: 150px;
+}
+
+ul.teamPersons li .person{
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	margin: 20px auto;
+	position: relative;
+}
+
+ul.teamPersons li .person img {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	top: -33px;
+	left: -70px;
+}
+
+ul.teamPersons li .btnDemo2{
+	width: 150px;
+	height: 50px;
+	apareance: none;
+	background: transparent;
+	border: solid 1px #10baf2;
+	border-radius: 3px;
+	color: #10baf2;
+	text-transform: uppercase;
+	margin: 30px auto;
+	font-size: 13px;
+}
+
+ul.teamPersons li .btnDemo2:hover{
+	background: #10baf2;
+	color: white;
+}
+
+
+/* ---------------------------------------------------------------------- FOOTER */
+
+.demoFooter{
+	width: 100%;
+  	height: 170px;
+  	margin: 20px auto 0px auto;
+  	background:  #10baf2;
+  	padding-top: 50px;
+}
+
+.demoFooter label{
+	color: white;
+	font-size: 17px;
+
+}
+
+.demoFooter  input{
+	width:400px;
+	height: 20px;
+	border: none;
+	padding: 15px;
+	font-size: 15px;
+}
+
+
+
+/* ---------------------------------------------------------------------- EDITABLE CONTENT */
+[contenteditable="true"]:hover{
+	border: dotted 1px #e55e3f;
+}
+
+
+
