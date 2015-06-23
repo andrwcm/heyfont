@@ -1,4 +1,4 @@
-# heyfont
+# heyFont
 
 The easy way to preview your google fonts.
 
@@ -7,4 +7,3 @@ The easy way to preview your google fonts.
 ## Hosted
 
 [Heroku ](https://heyfont.heroku.com)
-
