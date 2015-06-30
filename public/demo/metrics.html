@@ -3,8 +3,6 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" id="editable" href="../styles/metrics.css" media="screen" />
-
-		<script type="text/javascript" src="../js/actions-demo.js"></script>
 		<script type="text/javascript" src="../js/jquery.min.js"></script>
 	</head>
 
@@ -17,7 +15,7 @@
 				<div class="pixels">
 					<span id="pixel">16</span>px
 				</div>
-				<input type="range" min="2" max="100"  />
+				<input type="range" min="2" max="100"  id="valor"/>
 			</section>
 
 			<section class="textMetrics">
@@ -44,7 +42,7 @@
 			</section>
 
 			<script type="text/javascript">
-				 $('input').on('change', function () {
+				 $('#valor').on('change', function () {
 				    var v = $(this).val();
 				    $('#textchange').css('font-size', v + 'px')
 				    $('#pixel').html(v);
