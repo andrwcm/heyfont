@@ -79,9 +79,4 @@ $(document).keypress(function(event) {
     }
 });
 
-         $('#valor').on('change', function () {
-            var v = $(this).val();
-            $('#textchange').css('font-size', v + 'px')
-            $('#pixel').html(v);
-        });
 

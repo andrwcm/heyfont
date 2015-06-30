@@ -17,7 +17,7 @@
 				<input type="range" min="2" max="100"  id="valor"/>
 			</section>
 
-			<section id="body_demo">
+			<div id="body_demo">
 				<section class="textMetrics">
 
 					<div id="textchange">
@@ -40,8 +40,16 @@
 					<br>
 					<br>
 				</section>
+			</div>
 
-			</section>
+			<script type="text/javascript">
+				 $('#valor').on('change', function () {
+				    var v = $(this).val();
+				    $('#textchange').css('font-size', v + 'px')
+				    $('#pixel').html(v);
+				});
+			</script>
+
 
 		</div>
 
