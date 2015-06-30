@@ -54,7 +54,7 @@ section#rule{
 	top: 140px;
 }
 
-section#rule .value{
+section#rule .pixels{
 	color: gray;
 	margin: 10px 0px 40px 0px;
 	font-weight: 700;

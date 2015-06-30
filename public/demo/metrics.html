@@ -14,8 +14,8 @@
 			<h3>Metrics</h3>
 
 			<section id="rule">
-				<div class="value">
-					<span id="numbers">16</span>px
+				<div class="pixels">
+					<span id="pixel">16</span>px
 				</div>
 				<input type="range" min="2" max="100"  />
 			</section>
@@ -47,7 +47,7 @@
 				 $('input').on('change', function () {
 				    var v = $(this).val();
 				    $('#textchange').css('font-size', v + 'px')
-				    $('span#numbers').html(v);
+				    $('#pixel').html(v);
 				});
 			</script>
 
