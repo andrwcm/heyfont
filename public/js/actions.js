@@ -78,3 +78,10 @@ $(document).keypress(function(event) {
         $('.btn').click();
     }
 });
+
+         $('#valor').on('change', function () {
+            var v = $(this).val();
+            $('#textchange').css('font-size', v + 'px')
+            $('#pixel').html(v);
+        });
+
