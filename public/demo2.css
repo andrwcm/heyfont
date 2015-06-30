@@ -2,7 +2,7 @@
 	width: 95%;
 	height: 2710px;
 	margin: auto;
-	border: solid 1px #e55e3f;
+	border: solid 1px #ff2626;
 	padding: 0px;
 	position: relative;
 	top: 100px;
@@ -71,7 +71,7 @@
 	display: block;
 	border: solid 1px white;
 	background: white;
-	color: #e55e3f;
+	color: #ff2626;
 	margin: auto;
 	font-size: 15px;
 	border-radius: 100px;
@@ -104,6 +104,7 @@
 }
 
 #demoNav ul li{
+	cursor: pointer;
 	margin-left: 15px;
 	font-size: 17px;
 	margin-right: 15px;
@@ -156,9 +157,9 @@ div.iconlogo img{
 	margin: auto;
 	z-index: 0;
 	top: -30px;
-	color: #e55e3f;
+	color: #ff2626;
 	font-weight: 700;
-	border-bottom: solid 2px #e55e3f;
+	border-bottom: solid 2px #ff2626;
 	padding-bottom: 5px;
 }
 
@@ -185,7 +186,7 @@ div.iconlogo img{
 	color: white;
 	font-size: 20px;
 	padding-top: 160px;
-	background: rgba(229,94,63,.9);
+	background: rgba(255,37,38,.9);
 	-webkit-transition-duration:.5s;
 }
 
@@ -228,9 +229,9 @@ article#team .tittle2{
 	margin: 40px auto;
 	position: relative;
 	top: 30px;
-	border-bottom: solid 2px #e55e3f;
+	border-bottom: solid 2px #ff2626;
 	padding-bottom: 5px;
-	color: #e55e3f;
+	color: #ff2626;
 }
 
 
@@ -256,7 +257,9 @@ span.infoPerson{
 	color: #606060;
 	width: 240px;
 	padding: 4px;
-	height: 150px;
+	border: solid 1px white;
+	font-size: 17px;
+	height: 160px;
 }
 
 ul.teamPersons li .person{
@@ -284,9 +287,9 @@ ul.teamPersons li .btnDemo2{
 	height: 35px;
 	apareance: none;
 	background: transparent;
-	border: solid 1px #e55e3f;
+	border: solid 1px #ff2626;
 	border-radius: 100px;
-	color: #e55e3f;
+	color: #ff2626;
 	text-transform: uppercase;
 	margin: 30px auto;
 	padding-top: 18px;
@@ -294,7 +297,7 @@ ul.teamPersons li .btnDemo2{
 }
 
 ul.teamPersons li .btnDemo2:hover{
-	background: #e55e3f;
+	background: #ff2626;
 	color: white;
 }
 
@@ -306,7 +309,7 @@ ul.teamPersons li .btnDemo2:hover{
 	width: 100%;
   	height: 170px;
   	margin: 20px auto 0px auto;
-  	background: #e55e3f;
+  	background: #ff2626;
   	padding-top: 50px;
 }
 
@@ -330,6 +333,6 @@ ul.teamPersons li .btnDemo2:hover{
 
 /* ---------------------------------------------------------------------- EDITABLE CONTENT */
 [contenteditable="true"]:hover{
-	border: dotted 1px #e55e3f;
+	border: dotted 1px #ff2626;
 }
 

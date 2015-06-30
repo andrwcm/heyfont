@@ -54,19 +54,19 @@ ul.webdemos li{
 	font-size: 14px;
 	text-align: center;
 	border-radius: 2px;
-	border: solid 1px #e55e3f;
+	border: solid 1px #ff2626;
 	height: 16px;
 	padding: 10px;
 }
 
 ul.webdemos li {
 	text-decoration: none;
-	color:#e55e3f;
+	color:#ff2626;
 }
 
 
 .active-demo{
-	background: #e55e3f !important;
+	background: #ff2626 !important;
 	color: white !important;
 
 }

@@ -94,14 +94,14 @@
 	color: #10baf2;
 }
 
-div.logo{
+div.iconlogo{
 	position: absolute;
 	left: 50px;
 	top: 12px;
 	float: left;
 }
 
-div.logo img{
+div.iconlogo img{
 	width: 50px;
 	height: auto;
 }

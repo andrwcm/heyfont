@@ -43,9 +43,11 @@
 /* ---------------------------------------------------------------------- LETTER */
 
 #body_demo .a4wrap{
-	width: 100%;
-	height:600px;
+	width: 613px;
+	height:780px;
+	background: white;
 	text-align: center;
+	box-shadow: 0px 30px 60px rgba(0,0,0,.7);
 	margin:150px auto;
 }
 
@@ -56,16 +58,15 @@
 }
 
 #body_demo .letterText{
-	width: 310px;
-	font-size: 13px;
+	width: 500px;
+	font-size: 17px;
 	text-align: left;
 	position: absolute;
 	color: #424241;
-	left: -40px;
+	left: 0px;
 	right: 0px;
 	margin: auto;
-	top: 175px;
-	transform:rotate(-18deg);
+	top: 55px;
 }
 
 #body_demo .letterText p {
@@ -81,9 +82,9 @@
 	width: 250px;
 	height: 320px;
 	position: absolute;
-	left: 350px;
+	left: 650px;
 	right: 0px;
-	top: 500px;
+	top: 400px;
 	margin: auto;
 	z-index: 9999;
 }
@@ -92,18 +93,16 @@
 	display: block;
 	width: 245px;
 	height: 150px;
-	box-shadow: 10px 30px 40px rgba(0,0,0,.5);
+	box-shadow: 0px 30px 60px rgba(0,0,0,.7);
 }
 
 #body_demo .cards div.front{
 	background: white;
 	margin-bottom: 10px;
-	border: solid 1px #cac9c9;
 }
 
 #body_demo .cards div.back{
 	background: #ff2626;
-	border: solid 1px #0fc587;
 }
 
 #body_demo .cards div.front span.companyName{
@@ -133,7 +132,9 @@
 	left: 30px;
 	top: 18px;
 	display: block;
-	width: 70%;
+	height: 110px;
+	overflow: hidden;
+	width: 77%;
 }
 
 #body_demo .cards div.back span.contact p{
@@ -167,6 +168,7 @@
 	height: auto;
 	position: relative;
 	margin:auto;
+	top: -180px;
 	overflow: hidden;
 	z-index: 5;
 }
@@ -212,7 +214,7 @@
 
 .bag{
 	position: relative;
-	top: -76px;
+	top: -276px;
 	z-index: 3;
 }
 
@@ -232,6 +234,33 @@
 .bag .textBag p{
 	margin: -23px;
 }
+
+ /* ---------------------------------------------------------------------- bag*/
+
+ .pencil{
+
+ 	width: 134px;
+ 	height: 600px;
+ 	position: absolute;
+ 	left: -550px;
+ 	right: 0px;
+ 	margin: auto;
+ 	top: 120px;
+ 	z-index: 8;
+ }
+
+  .pencil .textpencil{
+  	display: block;
+  	font-size: 13px;
+  	color: white;
+  	width: 200px;
+  	height: 4px;
+  	position: relative;
+  	letter-spacing: 2px;
+  	left: -40px;
+  	top: 280px;
+  	transform: rotate(-90deg);
+  }
 
 /* ---------------------------------------------------------------------- EDITABLE CONTENT */
 [contenteditable="true"]:hover{

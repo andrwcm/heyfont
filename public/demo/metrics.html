@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" id="editable" href="../styles/metrics.css" media="screen" />
+
+		<script type="text/javascript" src="../js/actions-demo.js"></script>
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+	</head>
+
+	<body>
+
+		<div class="metrics">
+			<h3>Metrics</h3>
+
+			<section id="rule">
+				<div class="value">
+					<span>16</span>px
+				</div>
+				<input type="range" min="2" max="100"  />
+			</section>
+
+			<section class="textMetrics">
+
+				<div id="textchange">
+
+					<div class="btnText">
+						Button
+					</div>
+
+					<p><br></p>
+					<p><br></p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus euismod turpis, in efficitur est ornare et. </p>
+
+					<p>Curabitur id leo lacus. In vulputate sem eu felis cursus, eget sodales leo imperdiet. Nullam posuere odio quam. Integer sapien sem, aliquet id pulvinar vitae, varius malesuada mauris. Curabitur non ornare eros, eu ultrices mi. </p>
+
+					<p>Fusce aliquam condimentum urna in convallis. Morbi tellus augue, aliquam id magna in, venenatis pharetra diam. </p>
+
+					<p>Nullam accumsan, eros et condimentum tincidunt, justo ex ultricies est, et accumsan odio felis quis neque.</p>
+
+				</div>
+				<br>
+				<br>
+			</section>
+
+			<script type="text/javascript">
+				 $('input').on('change', function () {
+				    var v = $(this).val();
+				    $('#textchange').css('font-size', v + 'px')
+				    $('span').html(v);
+				});
+			</script>
+
+
+		</div>
+
+	</body>
+</html>
