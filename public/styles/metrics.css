@@ -6,7 +6,7 @@
 
 
 .metrics{
-	background: #ff2626;
+	background: #efefef;
 	background-size: cover;
 	width: 100%;
 	margin: 0px;
@@ -22,7 +22,7 @@
 	top: 80px;
 	font-weight: 600;
 	text-transform: uppercase;
-	color: white;
+	color: #ff2626;
 }
 
 .metrics h3:before{
@@ -55,7 +55,7 @@ section#rule{
 }
 
 section#rule .value{
-	color: white;
+	color: gray;
 	margin: 10px 0px 40px 0px;
 	font-weight: 700;
 	font-size: 20px;
@@ -84,16 +84,18 @@ section#rule .value{
 	text-align: left;
 	overflow-x:scroll;
 	background: white;
+	border: solid 1px #c6c6c6;
 	margin: auto;
 	padding: 20px;
-	box-shadow: 0px 30px 60px rgba(0,0,0,.7);
+
 }
 
 	input[type='range'] {
 		-webkit-appearance: none;
 		outline: none;
 		border-radius: 5px;
-		background-color: #721919;
+		background-color: #dddddd;
+		border: solid 1px #c6c6c6;
 		height: 10px;
 		width: 700px;
 		vertical-align: middle;
@@ -101,22 +103,21 @@ section#rule .value{
 	input[type='range']::-moz-range-track {
 		-moz-appearance: none;
 		border-radius: 5px;
-		background-color: #721919;
+		background-color: #dddddd;
+		border: solid 1px #c6c6c6;
 		height: 10px;
 	}
 	input[type='range']::-webkit-slider-thumb {
 		-webkit-appearance: none !important;
 		border-radius: 20px;
-		background-color: #0fc587;
+		background-color: #ff2626;
 		height: 20px;
 		width: 20px;
 	}
 	input[type='range']::-moz-range-thumb {
 		-moz-appearance: none;
 		border-radius: 20px;
-		background-color: #FFF;
-		box-shadow:inset 0 0 10px rgba(000,000,000,0.5);
-		border: 1px solid #999;
+		background-color: #ff2626;
 		height: 20px;
 		width: 20px;
 	}
