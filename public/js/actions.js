@@ -33,7 +33,7 @@
  $(document).ready(function() {
     $('.btn').click(function(){
         $("#preloader , #status").fadeIn(0).delay(2000).fadeOut("slow");
-        $('#content').delay(2200).slideDown ("slow");
+        $('#webDemo').delay(2200).slideDown ("slow");
         $('#tools').delay(2200).fadeIn("slow");
         $('#userInput').delay(2200).addClass('small-input');
         $('.tt-hint').delay(2200).addClass('small-input');
@@ -41,13 +41,46 @@
     });
 });
 
-  $(document).ready(function() {
+
+
+$(document).ready(function() {
+    $('#btnWeb').click(function(){
+        $("#preloader , #status").fadeIn(0).delay(2000).fadeOut("slow");
+        $('#brandingDemo, #metricsDemo').delay(2200).slideDown ("slow");
+        $('#webDemo').delay(2200).slideDown ("slow");
+    });
+});
+
+$(document).ready(function() {
+    $('#btnBranding').click(function(){
+        $("#preloader , #status").fadeIn(0).delay(2000).fadeOut("slow");
+        $('#webDemo, #metricsDemo').delay(2200).slideDown ("slow");
+        $('#brandingDemo').delay(2200).slideDown ("slow");
+    });
+});
+
+
+$(document).ready(function() {
+    $('#btnMetrics').click(function(){
+        $("#preloader , #status").fadeIn(0).delay(2000).fadeOut("slow");
+        $('#webDemo, #brandingDemo').delay(2200).slideDown ("slow");
+        $('#metricsDemo').delay(2200).slideDown ("slow");
+    });
+});
+
+
+
+
+$(document).ready(function() {
     $('ul#tool-options li a').click(function(){
         $("#preloader , #status").fadeIn(0).delay(2000).fadeOut("slow");
         $('ul#tool-options li a').removeClass('active');
         $(this).addClass('active');
     });
 });
+
+
+
 
 $(window).load(function() {
       $("#status").fadeOut();

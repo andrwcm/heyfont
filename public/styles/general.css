@@ -332,7 +332,7 @@ footer #made  a{
 }
 
 /* ---------------------------------------------------------------------- CONTENT */
-#content{
+#webDemo, #brandingDemo, #metricsDemo{
 	display: none;
 	background: #f7f7f7;
 	position:fixed;
