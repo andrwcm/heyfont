@@ -331,6 +331,149 @@ footer #made  a{
 	top: 20px;
 }
 
+/* ---------------------------------------------------------------------- form */
+#overlayForm{
+	position: fixed;
+	background: rgba(255,255,255,.8);
+	width: 100%;
+	height: 100%;
+	display: none;
+	text-align: center;
+	margin: auto;
+	z-index: 99999;
+}
+
+#overlayForm .feedback{
+	width: 600px;
+	height: 700px;
+	margin: auto;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: -50px;
+	bottom: 0px;
+	background: white;
+	border-radius: 7px;
+	box-shadow: 0px 20px 40px rgba(0,0,0,.3);
+}
+
+#overlayForm .feedback h2{
+	font-family: 'Asap', sans-serif !important;
+	font-size: 30px;
+	margin:20px auto 50px auto;
+	position: relative;
+	font-weight: 600;
+	color: #ff2626;
+}
+
+#overlayForm .feedback h2:before{
+	content: url(../assets/arrow.png);
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	margin:auto;
+	top: 30px;
+}
+
+#overlayForm .feedback label{
+	font-size: 17px;
+	text-align: left;
+	float: left;
+	left: 50px;
+	position: relative;
+}
+
+#overlayForm .feedback .inputTo {
+	width: 85%;
+	border: solid 1px gray;
+	border-radius: 4px;
+	margin: 10px auto;
+	height: 30px;
+	position: relative;
+	text-align: left;
+	padding-top: 10px;
+	top: 35px;
+}
+
+#overlayForm .feedback .inputTo .tag{
+	display: inline-block;
+	width:150px;
+	height: 25px;
+	text-align: left;
+	position: relative;
+	top: -5px;
+	left: -40px;
+	padding-left: 10px;
+	border-radius: 4px;
+	color: white;
+	padding-top: 5px;
+	background:#0fc587;
+}
+
+#overlayForm .feedback  .inputForm{
+	width: 83%;
+	border: solid 1px gray;
+	outline: none;
+	color: rgb(82, 81, 81);
+	border-radius: 4px;
+	margin: 10px auto 0px auto;
+	height: 30px;
+	font-size: 18px;
+	position: relative;
+	display: inline-block;
+	text-align: left;
+	top: 5px;
+	padding: 5px 10px 5px 10px;
+}
+
+#overlayForm .feedback .message{
+	width: 83%;
+	border: solid 1px gray;
+	outline: none;
+	color: rgb(82, 81, 81);
+	border-radius: 4px;
+	margin: 10px auto 0px auto;
+	height: 120px;
+	font-size: 18px;
+	position: relative;
+	display: inline-block;
+	text-align: left;
+	top: 5px;
+	padding: 5px 10px 5px 10px;
+}
+
+#overlayForm .feedback .btnForm{
+	cursor: pointer;
+	width: 150px;
+	height: 50px;
+	float: right;
+	outline: none;
+	right: 40px;
+	position: relative;
+	background: #ff2626;
+	color: white;
+	border: 0px;
+	border-radius: 5px;
+	font-size: 15px;
+}
+
+#overlayForm .feedback .close{
+	width: 40px;
+	border-radius: 20px;
+	background:#0fc587;
+	height:40px;
+	border:solid 4px white;
+	color: white;
+	font-weight: 600;
+	font-size: 16px;
+	position: relative;
+	float: right;
+	right: -20px;
+	top: -20px;
+	outline: none;
+	cursor: pointer;
+}
+
 /* ---------------------------------------------------------------------- CONTENT */
 #content{
 	display: none;

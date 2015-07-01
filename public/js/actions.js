@@ -50,6 +50,18 @@
     });
 });
 
+$(document).ready(function() {
+    $('#give').click(function(){
+        $("#overlayForm").slideDown(300);
+    });
+});
+
+$(document).ready(function() {
+    $('.close').click(function(){
+        $("#overlayForm").slideUp(300);
+    });
+});
+
 $(window).load(function() {
       $("#status").fadeOut();
       $("#preloader").delay(350).fadeOut("slow", function(){
