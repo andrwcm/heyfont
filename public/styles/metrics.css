@@ -6,8 +6,9 @@
 
 
 .metrics{
-	background: #efefef;
-	background-size: cover;
+	background: url(../assets/bg-figures-dos.png) center scroll repeat;
+	background-size: 200px auto;
+	background-color:#f5f5f5;
 	width: 100%;
 	margin: 0px;
 	text-align: center;
