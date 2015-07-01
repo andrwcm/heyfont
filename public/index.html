@@ -48,9 +48,14 @@
 
 		<script type="text/javascript">
 			$(document).ready(function() {
-				$("#webDemo").load("demo/demo-web.html");
-				$("#brandingDemo").load("demo/branding.html");
-				$("#metricsDemo").load("demo/metrics.html");
+				$("#content").load("demo/demo-web.html");
+
+				//clicks
+				$("ul#tool-options li a").click(function(){
+					var page = $ (this).attr("href");
+					$("#content").load("demo/" + page + ".html");
+					return false;
+				});
 
 			});
 
@@ -184,20 +189,20 @@
 			</span>
 
 			<ul id="tool-options" >
-				<li id="btnWeb">
-					<a href="#" class="active">
+				<li>
+					<a href="demo-web" class="active">
 						Web
 					</a>
 				</li>
 
 
-				<li id="btnBranding">
-					<a href="#">
+				<li>
+					<a href="branding">
 						Branding
 					</a>
 				</li>
-				<li id="btnMetrics">
-					<a href="#">
+				<li>
+					<a href="metrics">
 						Metrics
 					</a>
 				</li>
@@ -206,9 +211,9 @@
 
 		</nav>
 
-		<div id="webDemo"></div>
-		<div id="brandingDemo"></div>
-		<div id="metricsDemo"></div>
+		<div id="content">
+
+		</div>
 
 	</body>
 </html>
