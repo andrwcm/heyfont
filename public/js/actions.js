@@ -36,6 +36,7 @@
         $('#content').delay(2200).slideDown ("slow");
         $('#tools').delay(2200).fadeIn("slow");
         $('#userInput').delay(2200).addClass('small-input');
+        $('.tt-dropdown-menu').delay(2200).addClass('top');
         $('.tt-hint').delay(2200).addClass('small-input');
         $('#buttonFont').delay(2200).addClass('small-button');
     });
