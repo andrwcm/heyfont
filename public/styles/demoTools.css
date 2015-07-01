@@ -47,18 +47,19 @@ ul.webdemos{
 
 ul.webdemos li{
 	cursor: pointer;
+	background: white;
 	display: inline-block;
 	list-style: none;
-	width: 100px;
+	width: 150px;
 	margin: 15px;
 	color: #e55e3f;
-	font-size: 14px;
+	font-size: 19px;
 	font-family: 'Asap', sans-serif !important;
 	text-align: center;
 	border-radius: 2px;
 	border: solid 1px #ff2626;
-	height: 16px;
-	padding: 10px;
+	height: 25px;
+	padding: 15px;
 }
 
 ul.webdemos li {

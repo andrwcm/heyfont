@@ -21,20 +21,35 @@
 				<section class="textMetrics">
 
 					<div id="textchange">
+						<p><br></p>
 
-						<div class="btnText">
+						<div class="btnText" contenteditable="true">
 							Button
 						</div>
 
-						<p><br></p>
-						<p><br></p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus euismod turpis, in efficitur est ornare et. </p>
+						<div class="btnTextDos" contenteditable="true">
+							Button
+						</div>
 
-						<p>Curabitur id leo lacus. In vulputate sem eu felis cursus, eget sodales leo imperdiet. Nullam posuere odio quam. Integer sapien sem, aliquet id pulvinar vitae, varius malesuada mauris. Curabitur non ornare eros, eu ultrices mi. </p>
+						<div class="btnTextTres" contenteditable="true">
+							Button
+						</div>
 
-						<p>Fusce aliquam condimentum urna in convallis. Morbi tellus augue, aliquam id magna in, venenatis pharetra diam. </p>
+						<div contenteditable="true">
 
-						<p>Nullam accumsan, eros et condimentum tincidunt, justo ex ultricies est, et accumsan odio felis quis neque.</p>
+							<p><br></p>
+							<p><strong>Tittle of the text</strong></p>
+							<p><br></p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus euismod turpis, in efficitur est ornare et. </p>
+
+							<p>Curabitur id leo lacus. In vulputate sem eu felis cursus, eget sodales leo imperdiet. Nullam posuere odio quam. Integer sapien sem, aliquet id pulvinar vitae, varius malesuada mauris. Curabitur non ornare eros, eu ultrices mi. </p>
+
+							<p>Fusce aliquam condimentum urna in convallis. Morbi tellus augue, aliquam id magna in, venenatis pharetra diam. </p>
+
+							<p>Nullam accumsan, eros et condimentum tincidunt, justo ex ultricies est, et accumsan odio felis quis neque.</p>
+
+
+						</div>
 
 					</div>
 					<br>
@@ -43,6 +58,8 @@
 			</div>
 
 			<script type="text/javascript">
+				var value = $('#valor').val(16);
+
 				 $('#valor').on('change', function () {
 				    var v = $(this).val();
 				    $('#textchange').css('font-size', v + 'px')

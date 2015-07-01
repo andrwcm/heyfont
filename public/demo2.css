@@ -1,3 +1,8 @@
+body{
+	background: url(assets/figures.png) center scroll repeat;
+	background-size: 200px auto;
+}
+
 #window{
 	width: 95%;
 	height: 2710px;
@@ -5,7 +10,7 @@
 	border: solid 1px #ff2626;
 	padding: 0px;
 	position: relative;
-	top: 100px;
+	top: 150px;
 	box-shadow: 0px 0px 7px rgba(0,0,0,.4);
 }
 

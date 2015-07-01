@@ -6,12 +6,14 @@
 
 
 .branding{
-	background: #ff2626;
-	background-size: cover;
+	background: url(../assets/white-fig.png) center scroll repeat;
+	background-size: 200px auto;
+	background-color: #ff2626;
 	width: 100%;
 	margin: 0px;
 	text-align: center;
-	height: 2300px;
+	height: 2150px;
+	overflow: hidden;
 }
 
 .branding h3{
