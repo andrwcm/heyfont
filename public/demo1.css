@@ -1,6 +1,8 @@
-body{
+#wrapWeb{
 	background: url(assets/figures.png) center scroll repeat;
 	background-size: 200px auto;
+	display: block;
+	height: 2710px;
 }
 
 #window{
