@@ -15,7 +15,7 @@
 }
 
 .branding h3{
-	font-family: 'Asap', sans-serif;
+	font-family: 'Asap', sans-serif !important;
 	font-size: 40px;
 	margin:auto;
 	position: relative;

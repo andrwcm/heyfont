@@ -38,6 +38,7 @@ ul.webdemos{
 	width: 470px;
 	height: 90px;
 	position: relative;
+	font-family: 'Asap', sans-serif !important;
 	padding: 0px;
 	top: 0px;
 	left: 0px;
@@ -52,6 +53,7 @@ ul.webdemos li{
 	margin: 15px;
 	color: #e55e3f;
 	font-size: 14px;
+	font-family: 'Asap', sans-serif !important;
 	text-align: center;
 	border-radius: 2px;
 	border: solid 1px #ff2626;
@@ -61,12 +63,14 @@ ul.webdemos li{
 
 ul.webdemos li {
 	text-decoration: none;
+	font-family: 'Asap', sans-serif !important;
 	color:#ff2626;
 }
 
 
 .active-demo{
 	background: #ff2626 !important;
+	font-family: 'Asap', sans-serif !important;
 	color: white !important;
 
 }

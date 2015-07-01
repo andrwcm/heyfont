@@ -26,7 +26,7 @@
 
     function changeText2(){
     var userInput = document.getElementById('userInput').value;
-      $("#body_demo").google_fonts({fontname: $('#userInput').val()});
+      $("#content").google_fonts({fontname: $('#userInput').val()});
 
 }
 
