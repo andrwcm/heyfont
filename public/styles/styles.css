@@ -48,7 +48,7 @@
   -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
   -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
  box-shadow: 0 5px 10px rgba(0,0,0,.2);
-  z-index: 999 !important;
+  z-index: 999999999 !important;
 }
 
 .tt-dropdown-menu.top{
