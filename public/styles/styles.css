@@ -41,6 +41,7 @@
   background-color: #fff;
   border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.2);
+  text-align: left;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   right: 0px !important;
@@ -67,7 +68,7 @@
 
 .tt-suggestion.tt-is-under-cursor {
   color: #fff;
-  background-color: #0097cf;
+  background-color: #00b174;
 }
 
 .tt-suggestion p {
