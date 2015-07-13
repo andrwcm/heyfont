@@ -52,13 +52,13 @@ section#home{
 }
 
 section#home .logo{
-	height: 153px;
+	height: auto;
 	margin: auto;
 	left: 0px;
 	right: 0px;
 	position: absolute;
-	top: 90px;
-	width: 259px;
+	top: 60px;
+	width: 350px;
 }
 
 

@@ -25,7 +25,7 @@
 	  height: auto;
 	  position: relative;
 	  top: 13px;
-	  left: 15px;
+	  left: 5px;
 }
 
 .tools-fixed{
@@ -36,45 +36,56 @@
 /* ---------------------------------------------------------------------- WEB DEMOS UL */
 
 ul.webdemos{
-	width: 470px;
-	height: 90px;
+	background: #ff2626;
+	width: 100%;
+	height: 70px;
 	position: relative;
+	text-align: center;
 	font-family: 'Asap', sans-serif !important;
 	padding: 0px;
-	top: 0px;
+	top: 70px;
 	left: 0px;
 	float: left;
 }
 
 ul.webdemos li{
 	cursor: pointer;
-	background: white;
+	background: transparent;
 	display: inline-block;
 	list-style: none;
-	width: 150px;
+	width: 85px;
 	margin: 15px;
-	color: #e55e3f;
-	font-size: 19px;
+	color: white;
+	font-size: 15px;
 	font-family: 'Asap', sans-serif !important;
 	text-align: center;
 	border-radius: 2px;
-	border: solid 1px #ff2626;
-	height: 25px;
-	padding: 15px;
+	border: solid 1px white;
+	height: 17px;
+	padding: 9px;
 }
 
 ul.webdemos li {
 	text-decoration: none;
 	font-family: 'Asap', sans-serif !important;
-	color:#ff2626;
+	color:white;
 }
 
 
 .active-demo{
-	background: #ff2626 !important;
+	background:white !important;
 	font-family: 'Asap', sans-serif !important;
-	color: white !important;
+	color: #ff2626 !important;
 
+}
+
+ul.webdemos li.active-demo:after{
+	display: block;
+	content:url(../assets/active.png);
+	position: relative;
+	top: -23px;
+	float: left;
+	left: -22px;
 }
 
 /* ----------------------------------------------------------------------  UL TOOLS */
