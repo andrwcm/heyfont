@@ -37,24 +37,25 @@
 
 ul.webdemos{
 	background: #ff2626;
-	width: 100%;
-	height: 70px;
-	position: relative;
+	width: 8%;
+	height: 100%;
+	float: left;
+	position: fixed;
 	text-align: center;
 	font-family: 'Asap', sans-serif !important;
 	padding: 0px;
-	top: 70px;
+	top: 54px;
 	left: 0px;
 	float: left;
+	z-index: 7;
 }
 
 ul.webdemos li{
 	cursor: pointer;
 	background: transparent;
-	display: inline-block;
 	list-style: none;
-	width: 85px;
-	margin: 15px;
+	width: 70%;
+	margin: 15px auto;
 	color: white;
 	font-size: 15px;
 	font-family: 'Asap', sans-serif !important;
@@ -82,10 +83,10 @@ ul.webdemos li {
 ul.webdemos li.active-demo:after{
 	display: block;
 	content:url(../assets/active.png);
-	position: relative;
-	top: -23px;
-	float: left;
-	left: -22px;
+	position: absolute;
+	top: 18px;
+	float: right;
+	right: 2px;
 }
 
 /* ----------------------------------------------------------------------  UL TOOLS */
@@ -138,5 +139,3 @@ ul#tool-options li a.active{
 li.drop-down ul li:hover a{
 	color: white !important;
 }
-
-

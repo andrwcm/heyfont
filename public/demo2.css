@@ -10,10 +10,11 @@ body{
 }
 
 #window{
-	width: 100%;
+	width: 92%;
 	height: 2710px;
 	margin: auto;
 	padding: 0px;
+	float: right;
 	position: relative;
 	top: 150px;
 }
@@ -206,7 +207,7 @@ div.iconlogo img{
 
 #content2{
 	width: 500px;
-	margin: 200px auto 0px auto;
+	margin: 400px auto 0px auto;
 	height: 500px;
 }
 
@@ -231,6 +232,12 @@ div.iconlogo img{
 
 
 /* ----------------------------------------------------------------------  ARTICLE TEAM */
+
+article#team {
+	position: relative;
+	top: 80px;
+}
+
 
 article#team .tittle2{
 	font-size: 30px;
@@ -343,4 +350,3 @@ ul.teamPersons li .btnDemo2:hover{
 [contenteditable="true"]:hover{
 	border: dotted 1px #00b174;
 }
-

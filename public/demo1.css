@@ -10,12 +10,13 @@ body{
 }
 
 #window{
-	width: 100%;
+	width: 92%;
 	height: 2710px;
 	margin: auto;
 	padding: 0px;
+	float: right;
 	position: relative;
-	top: 150px;
+	top: 70px;
 }
 
 #body_demo{
@@ -312,6 +313,3 @@ ul.teamPersons li .btnDemo2:hover{
 [contenteditable="true"]:hover{
 	border: dotted 1px #e55e3f;
 }
-
-
-

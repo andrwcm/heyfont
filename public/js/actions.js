@@ -32,6 +32,7 @@
 
  $(document).ready(function() {
     $('.btn').click(function(){
+        $('body').css('overflow','hidden');
         $("#preloader , #status").fadeIn(0).delay(2000).fadeOut("slow");
         $('#content').delay(2200).slideDown ("slow");
         $('#tools').delay(2200).fadeIn("slow");
@@ -39,6 +40,7 @@
         $('.tt-dropdown-menu').delay(2200).addClass('top');
         $('.tt-hint').delay(2200).addClass('small-input');
         $('#buttonFont').delay(2200).addClass('small-button');
+
     });
 });
 
