@@ -63,10 +63,12 @@ ul.webdemos li{
 	font-family: 'Asap', sans-serif !important;
 	text-align: center;
 	border-radius: 2px;
+	position:relative;
+	left:0px;
 	border: solid 1px gray;
 	height: 20px;
 	padding: 20px 9px;
-	-webkit-transition-duration:.5s;
+	-webkit-transition-duration:.3s;
 }
 
 ul.webdemos li {
@@ -80,11 +82,11 @@ ul.webdemos li {
 	background:#0fc587 !important;
 	width: 90% !important;
 	left:20px !important;
-	position:relative;
 	border:solid 1px #0fc587 !important;
 	font-family: 'Asap', sans-serif !important;
 	color: white !important;
 	font-weight: 600;
+	border-radius: 2px 30px 30px 2px !important;
 
 }
 
