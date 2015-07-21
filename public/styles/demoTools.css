@@ -81,7 +81,6 @@ ul.webdemos li {
 }
 
 ul.webdemos li.active-demo:after{
-	display: block;
 	content:url(../assets/active.png);
 	position: absolute;
 	top: 18px;
