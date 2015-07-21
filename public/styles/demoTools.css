@@ -8,6 +8,7 @@
 	display: none;
 	top: 0px;
 	border-bottom: 1px #e1e1e1 solid;
+	box-shadow: 0px 0px 6px rgba(0,0,0,.3);
 }
 
 #tools .eyfont{
@@ -36,7 +37,7 @@
 /* ---------------------------------------------------------------------- WEB DEMOS UL */
 
 ul.webdemos{
-	background: #b6b6b6 ;
+	background: #f7f7f7 ;
 	width: 15%;
 	height: 100%;
 	float: left;
@@ -47,6 +48,7 @@ ul.webdemos{
 	top: 85px;
 	left: 0px;
 	float: left;
+	border-right: 1px solid #626262;
 	z-index: 7;
 }
 
