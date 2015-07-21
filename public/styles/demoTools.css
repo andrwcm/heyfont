@@ -36,7 +36,7 @@
 /* ---------------------------------------------------------------------- WEB DEMOS UL */
 
 ul.webdemos{
-	background: #ff2626;
+	background: #b6b6b6 ;
 	width: 15%;
 	height: 100%;
 	float: left;
@@ -68,25 +68,20 @@ ul.webdemos li{
 
 ul.webdemos li {
 	text-decoration: none;
+	background-color: #9d9d9d;
 	font-family: 'Asap', sans-serif !important;
 	color:white;
 }
 
 
 .active-demo{
-	background:white !important;
+	background:#0fc587 !important;
 	font-family: 'Asap', sans-serif !important;
-	color: #ff2626 !important;
+	color: white !important;
+	font-weight: 600;
 
 }
 
-ul.webdemos li.active-demo:after{
-	content:url(../assets/active.png);
-	position: absolute;
-	top: 18px;
-	float: right;
-	right: 17px;
-}
 
 /* ----------------------------------------------------------------------  UL TOOLS */
 
