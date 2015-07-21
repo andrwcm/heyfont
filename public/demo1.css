@@ -10,7 +10,7 @@ body{
 }
 
 #window{
-	width: 92%;
+	width: 85%;
 	height: 2710px;
 	margin: auto;
 	padding: 0px;
@@ -221,7 +221,7 @@ article#team .tittle2{
 
 
 ul.teamPersons{
-	width:890px;
+	width:950px;
 	height: 300px;
 	margin:70px auto;
 	padding: 0px;
