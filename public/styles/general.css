@@ -36,10 +36,15 @@ body{
 	height: 113px;
 	position: absolute;
 	margin: auto;
-	top: 0px;
+	top: -150px;
 	bottom: 0px;
 	right: 0px;
 	left: 0px;
+}
+
+#preloader #status img{
+  width: 100%;
+  height: auto;
 }
 
 /* ---------------------------------------------------------------------- FOLD */
