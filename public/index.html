@@ -65,6 +65,8 @@
 					limit: 10
 				});
 			});
+
+
 		</script>
 
 	</head>
@@ -120,7 +122,7 @@
 
 		<section id="home">
 			<div class="logo">
-				<img src="assets/heyfont.png">
+				<img src="assets/heyfont.svg">
 			</div>
 			<p>
 				<h1>The easy way to preview your google fonts</h1>
@@ -205,34 +207,43 @@
 		</footer>
 
 		<nav id="tools">
-			<span class="eyfont">
-				<a href="https://heyfont.herokuapp.com">
-					<img src="assets/heyfont.png">
-				</a>
-			</span>
+			<div class="heyfont webActive">
+					<span class="burguer"></span>
+					<img src="assets/hey.svg">
+			</div>
+		</nav>
 
+		<div id="overlayTools">
 			<ul id="tool-options" >
 				<li>
-					<a href="demo-web" class="active">
+					<a href="https://heyfont.herokuapp.com" class="logoHome">
+						<img src="assets/heyfont.svg">
+					</a>
+				</li>
+
+				<li>
+					<a href="demo-web" class="active" id="WebBtn">
 						Web
 					</a>
+					<span id="hover"></span>
 				</li>
 
-
 				<li>
-					<a href="branding">
+					<a href="branding" id="brandbtn">
 						Branding
 					</a>
+					<span id="hover"></span>
 				</li>
+
 				<li>
-					<a href="metrics">
+					<a href="metrics" id="MetricBtn">
 						Metrics
 					</a>
+					<span id="hover"></span>
 				</li>
+
 			</ul>
-
-
-		</nav>
+		</div>
 
 		<div id="content"></div>
 

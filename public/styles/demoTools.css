@@ -5,52 +5,118 @@
 	font-family: 'Asap', sans-serif;
 	position: fixed;
 	z-index: 99999999;
-	display: block;
+	display: none;
 	top: 0px;
 	border-bottom: 1px #e1e1e1 solid;
 	box-shadow: 0px 0px 6px rgba(0,0,0,.3);
 }
 
-#tools .eyfont{
+#tools .heyfont{
+	cursor: pointer !important;
 	display: block;
-	width: 130px;
+	background: #ff2626;
+	width: 140px;
 	position: absolute;
 	top: 0px;
-	right: 0px;
 	margin: auto;
 	left: 0px;
-	height: 90px;
+	height: 100%;
 }
 
-#tools .eyfont img{
-	  cursor: pointer !important;
-	  width: 144px;
+.webActive::before{
+	content: "Web preview" !important;
+	display: block !important;
+	position: absolute !important;
+	float: right !important;
+	color: rgb(129, 129, 129) !important;
+	top: 35px !important;
+	font-size: 20px !important;
+	right: -140px !important;
+}
+.brandActive::before{
+	content: "Branding preview" !important;
+	display: block !important;
+	position: absolute !important;
+	float: right !important;
+	color: rgb(129, 129, 129) !important;
+	top: 35px !important;
+	font-size: 20px !important;
+	right: -180px !important;
+}
+.metricActive::before{
+	content: "Metrics" !important;
+	display: block !important;
+	position: absolute !important;
+	float: right!important;
+	color: rgb(129, 129, 129)!important;
+	top: 35px!important;
+	font-size: 20px!important;
+	right: -100px!important;
+}
+
+#tools .heyfont img{
+	  width: 60px;
 	  height: auto;
 	  position: relative;
-	  top: 13px;
-	  left: 5px;
+	  top: 12px;
+	  left: 10px;
 }
 
-.tools-fixed{
-	position: fixed !important;
-	top: 0px;
+#tools .heyfont .burguer{
+	display: block;
+	width: 25px;
+	height: 3px;
+	background: white;
+	position: relative;
+	top:40px;
 }
+#tools .heyfont .burguer::before{
+	display: block;
+	content: "";
+	width: 25px;
+	height: 3px;
+	background: white;
+	position: relative;
+	top:-7px;
+	transition: .5s;
+}
+
+#tools .heyfont .burguer::after{
+	display: block;
+	content: "";
+	width: 25px;
+	height: 3px;
+	background: white;
+	position: relative;
+	top:4px;
+	transition: .5s;
+}
+
+#tools .heyfont:hover .burguer::before{
+	top:-9px;
+}
+
+#tools .heyfont:hover .burguer::after{
+	top:6px;
+}
+
+
+
 
 /* ---------------------------------------------------------------------- WEB DEMOS UL */
 
 ul.webdemos{
-	background: #f7f7f7 ;
-	width: 15%;
-	height: 100%;
-	float: left;
-	position: fixed;
+	background: #0fc587;
+	width: 85%;
+	height: 100px;
+	position:absolute;
 	text-align: center;
 	font-family: 'Asap', sans-serif !important;
 	padding: 0px;
-	top: 85px;
+	top: 50px;
 	left: 0px;
-	float: left;
-	border-right: 1px solid #626262;
+	right: 0px;
+	margin: auto;
 	z-index: 7;
 }
 
@@ -58,8 +124,9 @@ ul.webdemos li{
 	cursor: pointer;
 	background: transparent;
 	list-style: none;
-	width: 75%;
-	margin: 15px auto;
+	width: 150px;
+	display:inline-block;
+	margin: 20px 15px;
 	color: white;
 	font-size: 17px;
 	font-family: 'Asap', sans-serif !important;
@@ -68,7 +135,7 @@ ul.webdemos li{
 	position:relative;
 	left:20px;
 	float: left;
-	border: solid 1px gray;
+	border: solid 1px white;
 	height: 20px;
 	padding: 20px 9px;
 	-webkit-transition-duration:.3s;
@@ -77,68 +144,122 @@ ul.webdemos li{
 ul.webdemos li {
 	text-decoration: none;
 	font-family: 'Asap', sans-serif !important;
-	color:gray;
+	color:white
+}
+
+ul.webdemos li#labelText{
+	width: auto;
+	border: none;
 }
 
 
 .active-demo{
-	background:#0fc587 !important;
-	width: 90% !important;
-	border:solid 1px #0fc587 !important;
+	background:white !important;
 	font-family: 'Asap', sans-serif !important;
 	color: white !important;
-	font-weight: 600;
-	border-radius: 2px 30px 30px 2px !important;
-
+	color: #0fc587 !important;
 }
 
 
 /* ----------------------------------------------------------------------  UL TOOLS */
 
-
-ul#tool-options{
-	width: 450px;
-	height: 50px;
-	position: absolute;
-	top: 7px;
-	float: left;
-	left: 0px;
+#overlayTools{
+	position: fixed;
+	top:0px;
+	left:0px;
+	background: rgba(0,0,0,.8);
+	visibility: hidden;
+	height: 100%;
+	width: 100%;
 	padding: 0px;
-	display: block;
+	z-index: 9999999999999999;
+	transition: .4s;
 }
 
-ul#tool-options li{
+.overlayToolsVisible{
+	visibility: visible !important;
+}
+
+#overlayTools ul#tool-options{
+	background: #eeecec;
+	width: 250px;
+	height: 100%;
+	position: absolute;
+	top: -16px;
+	left: -250px;
+	padding: 0px !important;
 	display: block;
-	display:inline-block;
+	transition: .4s;
+}
+
+.tool-optionsVisible{
+	left: 0px !important;
+}
+
+#overlayTools ul#tool-options li{
 	text-align: center;
 	position: relative;
 	z-index: 3;
+
 }
 
-ul#tool-options li a{
+#overlayTools ul#tool-options li #hover{
+	background: rgba(0,0,0,.0);
+	display: block;
+	position: absolute;
+	top: 0px;
+	height: 100%;
+	border-radius: 0px;
+	width: 0%;
+	left: -300px;
+	bottom: 0px;
+	margin: auto;
+	z-index: 1;
+	transition: .4s;
+
+}
+
+#overlayTools ul#tool-options li:hover #hover{
+	left: 0px;
+	width: 100%;
+	background: rgba(0,0,0,.1);
+}
+
+#overlayTools ul#tool-options li a{
+	box-sizing: border-box;
 	text-decoration: none;
 	color: gray;
-	border:solid 1px #ff2626;
-	border-radius: 0px;
-	height: 35px;
-	color: #ff2626;
+	border: none;
+	height: 70px;
+	color: #221c20;
 	display: block;
-	width: 125px;
-	margin: -2px;
-	padding-top: 15px;
+	width: 100%;
+	padding-top: 25px;
+	position: relative;
+	box-shadow: none;
+	z-index: 4;
 }
 
-
-ul#tool-options li a:hover{
-	background: #ff2626;
-	color: white;
-	-webkit-transition-duration:.5s;
+#overlayTools ul#tool-options li a.logoHome{
+	height: 200px;
+	border: none;
 }
 
-ul#tool-options li a.active{
-	background: #ff2626;
-	color: white;
-	-webkit-transition-duration:.3s;
+#overlayTools ul#tool-options li a.logoHome img{
+	width: 70%;
+	position: relative;
+	top: 30px;
+	height: auto;
+}
+
+#overlayTools ul#tool-options li a.active{
+	background: white;
+	border-style: solid!important;
+	border-width: 0px 0px 0px 10px !important;
+	border-color: #ff2626 !important;
+	color: #ff2626;
+	font-weight: 600;
+	box-shadow: 0px 0px  8px rgba(0,0,0,.2) !important;
 }
 
 li.drop-down ul li:hover a{

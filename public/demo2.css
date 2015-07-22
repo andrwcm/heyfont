@@ -10,13 +10,14 @@ body{
 }
 
 #window{
+	box-sizing: border-box;
 	width: 85%;
 	height: 2710px;
 	margin: auto;
 	padding: 0px;
-	float: right;
 	position: relative;
-	top: 0px;
+	top: 150px;
+	border: solid 1px rgb(116, 116, 116);
 }
 
 #body_demo{

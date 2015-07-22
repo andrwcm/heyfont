@@ -30,6 +30,8 @@
 
 }
 
+
+//acciones al dar click en el botón GO!
  $(document).ready(function() {
     $('.btn').click(function(){
         $('body').css('overflow','hidden');
@@ -44,26 +46,59 @@
     });
 });
 
-  $(document).ready(function() {
-    $('ul#tool-options li a').click(function(){
-        $("#preloader , #status").fadeIn(0).delay(2000).fadeOut("slow");
-        $('ul#tool-options li a').removeClass('active');
-        $(this).addClass('active');
-    });
+
+//acciones al dar click en los botones de preview
+$(document).ready(function() {
+  $('ul#tool-options li a').click(function(){
+      $("#preloader , #status").fadeIn(0).delay(2000).fadeOut("slow");
+      $('ul#tool-options li a').removeClass('active');
+      $('#overlayTools').removeClass('overlayToolsVisible');
+      $('ul#tool-options').removeClass('tool-optionsVisible');
+      $(this).addClass('active');
+  });
 });
 
+
+//acciones feedback y menu
 $(document).ready(function() {
     $('#give').click(function(){
         $("#overlayForm").slideDown(300);
     });
-});
 
-$(document).ready(function() {
     $('.close').click(function(){
-        $("#overlayForm").slideUp(300);
+        $('#overlayForm').slideUp(300);
+    });
+
+    $('.heyfont').click(function(){
+        $('#overlayTools').addClass('overlayToolsVisible');
+        $('ul#tool-options').delay(1200).addClass('tool-optionsVisible');
+    });
+
+    $('#overlayTools').click(function(){
+        $('#overlayTools').removeClass('overlayToolsVisible');
+        $('ul#tool-options').removeClass('tool-optionsVisible');
+    });
+
+    //acciones botones opciones preview
+
+    $('ul#tool-options li a#brandbtn').click(function(){
+        $('.heyfont').removeClass('webActive');
+        $('.heyfont').addClass('brandActive');
+    });
+
+    $('ul#tool-options li a#WebBtn').click(function(){
+        $('.heyfont').removeClass('brandActive, metricActive');
+        $('.heyfont').addClass('webActive');
+    });
+
+    $('ul#tool-options li a#MetricBtn').click(function(){
+        $('.heyfont').removeClass('webActive, brandActive ');
+        $('.heyfont').addClass('metricActive');
     });
 });
 
+
+//acciones precarga
 $(window).load(function() {
       $("#status").fadeOut();
       $("#preloader").delay(350).fadeOut("slow", function(){
@@ -93,5 +128,3 @@ $(document).keypress(function(event) {
         $('.btn').click();
     }
 });
-
-

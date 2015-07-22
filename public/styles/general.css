@@ -6,7 +6,7 @@
 
 /* COLORES
 
-	eyFont: #ff2626;
+	heyFont: #ff2626;
 	textos: #444a4f;
 	dark: #1c5c6c;
 */
@@ -16,8 +16,12 @@ body{
 	background: #e27661;
 	margin: 0px;
 	text-align: center;
+  left:0px;
+  position: relative;
 	font-family: 'Asap', sans-serif;
+  transition: .4s;
 }
+
 
 #preloader{
 	width: 100%;
@@ -57,8 +61,8 @@ section#home .logo{
 	left: 0px;
 	right: 0px;
 	position: absolute;
-	top: 60px;
-	width: 350px;
+	top: 70px;
+	width: 300px;
 }
 
 
