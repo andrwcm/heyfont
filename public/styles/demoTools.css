@@ -113,7 +113,7 @@ ul.webdemos{
 	text-align: center;
 	font-family: 'Asap', sans-serif !important;
 	padding: 0px;
-	top: 50px;
+	top: 151px;
 	left: 0px;
 	right: 0px;
 	margin: auto;
@@ -240,12 +240,12 @@ ul.webdemos li#labelText{
 	z-index: 4;
 }
 
-#overlayTools ul#tool-options li a.logoHome{
+#overlayTools ul#tool-options a.logoHome li {
 	height: 200px;
 	border: none;
 }
 
-#overlayTools ul#tool-options li a.logoHome img{
+#overlayTools ul#tool-options a.logoHome li img{
 	width: 70%;
 	position: relative;
 	top: 30px;

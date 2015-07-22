@@ -8,7 +8,7 @@
 .branding{
 	background: url(../assets/white-fig.png) center scroll repeat;
 	background-size: 200px auto;
-	background-color: #ff2626;
+	background-color: #0fc587;
 	width: 100%;
 	margin: 0px;
 	text-align: center;
@@ -268,6 +268,3 @@
 [contenteditable="true"]:hover{
 	border: dotted 1px #e55e3f;
 }
-
-
-
