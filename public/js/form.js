@@ -17,10 +17,10 @@
             return false;
         }else{
             $('.ajaxgif').removeClass('hide');
-            var datos = 'nombre='+ nombre + '&email=' + email + '&telefono=' + telefono + '&mensaje=' + mensaje;
+            var datos = 'nombre='+ nombre + '&email=' + email + '&mensaje=' + mensaje;
             $.ajax({
                 type: "POST",
-                url: "../proceso.php",
+                url: "proceso.php",
                 data: datos,
                 success: function() {
                     $('.ajaxgif').hide();
