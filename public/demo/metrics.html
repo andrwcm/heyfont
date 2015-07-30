@@ -20,7 +20,7 @@
 			<div id="body_demo">
 				<section class="textMetrics">
 
-					<div id="textchange">
+					<div id="textchange" class="change1">
 							<div contenteditable="true" style="width;95%; height:auto;">
 							<p><br></p>
 							<p><strong>Tittle of the text</strong></p>
@@ -38,7 +38,7 @@
 
 					</div>
 
-					<div id="textchange">
+					<div id="textchange" class="change1">
 						<div class="btnText" contenteditable="true">
 							Button
 						</div>
@@ -68,7 +68,7 @@
 
 				 $('#valor').on('change', function () {
 				    var v = $(this).val();
-				    $('#textchange').css('font-size', v + 'px')
+				    $('.change1, .change2').css('font-size', v + 'px')
 				    $('#pixel').html(v);
 				});
 			</script>
