@@ -9,7 +9,7 @@
         if (nombre == "") {
             $(".nombre").focus();
             return false;
-        }else if(email == "" || !validacion_email.test(email)){
+        }else if(email == "" || validacion_email.test(email)){
             $(".email").focus();
             return false;
         }else if(mensaje == ""){
