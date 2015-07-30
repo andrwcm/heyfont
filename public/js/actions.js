@@ -15,7 +15,7 @@
 
     $(document).ready(function() {
     //alert('ready');
-    $('input').on('keyup', function(event) {
+    $('#userInput').on('keyup', function(event) {
         $(this).val(function(i, v){
             return v.replace(/[a-zA-z]/, function(c){
                return c.toUpperCase();
