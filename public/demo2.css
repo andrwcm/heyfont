@@ -12,7 +12,7 @@ body{
 #window{
 	box-sizing: border-box;
 	width: 85%;
-	height: 2710px;
+	height: 3210px;
 	margin: auto;
 	padding: 0px;
 	position: relative;
@@ -21,10 +21,10 @@ body{
 }
 
 #body_demo{
-	background: #e2e2e2;
+	background: white;
 	width: 100%;
 	margin: 0px;
-	height: 2710px;
+	height: 3100px;
 	text-align: center;
 	position: relative;
 }
@@ -73,7 +73,7 @@ body{
 	background-size: 100% 100%;
 	position: absolute;
 	border-radius: 50%;
-	margin-top: -250px;
+	margin-top: -281px;
 	margin-left:30%;
 }
 
@@ -82,7 +82,7 @@ body{
 	display: block;
 	border: solid 1px white;
 	background: white;
-	color: #00b174;
+	color: #371b52;
 	margin: auto;
 	font-size: 15px;
 	border-radius: 100px;
@@ -168,9 +168,9 @@ div.iconlogo img{
 	margin: auto;
 	z-index: 0;
 	top: -30px;
-	color: #00b174;
+	color: #371b52;
 	font-weight: 700;
-	border-bottom: solid 2px #00b174;
+	border-bottom: solid 2px #371b52;
 	padding-bottom: 5px;
 }
 
@@ -197,7 +197,7 @@ div.iconlogo img{
 	color: white;
 	font-size: 20px;
 	padding-top: 160px;
-	background: rgba(0,177,116,.9);
+	background: rgba(55,27,82,.9);
 	-webkit-transition-duration:.5s;
 }
 
@@ -207,28 +207,35 @@ div.iconlogo img{
 
 
 #content2{
-	width: 500px;
+	width: 100%;
 	margin: 400px auto 0px auto;
-	height: 500px;
+	height: 600px;
+	overflow: hidden;
+	position: relative;
+	z-index: 10;
 }
 
 #content2 .img{
 	width: 100%;
-	height: auto;
-	border-radius: 100px;
+	height: 300px;
 	overflow: hidden;
 	position: relative;
-	top: 60px;
+	top: 0px;
 }
 #content2 .img img{
 	width: 100%;
 	height: auto;
+	top: -300px;
+	position: relative;
 }
 
 #content2 .text{
-	font-size: 18px;
-	color: #606060;
-	margin: 100px auto;
+	font-size: 20px;
+	width: 500px;
+	height: 100px;
+	color:  #371b52;
+	margin:50px auto;
+	position: relative;
 }
 
 
@@ -246,9 +253,9 @@ article#team .tittle2{
 	margin: 40px auto;
 	position: relative;
 	top: 30px;
-	border-bottom: solid 2px #00b174;
+	border-bottom: solid 2px #371b52;
 	padding-bottom: 5px;
-	color: #00b174;
+	color: #371b52;
 }
 
 
@@ -302,18 +309,19 @@ ul.teamPersons li .btnDemo2{
 	display: block;
 	height: 35px;
 	apareance: none;
-	background: transparent;
-	border: solid 1px #00b174;
+	background: #371b52;
 	border-radius: 100px;
-	color: #00b174;
+	color: white;
 	text-transform: uppercase;
 	margin: 30px auto;
 	padding-top: 18px;
 	font-size: 13px;
+	transition-duration: .3s;
 }
 
 ul.teamPersons li .btnDemo2:hover{
-	background: #00b174;
+	background: #26103c;
+	width: 165px;
 	color: white;
 }
 
@@ -323,26 +331,68 @@ ul.teamPersons li .btnDemo2:hover{
 
 .demoFooter{
 	width: 100%;
-  	height: 170px;
-  	margin: 20px auto 0px auto;
-  	background: #00b174;
-  	padding-top: 50px;
+  height: 450px;
+  margin: 20px auto 0px auto;
+  background: #e2e2e2;
+	border-top: solid 1px  #371b52;
+  padding-top: 30px;
+	position: relative;
+	top:0px;
 }
 
-.demoFooter label{
-	color: white;
+.demoFooter .wrapFooter{
+	width: 800px;
+	margin: auto;
+	height: 500px;
+}
+
+.demoFooter .wrapFooter #address{
+	float: left;
+	width: 300px;
+	font-size: 25px;
+	color: #371b52;
+	position: relative;
+	top: 75px;
+	line-height: 45px;
+}
+
+.demoFooter .wrapFooter form{
+	width: 400px;
+	float: right;
+}
+
+.demoFooter .wrapFooter form label{
+	font-size: 15x;
+	color: rgb(57, 57, 57);
+	margin: 15px auto;
+	text-align: left;
+	float: left;
+}
+
+.demoFooter .wrapFooter form input{
+	width: 95%;
 	font-size: 17px;
-
-}
-
-.demoFooter  input{
-	width:400px;
-	height: 20px;
+	padding-left: 5%;
+	height: 50px;
 	border: none;
-	padding: 15px;
-	font-size: 15px;
 }
 
+.btnSend{
+	width: 150px;
+	cursor: pointer;
+	display: block;
+	height: 35px;
+	apareance: none;
+	background: #371b52;
+	border-radius: 100px;
+	color: white;
+	float: right;
+	text-transform: uppercase;
+	margin: 30px auto;
+	padding-top: 18px;
+	font-size: 13px;
+	transition-duration: .3s;
+}
 
 
 
