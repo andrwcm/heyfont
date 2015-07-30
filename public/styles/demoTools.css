@@ -5,7 +5,7 @@
 	font-family: 'Asap', sans-serif;
 	position: fixed;
 	z-index: 99999999;
-	display: none;
+	display: block;
 	top: 0px;
 	border-bottom: 1px #e1e1e1 solid;
 	box-shadow: 0px 0px 6px rgba(0,0,0,.3);
@@ -58,22 +58,23 @@
 	  width: 60px;
 	  height: auto;
 	  position: relative;
-	  top: 12px;
-	  left: 10px;
+	  top: 14px;
+	  left: 25px;
 }
 
 #tools .heyfont .burguer{
 	display: block;
-	width: 25px;
+	width: 30px;
 	height: 3px;
 	background: white;
 	position: relative;
-	top:40px;
+	top:47px;
+	left: 15px;
 }
 #tools .heyfont .burguer::before{
 	display: block;
 	content: "";
-	width: 25px;
+	width: 30px;
 	height: 3px;
 	background: white;
 	position: relative;
@@ -84,7 +85,7 @@
 #tools .heyfont .burguer::after{
 	display: block;
 	content: "";
-	width: 25px;
+	width: 30px;
 	height: 3px;
 	background: white;
 	position: relative;
@@ -93,11 +94,13 @@
 }
 
 #tools .heyfont:hover .burguer::before{
-	top:-9px;
+	top:-11px;
+	width: 31px;
 }
 
 #tools .heyfont:hover .burguer::after{
-	top:6px;
+	top:8px;
+	width: 31px;
 }
 
 
@@ -181,7 +184,7 @@ ul.webdemos li#labelText{
 }
 
 #overlayTools ul#tool-options{
-	background: #eeecec;
+	background: white;
 	width: 250px;
 	height: 100%;
 	position: absolute;
@@ -242,6 +245,8 @@ ul.webdemos li#labelText{
 
 #overlayTools ul#tool-options a.logoHome li {
 	height: 200px;
+	position: relative;
+	top: 20px;
 	border: none;
 }
 
@@ -264,4 +269,22 @@ ul.webdemos li#labelText{
 
 li.drop-down ul li:hover a{
 	color: white !important;
+}
+
+#overlayTools ul#tool-options p{
+	color: gray;
+	font-size: 17px;
+	position: absolute;
+	text-align: left;
+	bottom: 100px;
+	left: 20px;
+}
+
+#overlayTools ul#tool-options p img{
+	width: 250px;
+	height: auto;
+	position: absolute;
+	left:-30px;
+	right: 0px;
+	margin: auto;
 }

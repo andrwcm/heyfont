@@ -83,16 +83,19 @@ $(document).ready(function() {
 
     $('ul#tool-options li a#brandbtn').click(function(){
         $('.heyfont').removeClass('webActive');
+        $('.heyfont').removeClass('metricActive');
         $('.heyfont').addClass('brandActive');
     });
 
     $('ul#tool-options li a#WebBtn').click(function(){
-        $('.heyfont').removeClass('brandActive, metricActive');
+        $('.heyfont').removeClass('metricActive');
+        $('.heyfont').removeClass('brandActive');
         $('.heyfont').addClass('webActive');
     });
 
     $('ul#tool-options li a#MetricBtn').click(function(){
-        $('.heyfont').removeClass('webActive, brandActive ');
+        $('.heyfont').removeClass('webActive');
+        $('.heyfont').removeClass('brandActive ');
         $('.heyfont').addClass('metricActive');
     });
 });
