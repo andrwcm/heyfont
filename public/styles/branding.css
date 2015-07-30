@@ -53,12 +53,6 @@
 	margin:150px auto;
 }
 
-#body_demo .a4wrap img{
-	width: 1000px;
-	height: auto;
-	margin: auto;
-}
-
 #body_demo .letterText{
 	width: 500px;
 	font-size: 17px;
@@ -68,6 +62,8 @@
 	left: 0px;
 	right: 0px;
 	margin: auto;
+  height: 670px;
+  overflow: hidden;
 	top: 55px;
 }
 
@@ -166,8 +162,8 @@
 /* ---------------------------------------------------------------------- SHIRTS*/
 
 #body_demo .shirts{
-	width: 850px;
-	height: auto;
+	width: 900px;
+	height: 525px;
 	position: relative;
 	margin:auto;
 	top: -180px;
@@ -178,6 +174,7 @@
 #body_demo .shirts span.white{
 	display: block;
 	float: left;
+  left:20px;
 	position: relative;
 	transform:rotate(-18deg);
 }
@@ -185,6 +182,7 @@
 #body_demo .shirts span.black{
 	display: block;
 	right: 0px;
+  right:20px;
 	position: absolute;
 	transform:rotate(18deg);
 }
@@ -196,6 +194,8 @@
 	left: 0px;
 	right: 0px;
 	top: 150px;
+  overflow: hidden;
+  height: 300px;
 	margin: auto;
 	position: absolute;
 }
@@ -226,10 +226,12 @@
 	right: 0px;
 	margin: auto;
 	font-size: 65px;
-	top: 450px;
+	top: 420px;
 	width: 200px;
-	height: auto;
+  padding-top: 20px;
+	height: 190px;
 	display: block;
+  overflow: hidden;
 	color: #ff2626;
 }
 

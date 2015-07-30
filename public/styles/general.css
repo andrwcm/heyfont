@@ -302,13 +302,18 @@ h3{
 
 footer{
 	background: white;
-	height: 150px;
+	height: 180px;
 	margin: auto;
 	position: relative;
 	top: 100px;
 	text-align: center;
 	padding-top: 20px;
 	width: 100%;
+}
+
+footer p{
+  font-size: 13px;
+  color: gray;
 }
 
 footer #made{

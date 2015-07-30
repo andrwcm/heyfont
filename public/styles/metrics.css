@@ -12,7 +12,7 @@
 	width: 100%;
 	margin: 0px;
 	text-align: center;
-	height: 2300px;
+	height: 900px;
 }
 
 .metrics h3{
@@ -43,6 +43,8 @@
 	color: #313131;
 	position: relative;
 	top: 200px;
+  width: 900px;
+  margin: auto;
 }
 
 section#rule{
@@ -125,12 +127,67 @@ section#rule .pixels{
 	text-transform: uppercase;
 	text-align: center;
 	top: 0px;
-	transition-duration:.5s;
+	transition-duration:.1s;
 }
 
 .btnTextTres:hover{
 	box-shadow: 0px 2px 0px #049160, 0px 4px 0px #049160;
 	top: 4px;
+}
+
+.btnTextCuatro{
+	cursor: pointer;
+	background: transparent;
+	display: inline-block;
+	padding-top:18px;
+	padding-bottom:18px;
+	padding-left:50px;
+	padding-right:50px;
+	font-weight: 700;
+	border-bottom: 2px solid rgb(40, 39, 64) !important;
+  border-top: 2px solid rgb(40, 39, 64) !important;
+	color:rgb(40, 39, 64);
+	margin: 15px;
+	position: relative;
+	text-transform: uppercase;
+	text-align: center;
+	top: 0px;
+	transition-duration:.1s;
+  z-index: 2;
+}
+
+.btnTextCuatro span{
+  width: 100%;
+  height: 2px;
+  display: block;
+  background: rgb(40, 39, 64);
+  float: left;
+  left:0px;
+  bottom: -2px;
+  position: absolute;
+  transition-duration:.2s;
+  z-index: 1;
+}
+
+.btnTextCuatro p{
+  margin: 0px;
+  position: relative;
+  z-index: 3;
+}
+
+.btnTextCuatro:hover{
+  color: white;
+}
+
+.btnTextCuatro:hover span{
+  width: 100%;
+  height: 58px;
+  display: block;
+  background: rgb(40, 39, 64);
+  float: left;
+  left:0px;
+  bottom: -2px;
+  position: absolute;
 }
 
 
@@ -141,10 +198,19 @@ section#rule .pixels{
 	overflow-x:scroll;
 	background: white;
 	border: solid 1px #c6c6c6;
-	box-shadow: 0px 30px 40px rgba(0,0,0,.3);
 	margin: auto;
 	padding: 20px;
 
+}
+
+#textchange:first-child{
+  width: 62%;
+  float:left;
+}
+
+#textchange:last-child{
+  width: 25%;
+  float:right;
 }
 
 input[type='range'] {
