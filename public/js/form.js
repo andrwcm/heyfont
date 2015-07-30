@@ -20,7 +20,7 @@
             var datos = 'nombre='+ nombre + '&email=' + email + '&mensaje=' + mensaje;
             $.ajax({
                 type: "POST",
-                url: "proceso.php",
+                url: "../proceso.php",
                 data: datos,
                 success: function() {
                     $('.ajaxgif').hide();
