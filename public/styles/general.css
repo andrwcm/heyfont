@@ -13,7 +13,7 @@
 
 
 body{
-	background: #e27661;
+	background: #ff2626;
 	margin: 0px;
 	text-align: center;
   left:0px;
@@ -32,11 +32,11 @@ body{
 }
 
 #preloader #status{
-	width: 200px;
+	width: 100px;
 	height: 113px;
 	position: absolute;
 	margin: auto;
-	top: -150px;
+	top: -100px;
 	bottom: 0px;
 	right: 0px;
 	left: 0px;
@@ -97,13 +97,13 @@ section#home .description{
 	left: 0px;
 	right: 0px;
 	position: absolute;
-	margin-top: 260px;
+	margin-top: 300px;
 }
 
 .figure{
 	width: 100%;
 	height: 60px;
-	margin-top: -160px;
+	margin-top: -189px;
 	overflow: hidden;
 	position: absolute;
 }
@@ -112,7 +112,7 @@ section#home .description{
 	width: 0;
 	height: 0;
 	border-style: solid;
-	border-width: 0 400px 40px 400px;
+	border-width: 0 400px 50px 400px;
 	margin: auto;
 	top: 3px;
 	position: relative;
@@ -174,12 +174,20 @@ input:-moz-placeholder { color:#B4B4B4; }
 	width: 539px;
 }
 
+#searchWrap p {
+  position: relative;
+  z-index: 8;
+  position: relative;
+  top: 30px;
+}
+
 
 #searchWrap:before{
 	display: block;
 	width: 25px;
 	height: 25px;
 	float: right;
+  right: 20px;
 	content: url(../assets/icon-search.png);
 	z-index: 9;
 	top: 48px;
@@ -198,7 +206,7 @@ input.typo{
 	padding-left: 20px !important;
 	position: relative;
 	height: 67px;
-	width: 539px;
+	width: 519px;
 
 }
 
@@ -223,7 +231,7 @@ input.btn{
 	position: fixed !important;
 	top:-5px !important;
 	float: right !important;
-	right: 10px !important;
+	right: 25px !important;
 	height: 47px !important ;
 	z-index: 999999999 !important;
 }
@@ -232,7 +240,7 @@ input.btn{
 	position: fixed !important;
 	top: 25px !important;
 	float: right !important;
-	right: 90px !important;
+	right: 110px !important;
 	font-size: 17px !important;
 	height: 45px !important;
 	width: 350px !important;
@@ -251,7 +259,7 @@ input.btn{
 	background-color: #ff2626 ;
 	padding-top: 60px;
 	height: 620px;
-	margin:-120px auto;
+	margin:-130px auto;
 	text-align: center;
 	width: 100%;
 }
@@ -304,8 +312,8 @@ footer{
 	background: white;
 	height: 180px;
 	margin: auto;
-	position: relative;
-	top: 100px;
+	position: absolute;
+	bottom:0px;
 	text-align: center;
 	padding-top: 20px;
 	width: 100%;

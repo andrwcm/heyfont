@@ -6,7 +6,28 @@ body{
 	background: url(assets/figures.png) center scroll repeat;
 	background-size: 200px auto;
 	display: block;
+	text-align: center;
 	height: 2710px;
+}
+
+#wrapWeb h3{
+	font-family: 'Asap', sans-serif !important;
+	font-size: 40px;
+	margin:auto;
+	position: relative;
+	top: 85px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #ff2626;
+}
+
+#wrapWeb  h3:before{
+ content: url(assets/arrow.png);
+ position: absolute;
+ left: 0px;
+ right: 0px;
+ margin:auto;
+ top: 40px;
 }
 
 #window{
@@ -16,7 +37,7 @@ body{
 	margin: auto;
 	padding: 0px;
 	position: relative;
-	top: 150px;
+	top: 280px;
 	border: solid 1px rgb(116, 116, 116);
 }
 
