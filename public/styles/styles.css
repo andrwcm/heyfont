@@ -14,8 +14,7 @@
     padding-left: 20px ;
     position: absolute ;
     height: 67px ;
-    width: 519px;
-
+    width: 539px;
 }
 
 .typeahead {
@@ -31,26 +30,24 @@
     padding-left: 20px ;
     position: absolute ;
     height: 77px ;
-    width: 519px ;
+    width: 479px ;
 }
 
 .tt-dropdown-menu {
-  width: 519px;
+  width: 500px;
   margin-top: 12px;
   padding: 8px 0;
   background-color: #fff;
   border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  text-align: left;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
-  right: 0px !important;
   border-radius: 8px;
   -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
   -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
  box-shadow: 0 5px 10px rgba(0,0,0,.2);
-  z-index: 999999999 !important;
 }
+
 
 .tt-dropdown-menu.top{
       position: fixed !important;
