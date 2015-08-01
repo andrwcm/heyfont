@@ -258,7 +258,7 @@ input.btn{
 #about{
 	background-color: #ff2626 ;
 	padding-top: 60px;
-	height: 620px;
+	height: 730px;
 	margin:-130px auto;
 	text-align: center;
 	width: 100%;
@@ -267,7 +267,7 @@ input.btn{
 #about #wrap{
 	width: 1050px;
 	height: auto;
-	margin:auto;
+	margin:70px auto;
 	position: absolute;
 	left: 0px;
 	right: 0px;
@@ -277,12 +277,19 @@ input.btn{
 	font-size: 30px;
 	color: white;
 	font-weight: 700;
-	margin-bottom: 50px;
+	margin:auto;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  text-align: center;
 }
 
 h3{
 	color: white;
 	font-size: 23px;
+  margin:auto;
+  position: relative;
+  text-align: center;
 }
 
 #about div{
