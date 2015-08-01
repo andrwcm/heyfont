@@ -1,4 +1,6 @@
-[
+{
+ "kind": "webfonts#webfontList",
+ "items": [
   {
    "kind": "webfonts#webfont",
    "family": "ABeeZee",
@@ -13158,3 +13160,4 @@
    }
   }
  ]
+}

@@ -63,9 +63,11 @@
 
 			$(function(){
 				$('#userInput').typeahead({
-					name: 'fonts',
+					name: 'webfonts',
 					prefetch: 'data/webfonts.json',
-					limit: 10
+					limit: 10,
+					displayKey: 'family',
+        	source: dataSource.ttAdapter()
 				});
 			});
 
