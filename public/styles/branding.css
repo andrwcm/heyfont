@@ -270,7 +270,6 @@
 [contenteditable="true"]:hover{
 	border: dashed 2px #e55e3f;
   box-sizing: border-box;
-  overflow: scroll;
 }
 
 
