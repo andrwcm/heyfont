@@ -5,7 +5,7 @@
 	font-family: 'Asap', sans-serif;
 	position: fixed;
 	z-index: 99999999;
-	display: none;
+	display: block;
 	top: 0px;
 	border-bottom: 1px #e1e1e1 solid;
 	box-shadow: 0px 0px 6px rgba(0,0,0,.3);
@@ -261,8 +261,20 @@ ul.webdemos li#labelText{
 #overlayTools ul#tool-options a.logoHome li img{
 	width: 70%;
 	position: relative;
+	left: 20px;
 	top: 30px;
 	height: auto;
+}
+
+#overlayTools ul#tool-options a.logoHome li:after{
+	content: "/ home";
+	font-size: 15px;
+	color: #ff2626;
+	display: block;
+	float: right;
+	position: relative;
+	right: 50px;
+	top: 100px;
 }
 
 #overlayTools ul#tool-options li a.active{
