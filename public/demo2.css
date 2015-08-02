@@ -37,7 +37,7 @@ body{
 	margin: auto;
 	padding: 0px;
 	position: relative;
-	top: 150px;
+	top: 280px;
 	border: solid 1px rgb(116, 116, 116);
 }
 
@@ -419,6 +419,14 @@ ul.teamPersons li .btnDemo2:hover{
 
 
 /* ---------------------------------------------------------------------- EDITABLE CONTENT */
+/* ---------------------------------------------------------------------- EDITABLE CONTENT */
 [contenteditable="true"]:hover{
-	border: dotted 1px #00b174;
+	border: dashed 2px #e55e3f;
+  box-sizing: border-box;
+}
+
+
+[contenteditable="true"]{
+	border: dashed 2px transparent;
+  box-sizing: border-box;
 }

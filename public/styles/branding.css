@@ -268,5 +268,13 @@
 
 /* ---------------------------------------------------------------------- EDITABLE CONTENT */
 [contenteditable="true"]:hover{
-	border: dotted 1px #e55e3f;
+	border: dashed 2px #e55e3f;
+  box-sizing: border-box;
+  overflow: scroll;
+}
+
+
+[contenteditable="true"]{
+	border: dashed 2px transparent;
+  box-sizing: border-box;
 }
