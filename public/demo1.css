@@ -16,6 +16,10 @@ body{
 	margin:auto;
 	position: relative;
 	top: 85px;
+	padding-top: 24px;
+	padding-bottom: 24px;
+	padding-left: 30px;
+	padding-right: 30px;
 	font-weight: 600;
 	text-transform: uppercase;
 	color: #ff2626;
@@ -142,13 +146,16 @@ div.iconlogo img{
 
 #content1{
 	width: 750px;
-	margin: 100px auto;
+	margin: 150px auto;
 	height: 500px;
 }
 #content1 .text{
 	width:700px;
 	margin:auto;
 	color: #44432D;
+	height: auto;
+	padding-bottom: 24px;
+	padding-top: 30px;
 	text-align: center;
 	font-size: 19px;
 	position: relative;
@@ -206,13 +213,13 @@ div.iconlogo img{
 
 #content2{
 	width: 100%;
-	margin: 200px auto 0px auto;
+	margin: 280px auto 0px auto;
 	height: 500px;
 }
 
 #content2 .img{
 	width: 80%;
-	margin: auto;
+	margin: 40px auto;
 	height: 400px;
 	border: solid 1px #10baf2;
 	border-radius: 10px;
@@ -268,7 +275,9 @@ span.infoPerson{
 	display: block;
 	width: 240px;
 	padding: 4px;
-	height: 150px;
+	height: auto;
+	padding-bottom: 24px;
+	padding-top: 10px;
 }
 
 ul.teamPersons li .person{
@@ -291,14 +300,16 @@ ul.teamPersons li .person img {
 
 ul.teamPersons li .btnDemo2{
 	display: inline-block;
-	padding-top:15px;
-	padding-bottom:15px;
+	cursor: pointer;
+	padding-top:20px;
+	padding-bottom:20px;
 	padding-left:50px;
 	padding-right:50px;
 	background: transparent;
 	border: solid 1px #10baf2;
 	border-radius: 3px;
 	color: #10baf2;
+	font-weight: 600;
 	text-transform: uppercase;
 	margin: 30px auto;
 	font-size: 13px;
@@ -394,9 +405,9 @@ ul.teamPersons li .btnDemo2:hover{
 
 
 /* ---------------------------------------------------------------------- EDITABLE CONTENT */
-/* ---------------------------------------------------------------------- EDITABLE CONTENT */
+
 [contenteditable="true"]:hover{
-	border: dashed 2px #e55e3f;
+	border: dashed 2px #e55e3f !important;
   box-sizing: border-box;
 }
 

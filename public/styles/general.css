@@ -47,6 +47,39 @@ body{
   height: auto;
 }
 
+.mobil{
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  margin: auto;
+  height: 100%;
+  background: rgba(0,0,0,.95);
+  z-index: 99999999999999;
+}
+
+.mobil .message{
+  font-size: 20px;
+  color: white;
+  font-family: 'Asap', sans-serif;
+  font-weight: 100;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 200px;
+  display: block;
+  height: 400px;
+  top:0px;
+  margin: auto;
+}
+
+.mobil .message img.logohey{
+  width: 150px;
+  height: auto;
+}
+
 /* ---------------------------------------------------------------------- FOLD */
 
 section#home{
@@ -207,7 +240,6 @@ input.typo{
 	position: relative;
 	height: 67px;
 	width: 519px;
-
 }
 
 
@@ -360,6 +392,44 @@ footer #made  a{
 	top: 20px;
 }
 
+ul.heycontact{
+  width: 170px;
+  height: 50px;
+  padding: 0px;
+  position: relative;
+  top: 5px;
+  margin: auto;
+  list-style: none;
+}
+
+ul.heycontact li{
+  display: inline-block;
+}
+
+ul.heycontact li:first-child{
+  width: 55%;
+  height: auto;
+}
+
+ul.heycontact li:last-child img{
+  position: relative;
+  top:-15px;
+}
+
+.heyandrw {
+  border-right: solid 1px #ff2626;
+  padding-right: 10px;
+}
+
+
+.heyandrw img{
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: -15px;
+}
+
+
 /* ---------------------------------------------------------------------- form */
 #overlayForm{
 	position: fixed;
@@ -414,7 +484,6 @@ footer #made  a{
 
 #overlayForm .feedback .inputTo {
 	width: 85%;
-	border: solid 1px gray;
 	border-radius: 4px;
 	margin: 10px auto;
 	height: 30px;
@@ -431,7 +500,7 @@ footer #made  a{
 	text-align: left;
 	position: relative;
 	top: -5px;
-	left: -40px;
+	left: -55px;
 	padding-left: 10px;
 	border-radius: 4px;
 	color: white;
@@ -439,7 +508,7 @@ footer #made  a{
 	background:#0fc587;
 }
 
-#overlayForm .feedback  .inputForm{
+#overlayForm .feedback  #inputForm{
 	width: 83%;
 	border: solid 1px gray;
 	outline: none;
@@ -455,7 +524,7 @@ footer #made  a{
 	padding: 5px 10px 5px 10px;
 }
 
-#overlayForm .feedback .message{
+#overlayForm .feedback #message{
 	width: 83%;
 	border: solid 1px gray;
 	outline: none;

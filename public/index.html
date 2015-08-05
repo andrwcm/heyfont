@@ -7,7 +7,7 @@
 
 		<meta charset="UTF-8">
 
-		<!--<meta name="viewport" content="width=device-width,initial-scale=1,minimal-ui" />-->
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimal-ui" />
 		<meta name="description" content="The easy way to preview your google fonts"  />
 		<meta name="author" content="Made by andrw heyandrw@gmail.com" />
 		<meta name="keywords" content="google, fonts, preview, branding, web, metrics, desing, web design, ui desing" />
@@ -40,11 +40,13 @@
 		<link rel="stylesheet" type="text/css" href="styles/styles.css">
 		<link rel="stylesheet" type="text/css" href="styles/demoTools.css">
 		<link rel="stylesheet" type="text/css" href="styles/form.css">
+		<link rel="stylesheet" type="text/css" href="styles/media.css">
 
 		<!-- js -->
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/actions.js"></script>
 		<script type="text/javascript" src="js/type.js"></script>
+		<script type="text/javascript" src="js/form.js"></script>
 
 		<script type="text/javascript">
 			$(document).ready(function() {
@@ -93,20 +95,20 @@
 
 			 		<p><br></p>
 			 		<label>Your name:</label>
-			 		<input type="text" class="inputForm nombre" name="nombre">
+			 		<input type="text" id="inputForm" class="nombre" name="nombre">
 
 					<p></p>
 			 		<label>Your e-mail:</label>
-			 		<input type="text" class="inputForm email" name="email">
+			 		<input type="text" id="inputForm" class=" email" name="email">
 
 			 		<p></p>
 			 		<label>Your menssage:</label>
-			 		<textarea class="message mensaje" name="mensaje">Hey!</textarea>
+			 		<textarea id="message" class=" mensaje" name="mensaje">Hey!</textarea>
 
 			 		<p><br></p>
 					<img src="assets/ajax.gif" class="ajaxgif hide" />
 					<div class="msg"></div>
-					<button class="btnForm">SEND</button>
+					<button class="btnForm" id="formsend">SEND</button>
 
 				</form>
 		 	</section>
@@ -200,12 +202,20 @@
 		<footer>
 			<div id="made">
 				<span>Created a developed with</span>
-				<a href="http://andrwcm.hol.es" target="_blank">
-					<img src="assets/logo_andrw.png">
-				</a>
-				<a href="https://twitter.com/heyFont" target="_blank">
-					<img src="assets/twitter.png">
-				</a>
+				<ul class="heycontact">
+					<li class="heyandrw">
+						<a href="http://andrwcm.hol.es" target="_blank">
+							<img src="assets/heyandrw.svg">
+						</a>
+					</li>
+
+					<li>
+						<a href="https://twitter.com/heyFont" target="_blank">
+							<img src="assets/twitter.png">
+						</a>
+					</li>
+
+				</ul>
 				<p><br></p>
 				<p>Copyright (c) 2015 Copyright Holder All Rights Reserved.</p>
 			</div>
@@ -253,6 +263,30 @@
 		</div>
 
 		<div id="content"></div>
+
+		<div class="mobil">
+			<div class="message">
+				<p><img src="assets/heyfont.svg" class="logohey"></p>
+				<br>
+				I'm sorry, I'm not avaible on mobile yet
+				<p>:(</p>
+				<br>
+				<ul style="list-style:none; ">
+					<li style="display:inline-block;">
+						<a href="http://andrwcm.hol.es" target="_blank">
+							<img src="assets/heyandrw.svg" style="width:100px; height:auto;">
+						</a>
+					</li>
+
+					<li style="display:inline-block;">
+						<a href="https://twitter.com/heyFont" target="_blank">
+							<img src="assets/twitter.png">
+						</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
 
 	</body>
 </html>

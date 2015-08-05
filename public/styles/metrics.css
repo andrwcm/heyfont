@@ -206,10 +206,13 @@ section#rule .pixels{
 #textchange:first-child{
   width: 62%;
   float:left;
+  box-shadow: 0px 0px 12px rgba(0,0,0,.1);
 }
 
 #textchange:last-child{
   width: 25%;
+  background: transparent;
+  border:none;
   float:right;
 }
 
@@ -252,6 +255,9 @@ input[type='range']::-moz-range-thumb {
 }
 
 
+/* ---------------------------------------------------------------------- EDITABLE CONTENT */
+
 [contenteditable="true"]:hover{
-	border: dotted 1px #e55e3f;
+	border: dashed 2px #e55e3f;
+  box-sizing: border-box;
 }

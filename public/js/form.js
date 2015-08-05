@@ -1,5 +1,5 @@
 (function(){
-    $(".btnForm").click(function() {
+    $("#formsend").click(function() {
 
         var nombre = $(".nombre").val();
             email = $(".email").val();
