@@ -6,7 +6,6 @@ body{
 	background: url(assets/figures.png) center scroll repeat;
 	background-size: 200px auto;
 	display: block;
-	text-align: center;
 	height: 2710px;
 }
 
@@ -16,10 +15,6 @@ body{
 	margin:auto;
 	position: relative;
 	top: 85px;
-	padding-top: 24px;
-	padding-bottom: 24px;
-	padding-left: 30px;
-	padding-right: 30px;
 	font-weight: 600;
 	text-transform: uppercase;
 	color: #ff2626;
@@ -41,7 +36,7 @@ body{
 	margin: auto;
 	padding: 0px;
 	position: relative;
-	top: 280px;
+	top: 232px;
 	border: solid 1px rgb(116, 116, 116);
 }
 
