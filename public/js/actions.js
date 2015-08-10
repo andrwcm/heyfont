@@ -8,6 +8,8 @@
     fontname = fontname.replace(/ /gi, "+");
     $("head").append('<link href="//fonts.googleapis.com/css?family='+fontname+'" rel="stylesheet" type="text/css">');
     jQuery(this).css("font-family",options.fontname);
+    $("#fontTag").html(''+fontname+'');
+    $("#fontLink").attr("href", "https://www.google.com/fonts#QuickUsePlace:quickUse/Family:"+fontname+"");
     return this;
   };
 

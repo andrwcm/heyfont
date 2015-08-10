@@ -196,11 +196,10 @@
 					<span class="burguer"></span>
 					<img src="assets/hey.svg">
 			</div>
-			<span>
-			Download this
-			<a href="http://google.com">
+			<span class="download">
+			Download
+			<a href="http://google.com" target="_blank" id="fontLink">
 				<div id="fontTag">
-					+fontname+
 				</div>
 			</a>
 			</span>
@@ -266,34 +265,34 @@
 
 		</div>
 
-		<!-- js -->
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/actions.js"></script>
-		<script type="text/javascript" src="js/type.js"></script>
-		<script type="text/javascript" src="js/form.js"></script>
-
-		<script type="text/javascript">
-			$(document).ready(function() {
-				$("#content").load("demo/demo-web.html");
-
-				//clicks
-				$("ul#tool-options li a").click(function(){
-					var page = $ (this).attr("href");
-					$("#content").load("demo/" + page + ".html");
-					return false;
-				});
-
-			});
-
-			$(function(){
-				$('#userInput').typeahead({
-					name: 'fonts',
-					prefetch: 'data/fonts.json',
-					limit: 10
-				});
-			});
-
-		</script>
-
 	</body>
+
+	<!-- js -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/actions.js"></script>
+	<script type="text/javascript" src="js/type.js"></script>
+	<script type="text/javascript" src="js/form.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#content").load("demo/demo-web.html");
+
+			//clicks
+			$("ul#tool-options li a").click(function(){
+				var page = $ (this).attr("href");
+				$("#content").load("demo/" + page + ".html");
+				return false;
+			});
+
+		});
+
+		$(function(){
+			$('#userInput').typeahead({
+				name: 'fonts',
+				prefetch: 'data/fonts.json',
+				limit: 10
+			});
+		});
+
+	</script>
 </html>

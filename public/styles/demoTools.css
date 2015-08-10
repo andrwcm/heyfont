@@ -111,6 +111,39 @@
 	width: 31px;
 }
 
+span.download{
+	float: left;
+	color: gray;
+	left: 360px;
+	top:30px;
+	position: relative;
+}
+
+span.download a{
+	display: inline-block;
+	text-decoration: none;
+}
+
+span.download a #fontTag{
+	padding-left: 15px;
+	padding-right: 30px;
+	position: relative;
+	left: 7px;
+	height: 30px;
+	border-radius: 4px;
+	padding-top: 10px;
+	background-color: #0fc587;
+	color: white;
+}
+
+span.download a #fontTag::after{
+	content: ">";
+	color: white;
+	float: right;
+	position: relative;
+	right: -17px;
+}
+
 
 
 
