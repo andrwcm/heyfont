@@ -5,7 +5,7 @@
 	font-family: 'Asap', sans-serif;
 	position: fixed;
 	z-index: 99999999;
-	display: none;
+	display: block;
 	top: 0px;
 	border-bottom: 1px #e1e1e1 solid;
 	box-shadow: 0px 0px 6px rgba(0,0,0,.3);
