@@ -83,10 +83,10 @@ body{
 /* ---------------------------------------------------------------------- FOLD */
 
 section#home{
-	background: url(../assets/bg_fold.jpg) bottom no-repeat fixed;
+	background: url(../assets/bg_fold.jpg) top no-repeat;
 	background-position: 0px -132px;
-	background-size: cover;
-	height: 650px;
+	background-size: cover 100%;
+	height:650px;
 	margin: auto;
 	padding-top: 100px;
 	text-align: center;
@@ -130,13 +130,13 @@ section#home .description{
 	left: 0px;
 	right: 0px;
 	position: absolute;
-	margin-top: 300px;
+	margin-top: 250px;
 }
 
 .figure{
 	width: 100%;
-	height: 60px;
-	margin-top: -189px;
+	height: 90px;
+	margin-top: -219px;
 	overflow: hidden;
 	position: absolute;
 }
@@ -145,9 +145,9 @@ section#home .description{
 	width: 0;
 	height: 0;
 	border-style: solid;
-	border-width: 0 400px 50px 400px;
+	border-width: 0 300px 75px 300px;
 	margin: auto;
-	top: 3px;
+	top: -3px;
 	position: relative;
 	border-color: transparent transparent #ff2626 transparent;
 }
@@ -203,7 +203,7 @@ input:-moz-placeholder { color:#B4B4B4; }
 	margin: auto;
 	text-align:center;
 	position: relative;
-	top: -310px;
+	top: -360px;
 	width: 539px;
 }
 
@@ -211,7 +211,7 @@ input:-moz-placeholder { color:#B4B4B4; }
   position: relative;
   z-index: 8;
   position: relative;
-  top: 30px;
+  top: 40px;
 }
 
 
@@ -244,7 +244,7 @@ input.typo{
 
 
 input.btn{
-	background: #ff2626 ;
+	background: #ff2626;
 	border:none;
 	cursor: pointer ;
 	font-size: 15px;
@@ -255,6 +255,11 @@ input.btn{
 	position: relative ;
 	margin: 30px auto;
 	width: 150px ;
+}
+
+input.btn:hover{
+  background: #c11f1f;
+  width: 154px ;
 }
 
 .small-button{
