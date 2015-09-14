@@ -37,7 +37,7 @@
 }
 
 #body_demo{
-	background:rgb(228, 234, 236);
+	background:#FAFCFD;
 	width: 100%;
 	margin: 0px;
 	height: 3200px;
@@ -48,7 +48,7 @@
 /* ---------------------------------------------------------------------- FOLD */
 
 #demoFold{
-	background: url(assets/demos/demo-1/bg_demo1.jpg) center fixed;
+	background: url(assets/demos/demo-1/bg_demo1.jpg) center;
 	background-size: cover;
 	width: 100%;
 	height: 400px;
@@ -158,7 +158,7 @@ div.iconlogo img{
 }
 
 #content1  .text:before{
-	content: '"';
+	content: 'About Us';
 	font-size: 100px;
 	position:relative;
 	float: right;
@@ -241,7 +241,7 @@ article#team .tittle2{
 	font-weight: 700;
 	margin: 40px auto;
 	position: relative;
-	top: 40px;
+	top: 71px;
 }
 
 
@@ -351,7 +351,7 @@ ul.teamPersons li .btnDemo2:hover{
 	font-size: 18px;
 	margin-right: 20px;
 	float: left;
-	margin-left: 10px;
+	margin-left: 8px;
 	margin-top: 20px;
 }
 

@@ -1,7 +1,7 @@
 {
-  "name": "eyfont",
+  "name": "heyfont",
   "description": "The easy way to preview your google fonts",
-  "repository": "https://github.com/andrwcm/eyfont.git",
-  "logo": "http://eyfont.heroku.com/eyfont.svg",
+  "repository": "https://github.com/andrwcm/heyfont.git",
+  "logo": "http:/heyfont.heroku.com/eyfont.svg",
   "keywords": ["google", "fonts", "preview"]
 }

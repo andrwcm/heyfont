@@ -49,7 +49,7 @@
 /* ---------------------------------------------------------------------- FOLD */
 
 #demoFold{
-	background: url(assets/demos/demo-2/bg_demo2.jpg) center fixed;
+	background: url(assets/demos/demo-2/bg_demo2.jpg) center;
 	background-size: cover;
 	width: 100%;
 	height: 400px;
