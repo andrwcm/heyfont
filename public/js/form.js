@@ -20,15 +20,15 @@
             var datos = 'nombre='+ nombre + '&email=' + email + '&mensaje=' + mensaje;
             $.ajax({
                 type: "POST",
-                url: "proceso.php",
+                url: "../proceso.php",
                 data: datos,
                 success: function() {
                     $('.ajaxgif').hide();
-                    $('.msg').text('Mensaje enviado!').addClass('msg_ok').animate({ 'right' : '130px' }, 300);
+                    $('.msg').text('Message send!').addClass('msg_ok').animate({ 'right' : '130px' }, 300);
                 },
                 error: function() {
                     $('.ajaxgif').hide();
-                    $('.msg').text('Hubo un error!').addClass('msg_error').animate({ 'right' : '130px' }, 300);
+                    $('.msg').text('Ups we´ve got a problem!').addClass('msg_error').animate({ 'right' : '130px' }, 300);
                 }
             });
             return false;

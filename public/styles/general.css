@@ -99,7 +99,7 @@ section#home .logo{
 	left: 0px;
 	right: 0px;
 	position: absolute;
-	top: 70px;
+	top: 90px;
 	width: 300px;
 }
 
@@ -156,11 +156,12 @@ section#home .description{
 
 
 ul#nav{
-	height: 25px;
-	position: absolute;
-	right: 40px;
-	top: 40px;
-	width: 315px;
+  background: rgba(255,255,255,.87);
+  border-bottom: solid 1px rgba(0,0,0,.1);
+	height: 60px;
+	position: fixed;
+	top: -17px;
+	width: 100%;
 	z-index: 999;
 }
 
@@ -172,23 +173,39 @@ ul#nav a li{
 	color: #444a4f;
 	font-size: 17px;
 	list-style: none;
-	margin:0px 15px;
+	margin:20px 15px;
 	padding: 0px;
+  float: right;
+  position: relative;
+  right: 70px;
 	display: inline-block;
-	border-bottom: solid 1px #444a4f;
 	padding-bottom: 3px;
+  transition-duration: .3s;
 }
 
-ul#nav a li.divider:before{
-	display: block;
-	content: "";
-	width: 1px;
-	height: 30px;
-	background: #ff2626;
-	position: relative;
-	left: 85px;
-	top: 24px;
+ul#nav a li:hover{
+  color:#ff2626;
 }
+
+ul#nav a li#share{
+  padding: 8px 25px 8px 10px;
+  border:solid 1px #ff2626;
+  position: relative;
+  top: -8px;
+  border-radius: 3px;
+  color: #ff2626;
+}
+
+ul#nav a li#share::after{
+  content: url("../assets/twitter.png");
+  width: 15px;
+  height: 15px;
+  display: block;
+  float: right;
+  position: relative;
+  right: -10px;
+}
+
 
 /* ---------------------------------------------------------------------- SEARCH */
 
@@ -422,7 +439,6 @@ ul.heycontact li:last-child img{
 }
 
 .heyandrw {
-  border-right: solid 1px #ff2626;
   padding-right: 10px;
 }
 
