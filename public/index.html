@@ -43,9 +43,10 @@
 		<link rel="stylesheet" type="text/css" href="styles/media.css">
 
 		<script type="text/javascript">
-		var url = 'http://heyfont.herokuapp.com'
-		url = url.replace('http://heyfont.heyandrw.com')
-		console.log(url)
+		if(location.hostname == 'heyfont.herokuapp.com')
+		{
+			location.replace('heyfont.heyandrw.com')
+		}
 		</script>
 
 	</head>
