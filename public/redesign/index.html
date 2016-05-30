@@ -2,37 +2,45 @@
 <html>
 <head>
 	<title>Heyfont</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link rel="stylesheet" href="http://demos.jquerymobile.com/1.4.5/css/themes/default/jquery.mobile-1.4.5.min.css" />
-
-	<script type="text/javascript" src="http://demos.jquerymobile.com/1.4.5/js/jquery.js"></script>
-	<script type="text/javascript" src="http://demos.jquerymobile.com/1.4.5/js/jquery.mobile-1.4.5.min.js"></script>
-	<script type="text/javascript" src="http://demos.jquerymobile.com/1.4.5/_assets/js/index.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.4.5.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
 <body>	
-	<header>This is the header</header>
-		<div id="home" data-role="page" id="one">
-			<div role="main" class="ui-content">
-				<h1>Heyfont</h1>
-			</div>
-		</div>
+	<!-- Start of first page -->
+<div data-role="page" id="foo">
 
-		<div id="plain" data-role="page" id="dos">
-			<h1>Plain Text</h1>
-		</div>
+	<div data-role="header">
+		<h1>Foo</h1>
+	</div><!-- /header -->
 
-		<div id="branding" data-role="page" id="tres">
-			<h1>Branding</h1>
-		</div>
+	<div role="main" class="ui-content">
+		<p>I'm first in the source order so I'm shown as the page.</p>
+		<p>View internal page called <a href="#bar">bar</a></p>
+	</div><!-- /content -->
 
-		<div id="interface" data-role="page" id="cuatro">
-			<h1>Interface</h1>
-		</div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
 
-		<div id="cover" data-role="page" id="cinco">
-			<h1>Cover</h1>
-		</div>
-		
-	<footer>This is the footer</footer>
+<!-- Start of second page -->
+<div data-role="page" id="bar">
+
+	<div data-role="header">
+		<h1>Bar</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
+		<p><a href="#foo">Back to foo</a></p>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
 </body>
 </html>
