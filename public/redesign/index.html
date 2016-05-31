@@ -34,15 +34,11 @@
 
 	<section data-role="page" id="brand">
 		<div role="main" class="ui-content" id="branding">
-			
-
 		</div>
 	</section>
 
 </body>
 	<script src="js/type.js"></script>
-	<script src="js/loadimage.js"></script>
-	<script src="js/html2canvas.js"></script>
 	<script src="js/actions.js"></script>
 
 	<!-- autocomplete -->
@@ -54,33 +50,5 @@
 				limit: 10
 			});
 		});
-	</script>
-
-	<!-- save image -->
-	<script>
-	$(document).ready(function(){
-
-		
-	var element = $("#branding"); // global variable
-	var getCanvas; // global variable
-	 
-	    $("#btn-Preview-Image").on('click', function () {
-	         html2canvas(element, {
-	         onrendered: function (canvas) {
-	                $("#previewImage").append(canvas);
-	                getCanvas = canvas;
-	             }
-	         });
-	    });
-
-		$("#btn-Convert-Html2Image").on('click', function () {
-	    var imgageData = getCanvas.toDataURL("image/png");
-	    // Now browser starts downloading it instead of just showing it
-	    var newData = imgageData.replace(/^data:image\/png/, "data:application/octet-stream");
-	    $("#btn-Convert-Html2Image").attr("download", "heyfont_preview.png").attr("href", newData);
-		});
-
-	});
-
 	</script>
 </html>

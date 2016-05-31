@@ -4,10 +4,57 @@
 	<title>heyfont - Branding preview</title>
 </head>
 <body>
-	<h1>Branding</h1>
-	<form id="form1" runat="server">
-		<input type='file' id="imgInp" />
-		<img id="blah" src="#" alt="your image" />
-	</form>
+	<section id="brandinpreview" style="background: gray;">
+
+		<h1>Branding preview</h1>
+		<form id="form1" runat="server">
+			<input type='file' id="imgInp" />
+
+			<img id="logo" src="#" alt="your image" />
+			<img id="letter" src="#" alt="your image" />
+			<img id="card" src="#" alt="your image" />
+		</form>
+
+	</section>
+
+	<input id="btn-Preview-Image" type="button" value="Preview"/>
+    <a id="btn-Convert-Html2Image" href="#">Download</a>
+    <br/>
+    <h3>Preview :</h3>
+    <div id="previewImage">
+
+    </div>
+
+
 </body>
+<script type="text/javascript" src="http://heyfont.heyandrw.com/js/jquery.min.js"></script>
+<script src="../js/loadimage.js"></script>
+<script src="../js/html2canvas.js"></script>
+
+<!-- save image -->
+	<script>
+	$(document).ready(function(){
+	var element = $("#brandinpreview"); // global variable
+	var getCanvas; // global variable
+	 
+	    $("#btn-Preview-Image").on('click', function () {
+	         html2canvas(element, {
+	         onrendered: function (canvas) {
+	                $("#previewImage").append(canvas);
+	                getCanvas = canvas;
+	             }
+	         });
+	    });
+
+		$("#btn-Convert-Html2Image").on('click', function () {
+	    var imgageData = getCanvas.toDataURL("image/png");
+	    // Now browser starts downloading it instead of just showing it
+	    var newData = imgageData.replace(/^data:image\/png/, "data:application/octet-stream");
+	    $("#btn-Convert-Html2Image").attr("download", "heyfont_preview.png").attr("href", newData);
+		});
+
+	});
+	</script>
+
+
 </html>
