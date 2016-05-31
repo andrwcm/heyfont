@@ -1,7 +1,8 @@
 // load pages
-		$(document).ready(function(){
-			$( "#branding" ).load( "pages/branding.html" );
-		});
+	//	 $(document).ready(function(){
+			
+	//		$( "#branding" ).load( "pages/branding.html" );
+	//	});
 
 
 // save image
