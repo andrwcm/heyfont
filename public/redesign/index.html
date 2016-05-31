@@ -10,19 +10,6 @@
 
 	<script type="text/javascript" src="http://heyfont.heyandrw.com/js/jquery.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-	<script src="js/type.js"></script>
-	<script src="js/loadimage.js"></script>
-
-	<script type="text/javascript">
-		$(function(){
-			$('#userInput').typeahead({
-				name: 'fonts',
-				prefetch: '//www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyCAWk9AE4mJyOn7-bN3ZG8jYKYaYjIcRew',
-				limit: 10
-			});
-		});
-	</script>
-
 
 </head>
 
@@ -46,19 +33,53 @@
 
 
 	<section data-role="page" id="brand">
-
-		<div role="main" class="ui-content">
-			<h1>Branding</h1>
-
-			<form id="form1" runat="server">
-		        <input type='file' id="imgInp" />
-		        <img id="blah" src="#" alt="your image" />
-		    </form>
+		<div role="main" class="ui-content" id="branding">
+			
 
 		</div>
-		
 	</section>
 
 </body>
-	
+	<script src="js/type.js"></script>
+	<script src="js/loadimage.js"></script>
+	<script src="js/html2canvas.js"></script>
+
+	<!-- autocomplete -->
+	<script type="text/javascript">
+		$(function(){
+			$('#userInput').typeahead({
+				name: 'fonts',
+				prefetch: '//www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyCAWk9AE4mJyOn7-bN3ZG8jYKYaYjIcRew',
+				limit: 10
+			});
+		});
+	</script>
+
+	<!-- save image -->
+	<script>
+	$(document).ready(function(){
+
+		
+	var element = $("#branding"); // global variable
+	var getCanvas; // global variable
+	 
+	    $("#btn-Preview-Image").on('click', function () {
+	         html2canvas(element, {
+	         onrendered: function (canvas) {
+	                $("#previewImage").append(canvas);
+	                getCanvas = canvas;
+	             }
+	         });
+	    });
+
+		$("#btn-Convert-Html2Image").on('click', function () {
+	    var imgageData = getCanvas.toDataURL("image/png");
+	    // Now browser starts downloading it instead of just showing it
+	    var newData = imgageData.replace(/^data:image\/png/, "data:application/octet-stream");
+	    $("#btn-Convert-Html2Image").attr("download", "heyfont_preview.png").attr("href", newData);
+		});
+
+	});
+
+	</script>
 </html>

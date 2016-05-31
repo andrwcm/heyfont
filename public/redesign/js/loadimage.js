@@ -2,11 +2,11 @@ function readURL() {
 	//	rehide the image and remove its current "src",
 	//	this way if the new image doesn't load,
 	//	then the image element is "gone" for now
-	$('#blah').attr('src', '').hide();
+	$('#logo, #letter, #card').attr('src', '').hide();
 	if (this.files && this.files[0]) {
 		var reader = new FileReader();
 		$(reader).load(function(e) {
-			$('#blah')
+			$('#logo, #letter, #card')
 				//	first we set the attribute of "src" thus changing the image link
 				.attr('src', e.target.result)	//	this will now call the load event on the image
 		});
@@ -15,7 +15,7 @@ function readURL() {
 }
 
 //	below makes use of jQuery chaining. This means the same element is returned after each method, so we don't need to call it again
-$('#blah')
+$('#logo, #letter, #card')
 	//	here we first set a "load" event for the image that will cause it change it's height to a set variable
 	//		and make it "show" when finished loading
 	.load(function(e) {
