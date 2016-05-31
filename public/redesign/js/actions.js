@@ -1,6 +1,8 @@
+// load pages
 		$(document).ready(function(){
 			$( "#branding" ).load( "pages/branding.html" );
 		});
+
 
 // save image
 		$(document).ready(function(){
