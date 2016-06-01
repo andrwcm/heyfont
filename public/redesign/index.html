@@ -20,7 +20,7 @@
 			<h1>Heyfont</h1>
 
 			<div id="searchWrap">
-				<input type="text" id="userInput" class="typo" placeholder="Example: hey" >
+				<input type="text" id="userInput" class="typo" placeholder="Example:aaaaa" >
 				
 			</div>
 
@@ -70,7 +70,7 @@
 		$(function(){
 			$('#userInput').typeahead({
 				name: 'fonts',
-				prefetch: '//www.googleapis.com/webfonts/v1/webfonts?sort=alpha&fields=items%2Ckind&key=AIzaSyCAWk9AE4mJyOn7-bN3ZG8jYKYaYjIcRew',
+				prefetch: 'https://www.googleapis.com/webfonts/v1/webfonts?sort=alpha&fields=items%2Ckind&key=AIzaSyCAWk9AE4mJyOn7-bN3ZG8jYKYaYjIcRew',
 				limit: 10
 			});
 		});
