@@ -57,12 +57,11 @@
 		<div role="main" class="ui-content">
 			<h1>Heyfontsss</h1>
 
-			as
 
-        	<div class="bfh-selectbox bfh-googlefonts" data-font="Lato"></div>
-
-        	<select class="form-control bfh-googlefonts" data-available="Open Sans,Josefin Slab,Lato"></select>
-			</div>
+        	<select id="destinations">
+		    	<option value="">Select</option>
+			</select>
+			<a href="#" id="fetch">Fetch JSON</a>
 
 			<a href="#brand">
 				<input type="button" class="btn" value="GO!" onclick='changeText2()' id="buttonFont">
@@ -119,15 +118,40 @@
 	<script src="js/loadimage.js"></script>
 	<script src="js/html2canvas.js"></script>
 
-	<!-- autocomplete -->
 	<script type="text/javascript">
-		$(function(){
-			$('#userInput').typeahead({
-				name: 'fonts',
-				prefetch: 'json/webfonts.json',
-				limit: 10
-			});
-		});
+		
 
+		// jason 
+
+		var json = {
+		    "Destinations": [
+		    {
+		        "destinationName": "London",
+		        "destinationID": "lon"
+		    },
+		    {
+		        "destinationName": "New York",
+		        "destinationID": "nyc"
+		    },
+		    {
+		        "destinationName": "Paris",
+		        "destinationID": "par"
+		    },
+		    {
+		        "destinationName": "Rome",
+		        "destinationID": "rom"
+		    }
+		    ]
+		};
+
+		$('#fetch').click(function() {
+		    $.post('/echo/json/', {json: JSON.stringify(json)}, function(data) {
+		        $.each(data.Destinations, function(i, v) {
+		            $('#destinations').append('<option value="' + v.destinationID + '">' + v.destinationName + '</option>');
+		        });
+		    });
+		});
 	</script>
+
+	
 </html>
