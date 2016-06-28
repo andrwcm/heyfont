@@ -5,28 +5,73 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />
-	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/bootstrap-formhelpers.min.css" />
 
-	<script type="text/javascript" src="http://heyfont.heyandrw.com/js/jquery.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<style type="text/css">
+	html{
+		height: 100%;
+	}
+	body{
+		margin: auto;
+		height: 100%;
+	}
+	.bfh-selectbox-options{
+		width: 200px !important;
+	}
+	.header{
+		position: fixed;
+		width: 100%;
+		height: 50px;
+		top:0px;
+		z-index: 99999;
+		background: red;
+	}
+
+	#home, #brand{
+		width: 100%;
+		height: 160%;
+		background: gray;
+	}
+
+	.foo{
+		width: 100%;
+		height: 50px;
+		background: green;
+		bottom: 0px;
+		position: fixed;
+	}
+	</style>
 
 </head>
 
-<body>	
+<body>
+	<div class="header">
+		<h1>Tittle</h1>
+	</div>
+
+
 	<section data-role="page" id="home">
 
 		<div role="main" class="ui-content">
-			<h1>Heyfont</h1>
+			<h1>Heyfontsss</h1>
 
-			<div id="searchWrap">
-				<input type="text" id="userInput" class="typo" placeholder="json" >
-				
+			
+
+        	<div class="bfh-selectbox bfh-googlefonts" data-font="Lato"></div>
+
+        	<select class="form-control bfh-googlefonts" data-available="Open Sans,Josefin Slab,Lato"></select>
 			</div>
 
 			<a href="#brand">
 				<input type="button" class="btn" value="GO!" onclick='changeText2()' id="buttonFont">
 			</a>
+			
+				<div class="foo">
+					<h2>footer</h2>
+				</div>
+			
 		</div>
 
 	</section>
@@ -55,12 +100,21 @@
 		    <div id="previewImage">
 
     		</div>
+
+    		<div class="foo">
+					<h2>Brandin</h2>
+				</div>
 		
 		</div>
 	</section>
 
 </body>
-	<script src="js/type.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="js/bootstrap-typeahead.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-formhelpers.js"></script>
+	<script src="js/demo.js"></script>
 	<script src="js/actions.js"></script>
 	<script src="js/loadimage.js"></script>
 	<script src="js/html2canvas.js"></script>
@@ -70,9 +124,10 @@
 		$(function(){
 			$('#userInput').typeahead({
 				name: 'fonts',
-				prefetch: 'https://www.googleapis.com/webfonts/v1/webfonts?sort=alpha&fields=items%2Ckind&key=AIzaSyCAWk9AE4mJyOn7-bN3ZG8jYKYaYjIcRew',
+				prefetch: 'json/webfonts.json',
 				limit: 10
 			});
 		});
+
 	</script>
 </html>
