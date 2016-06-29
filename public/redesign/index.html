@@ -58,10 +58,11 @@
 			<h1>Heyfontsss</h1>
 
 
-        	<select id="destinations">
-		    	<option value="">Select</option>
-			</select>
-			<a href="#" id="fetch">Fetch JSON</a>
+        	<div id="select">holll
+
+        	</div>
+
+        	<select name="select" id="select"></select>
 
 			<a href="#brand">
 				<input type="button" class="btn" value="GO!" onclick='changeText2()' id="buttonFont">
@@ -117,40 +118,34 @@
 	<script src="js/actions.js"></script>
 	<script src="js/loadimage.js"></script>
 	<script src="js/html2canvas.js"></script>
-
+	
 	<script type="text/javascript">
-		
+		$.ajax({
+		  method: 'get',
+		  url: 'https://www.googleapis.com/webfonts/v1/webfonts',
+		  data: {
+		    key: 'AIzaSyCAWk9AE4mJyOn7-bN3ZG8jYKYaYjIcRew'
+		  }
+		})
+		.done(function(response) {
+		  var list = response.items;
+		  var select = document.createElement('select');
+		​
+		  list.forEach(function(font) {
+		    var _option = document.createElement('option');
+		    _option.value = font.family;
+		    _option.text = font.family;
+		​
+		    select.add(_option);
+		  })
+		​
+		  var el = document.getElementById('select');
+		  el.appendChild(select);
+		})
+		.fail(function(error) {
+		  // mostrar algo en caso de un error
+		})
 
-		// jason 
-
-		var json = {
-		    "Destinations": [
-		    {
-		        "destinationName": "London",
-		        "destinationID": "lon"
-		    },
-		    {
-		        "destinationName": "New York",
-		        "destinationID": "nyc"
-		    },
-		    {
-		        "destinationName": "Paris",
-		        "destinationID": "par"
-		    },
-		    {
-		        "destinationName": "Rome",
-		        "destinationID": "rom"
-		    }
-		    ]
-		};
-
-		$('#fetch').click(function() {
-		    $.post('/echo/json/', {json: JSON.stringify(json)}, function(data) {
-		        $.each(data.Destinations, function(i, v) {
-		            $('#destinations').append('<option value="' + v.destinationID + '">' + v.destinationName + '</option>');
-		        });
-		    });
-		});
 	</script>
 
 	
