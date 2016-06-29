@@ -4,10 +4,12 @@
 	<title>Heyfont</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="http://files.codepedia.info/uploads/iScripts/html2canvas.js"></script>
 
 	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
-	<link rel="stylesheet" href="css/bootstrap-formhelpers.min.css" />
+
 
 	<style type="text/css">
 	html{
@@ -55,16 +57,11 @@
 	<section data-role="page" id="home">
 
 		<div role="main" class="ui-content">
-			<h1>Heyfontsss</h1>
+			<h1>Heyfonts	</h1>
 
 
-        	<div id="select">holll
+        	<div id="select"></div>
 
-        	</div>
-
-        	<select name="" id="select">
-        		<option value="ont.family"></option>
-        	</select>
 
 			<a href="#brand">
 				<input type="button" class="btn" value="GO!" onclick='changeText2()' id="buttonFont">
@@ -81,7 +78,7 @@
 
 	<section data-role="page" id="brand">
 		<div role="main" class="ui-content" id="branding">
-			<section id="brandinpreview" style="background: gray; display: block;">
+			<section id="brandinpreview" style="background: red; display: block;">
 
 				<h1>Branding preview</h1>
 
@@ -94,32 +91,51 @@
 				</form>
 
 			</section>
+		</div>
 
-			<input id="btn-Preview-Image" type="button" value="Preview"/>
-		    <a id="btn-Convert-Html2Image" href="#">Download</a>
-		    <br/>
-		    <h3>Preview :</h3>
-		    <div id="previewImage">
+		<a id="btn-Preview-Image" href="#">Preview button</a>
+	    <a id="btn-Convert-Html2Image" href="#">Download</a>
+	    <br/>
+	    <h3>Preview :</h3>
+	    <div id="previewImage">
+	    </div>
 
-    		</div>
 
-    		<div class="foo">
-					<h2>Brandin</h2>
-				</div>
-		
+		<div class="foo">
+			<h2>Branding</h2>
 		</div>
 	</section>
+	<script>
+		$(document).ready(function(){
+
+			
+		var element = $("#branding"); // global variable
+		var getCanvas; // global variable
+		 
+		    $("#btn-Preview-Image").on('click', function () {
+		         html2canvas(element, {
+		         onrendered: function (canvas) {
+		                $("#previewImage").append(canvas);
+		                getCanvas = canvas;
+		             }
+		         });
+		    });
+
+			$("#btn-Convert-Html2Image").on('click', function () {
+		    var imgageData = getCanvas.toDataURL("image/png");
+		    // Now browser starts downloading it instead of just showing it
+		    var newData = imgageData.replace(/^data:image\/png/, "data:application/octet-stream");
+		    $("#btn-Convert-Html2Image").attr("download", "your_pic_name.png").attr("href", newData);
+			});
+
+		});
+
+	</script>
 
 </body>
-	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-	<script src="js/bootstrap-typeahead.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/bootstrap-formhelpers.js"></script>
-	<script src="js/demo.js"></script>
-	<script src="js/actions.js"></script>
 	<script src="js/loadimage.js"></script>
-	<script src="js/html2canvas.js"></script>
+
 	
 	<script type="text/javascript">
 		$.ajax({
@@ -132,15 +148,15 @@
 		.done(function(response) {
 		  var list = response.items;
 		  var select = document.createElement('select');
-		​
+
 		  list.forEach(function(font) {
 		    var _option = document.createElement('option');
 		    _option.value = font.family;
 		    _option.text = font.family;
-		​
+
 		    select.add(_option);
 		  })
-		​
+
 		  var el = document.getElementById('select');
 		  el.appendChild(select);
 		})
