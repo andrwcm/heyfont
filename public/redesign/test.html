@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Heyfont</title>
+
+	
+
+</head>
+
+<body>
+	
+			<h1>Heyfonts</h1>
+
+        	<select name="" id="select">
+        	</select>
+
+</body>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+
+	
+	<script type="text/javascript">
+		$.ajax({
+  method: 'get',
+  url: 'https://www.googleapis.com/webfonts/v1/webfonts',
+  data: {
+    key: 'AIzaSyCAWk9AE4mJyOn7-bN3ZG8jYKYaYjIcRew'
+  }
+})
+.done(function(response) {
+  var list = response.items;
+  var select = document.createElement('select');
+
+  list.forEach(function(font) {
+    var _option = document.createElement('option');
+    _option.value = font.family;
+    _option.text = font.family;
+
+    select.add(_option);
+  })
+
+  var el = document.getElementById('select');
+  el.appendChild(select);
+})
+.fail(function(error) {
+  // mostrar algo en caso de un error
+})
+
+	</script>
+
+	
+</html>
