@@ -11,7 +11,18 @@
 	
 			<h1>Heyfonts</h1>
 
-        	<div id="select"></div>
+      <div id="select"></div>
+      <input type="button" class="btn" value="GO!" onclick='changeText2()' id="buttonFont">
+
+      <br>
+      <span class="download">
+      Download
+      <a href="http://google.com" target="_blank" id="fontLink">
+        <div id="fontTag">
+        </div>
+      </a>
+      </span>
+
 
 </body>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
@@ -19,32 +30,70 @@
 	
 	<script type="text/javascript">
 		$.ajax({
-  method: 'get',
-  url: 'https://www.googleapis.com/webfonts/v1/webfonts',
-  data: {
-    key: 'AIzaSyCAWk9AE4mJyOn7-bN3ZG8jYKYaYjIcRew'
-  }
-})
-.done(function(response) {
-  var list = response.items;
-  var select = document.createElement('select');
+      method: 'get',
+      url: 'https://www.googleapis.com/webfonts/v1/webfonts',
+      data: {
+        key: 'AIzaSyCAWk9AE4mJyOn7-bN3ZG8jYKYaYjIcRew'
+      }
+    })
+    .done(function(response) {
+      var list = response.items;
+      var select = document.createElement('select');
 
-  list.forEach(function(font) {
-    var _option = document.createElement('option');
-    _option.value = font.family;
-    _option.text = font.family;
+      list.forEach(function(font) {
+        var _option = document.createElement('option');
+        _option.value = font.family;
+        _option.text = font.family;
 
-    select.add(_option);
-  })
+        select.add(_option);
+      })
 
-  var el = document.getElementById('select');
-  el.appendChild(select);
-})
-.fail(function(error) {
-  // mostrar algo en caso de un error
-})
+      var el = document.getElementById('select');
+      el.appendChild(select);
+    })
+    .fail(function(error) {
+      // mostrar algo en caso de un error
+    })
 
 	</script>
+
+
+  <script type="text/javascript">
+    
+      (function( $ ) {
+    $.fn.google_fonts = function(options) {
+      var defaults = {
+          fontname: "arial"
+      };
+      var options = jQuery.extend(defaults, options);
+      var fontname = options.fontname;
+      fontname = fontname.replace(/ /gi, "+");
+      $("head").append('<link href="https//fonts.googleapis.com/css?family='+fontname+'" rel="stylesheet" type="text/css">');
+      jQuery(this).css("font-family",options.fontname);
+      $("#fontLink").attr("href", "https://www.google.com/fonts#QuickUsePlace:quickUse/Family:"+fontname+"");
+      $("#fontTag").html(''+fontname+'');
+      return this;
+    };
+
+  })( jQuery );
+
+      $(document).ready(function() {
+      //alert('ready');
+      $('#select').on('keyup', function(event) {
+          $(this).val(function(i, v){
+              return v.replace(/[a-zA-z]/, function(c){
+                 return c.toUpperCase();
+                  })
+              })
+          });
+      });
+
+      function changeText2(){
+      var select = document.getElementById('select').value;
+        $("#content").google_fonts({fontname: $('#select').val()});
+
+  }
+  </script>
 
 	
 </html>

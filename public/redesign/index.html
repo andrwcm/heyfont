@@ -44,6 +44,31 @@
 		bottom: 0px;
 		position: fixed;
 	}
+
+	#select select {
+	   background: transparent;
+	   width: 600px;
+	   padding: 5px;
+	   font-size: 16px;
+	   line-height: 1;
+	   border: 0;
+	   border-radius: 0;
+	   height: 55px;
+	   -webkit-appearance: none;
+	   }
+
+	   #select select option{
+	   	height: 20px;
+	   }
+
+	   #select {
+	   width: 600px;
+	   height:55px;
+	   overflow: hidden;
+	   background: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-128.png) no-repeat right #ddd;
+	   background-size: 40px;
+	   border: 1px solid #ccc;
+	   }
 	</style>
 
 </head>
@@ -61,6 +86,8 @@
 
 
         	<div id="select"></div>
+
+        	<div id="select-dos"></div>
 
 
 			<a href="#brand">
@@ -159,7 +186,36 @@
 
 		  var el = document.getElementById('select');
 		  el.appendChild(select);
+			})
+		.fail(function(error) {
+		  // mostrar algo en caso de un error
 		})
+
+	</script>
+
+	<script type="text/javascript">
+		$.ajax({
+		  method: 'get',
+		  url: 'https://www.googleapis.com/webfonts/v1/webfonts',
+		  data: {
+		    key: 'AIzaSyCAWk9AE4mJyOn7-bN3ZG8jYKYaYjIcRew'
+		  }
+		})
+		.done(function(response) {
+		  var list = response.items;
+		  var select = document.createElement('select');
+
+		  list.forEach(function(font) {
+		    var _option = document.createElement('option');
+		    _option.value = font.family;
+		    _option.text = font.family;
+
+		    select.add(_option);
+		  })
+
+		  var el = document.getElementById('select-dos');
+		  el.appendChild(select);
+			})
 		.fail(function(error) {
 		  // mostrar algo en caso de un error
 		})
