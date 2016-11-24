@@ -97,7 +97,7 @@ section#container input.email{
 section#container input.button{
 	cursor: pointer;
 	outline: none;
-	margin: 49px auto;
+	margin: 0px auto 50px;
 	width: 238px;
 	border: none;
 	box-shadow: 0px 0px 16px rgba(58,233,150,.7);
