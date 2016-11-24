@@ -1,0 +1,117 @@
+@import url(//fonts.googleapis.com/css?family=Lato:300" rel="stylesheet);
+
+@font-face {
+    font-family: 'Lato', sans-serif;
+}
+
+#preloader{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: rgba(255,255,255,.98);
+  z-index:999999999999999999999;
+}
+
+#preloader #status{
+	width: 100px;
+	height: 113px;
+	position: absolute;
+	margin: auto;
+	top: -100px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+}
+
+#preloader #status img{
+  width: 100%;
+  height: auto;
+}
+
+
+html{
+	height: 100%;
+	margin: auto;
+}
+
+body{
+	background: url(../assets/new/heyfont_bg.jpg);
+	background-size: cover;
+	height: 100%;
+	font-family: 'Lato', sans-serif;
+	margin: 0px;
+	text-align: center;
+  	left:0px;
+  	position: relative;
+  	transition: .4s;
+}
+
+section#container{
+	width: 738px;
+	height: 577px;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	margin: auto;
+	text-align: center;
+}
+
+section#container h1{
+	font-size: 0px;
+	width: 228px;
+	height: auto;
+	position: relative;
+	margin: auto;
+}
+
+section#container h1 img{
+	width: 100%;
+	height: auto;
+}
+
+section#container p.text{
+	width: 90%;
+	height: auto;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	color: #3C3C46;
+	text-align: center;
+	font-weight: 400;
+	margin: 57px auto;
+}
+
+section#container input.email{
+	width: 95%;
+	height: 50px;
+	background: #F9F9F9;
+	border: solid 1px #F5F5F5;
+	font-size: 15px;
+	color: #686868;
+	font-family: 'Lato', sans-serif;
+	outline: none;
+	padding-left: 3%; 
+}
+
+section#container input.button{
+	cursor: pointer;
+	outline: none;
+	margin: 49px auto;
+	width: 238px;
+	border: none;
+	box-shadow: 0px 0px 16px rgba(58,233,150,.7);
+	height: 60px;
+	background: #3AE996;
+	font-family: Lato-Bold;
+	font-size: 20px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+}
+
+section#container a{
+	font-family: 'Lato', sans-serif;
+	font-size: 17px;
+	color: #A8A8A8;
+	letter-spacing: 0;
+}
