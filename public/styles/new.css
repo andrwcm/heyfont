@@ -395,6 +395,21 @@ section#team  ul.team_info li a p.description{
 		width: 100%;
 		margin:25px auto;
 	}
+
+	section#team  ul.team_info{
+		padding: 0px !important;
+		list-style: none;
+		height: auto;
+		width: 90%;
+		margin:auto;
+		text-align: center;
+	}
+
+	section#team  ul.team_info li{
+	display: inline-block;
+	width: 200px;
+	margin-top:50px;
+}
 }
 
 
