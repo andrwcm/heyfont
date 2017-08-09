@@ -23,6 +23,16 @@
 	left: 0px;
 }
 
+a.link{
+	opacity: 0.8;
+	font-weight: 400;
+	top:30px;
+	color: #febd29;
+	position: relative;
+	font-size: 18px;
+	letter-spacing: 0;
+}
+
 #preloader #status img{
   width: 100%;
   height: auto;
@@ -44,6 +54,59 @@ body{
   	position: relative;
   	transition: .4s;
 }
+
+
+.termsOverlay{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0,0,0,.8);
+	z-index: 6666;
+}
+section#terms{
+	width: 500px;
+	height: 470px;
+	padding: 10px 30px;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	text-align: left;
+	font-weight: 300;
+	right: 0px;
+	left: 0px;
+	margin:auto;
+	background: white;
+	border-radius: 5px;
+	box-shadow: 0px 0px 25px rgba(0,0,0,.8);
+
+}
+
+section#terms h3{
+	font-size: 22px;
+	font-weight: 700;
+	color: #EA4369;
+}
+
+
+section#terms .ButtonSend{
+	cursor: pointer;
+	background: #3C3C46;
+	box-shadow: 0 9px 23px 0 rgba(0,0,0,0.24);
+	color: white;
+	width:auto;
+	font-size: 14px;
+	border: none;
+	height: auto;
+	padding:20px 40px 20px 40px;
+	margin-top: 15px;
+	transition: .4s;
+}
+
+section#terms .ButtonSend:hover{
+	background: #101011;
+}
+
 
 section#container{
 	width: 1180px;
@@ -150,6 +213,7 @@ section#container div#description a{
 
 section#container div#buttons{
 	margin-top: 53px;
+	height: 70px;
 }
 
 section#container div#buttons a .primaryButton{
@@ -195,10 +259,10 @@ section#container div#buttons a .secundaryButton{
 	font-weight: 400;
 	text-decoration: none;
 	background: #3C3C46;
-	border: 1px solid rgba(255,255,255,0.24);
+	border: 1px solid rgba(255,255,255,0.1);
 	font-family: 'Lato', sans-serif;
 	font-size: 20px;
-	color: rgba(255,255,255,0.50);
+	color: rgba(255,255,255,0.90);
 	font-weight: 400;
 	letter-spacing: 0;
 	display: block;

@@ -114,6 +114,14 @@ $(document).ready(function() {
         $('.heyfont').removeClass('brandActive ');
         $('.heyfont').addClass('metricActive');
     });
+
+    $('.primaryButton').click(function(){
+        $('.termsOverlay').slideDown(320);
+    });
+
+    $('.termsOverlay').click(function(){
+        $(this).slideUp(320);
+    });
 });
 
 
@@ -123,6 +131,8 @@ $(window).load(function() {
       $("#preloader").delay(350).fadeOut("slow", function(){
    });
 })
+
+
 
 $(document).ready(function(){
     //al hacer click en insertar
