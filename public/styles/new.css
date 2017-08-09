@@ -392,11 +392,11 @@ section#team  ul.team_info li a p.description{
 	}
 
 	.preview{
-		width: 70%;
+		width:100%;
 		overflow: hidden;
-		height:300px !important;
+		height:500px !important;
 		float: none;
-		margin:0px auto -60px;
+		margin:40px auto -60px;
 		display: block;
 		right:none;
 		position: relative;
@@ -418,7 +418,7 @@ section#team  ul.team_info li a p.description{
 	}
 
 	.preview{
-		width: 80%;
+		width: 100%;
 		overflow: hidden;
 		height: 591px;
 		float: none;
@@ -426,6 +426,13 @@ section#team  ul.team_info li a p.description{
 		right:0px;
 		position: relative;
 		top: 160px;
+	}
+
+	.preview img{
+		width: 150%;
+		float: none;
+		margin:auto;
+		height: auto;
 	}
 
 	section#container div#description {
@@ -455,6 +462,10 @@ section#team  ul.team_info li a p.description{
 }
 
 @media (max-width: 530px) {
+	section#container div#buttons{
+		margin-top: 53px;
+		height:200px;
+	}
 	section#container div#buttons a .primaryButton, .secundaryButton{
 		width: 100%;
 		margin:25px auto;
