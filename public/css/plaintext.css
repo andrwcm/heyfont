@@ -159,6 +159,7 @@ ul.Text-style{
 	left: 0px;
   height:30px;
   margin-right: 20px;
+  font-family: 'Muli', sans-serif !important;
 }
 
 ul.Text-style li.button-normal{
@@ -221,6 +222,7 @@ ul.aligment{
   position: relative;
   margin-left: 20px;
   top: 6px;
+  font-family: 'Muli', sans-serif !important;
 }
 
 ul.aligment li.button-align{
@@ -284,6 +286,7 @@ ul.sizes{
   padding-right: 20px;
 	margin-top: 0px;
   position: relative;
+  font-family: 'Muli', sans-serif !important;
 }
 
 ul.sizes .wrapper{
@@ -356,7 +359,7 @@ ul.sizes li p{
 
 div.background_button{
   cursor: pointer;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Muli', sans-serif !important;
   margin-left: 30px;
   display: inline-block;
   width: 120px;
