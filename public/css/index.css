@@ -5,6 +5,44 @@
   font-family: 'Muli', sans-serif;
 }
 
+.tt-hint{
+  display: none !important;
+}
+
+.tt-dataset-fonts{
+  background: #141415;
+  margin-top: 5px;
+  width: 300px;
+  height: auto;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  border-radius: 6px;
+  border: solid 1px rgba(255,255,255,.1)
+  font-size: 14px;
+  line-height: 15px;
+}
+
+
+.tt-dataset-fonts.topState{
+  position: fixed !important;
+  top: 97px !important;
+  right: 360px;
+  z-index: 9999999999999999999999999999999 !important;
+}
+
+.tt-dataset-fonts p{
+  margin: 15px;
+  color: rgba(255,255,255,.4);
+  transition: .5s;
+}
+
+
+.tt-dataset-fonts p:hover{
+  margin: 15px;
+  color: rgba(255,255,255,.9);
+}
+
 /* variables colores */
 
 :root {
@@ -149,8 +187,8 @@ p.text-normal{
 .searchWrap #userInput{
   display: block;
   outline: none;
-  background: #0E0E0F;
-  border: 1px solid var(--light-gray);
+  background:   #0E0E0F !important;
+  border: 1px solid #5B6BB2;
   border-radius: 2px;
   padding-left: 23px;
   font-family: Muli Light;
@@ -159,9 +197,9 @@ p.text-normal{
   font-size: 16px;
   line-height: 30px;
   color: #7F7F7F;
-  width: 100%;
-  height: 100%;
-  transition-duration: .5s;
+  width: 830px;
+  height: 70px;
+
 }
 
 #userInput.small-input{
@@ -367,7 +405,7 @@ footer a
 	left: 0px;
 	width: 100%;
 	height: 100%;
-	z-index: 999999999;
+	z-index: 99;
 	padding-top: 100px;
 	overflow: scroll;
 }

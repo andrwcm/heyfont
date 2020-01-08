@@ -52,6 +52,7 @@ $(function() {
  $(document).ready(function() {
     $('.SearchIcon').click(function(){
         $('body').css('overflow','hidden');
+        $('.tt-dataset-fonts').addClass('topState');
         $('#content').delay(500).slideDown ("slow");
         $('#tools').delay(500).fadeIn("slow");
         $('#userInput').delay(500).addClass('small-input');
