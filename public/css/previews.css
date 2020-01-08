@@ -119,6 +119,7 @@ ul#preview-options li a{
 	display: block;
 	z-index: 4;
 	transition: .5s;
+	outline: none !important;
 }
 
 ul#preview-options li a:hover{

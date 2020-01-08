@@ -20,6 +20,7 @@
 
   <link rel="stylesheet" href="css/standardize.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/previews.css">
 
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/actions.js"></script>
@@ -30,7 +31,7 @@
   <div id="content"></div>
 
 	<nav id="navigation">
-			<a href="heyfont.html" class="logoHome">
+			<a href="#" class="logoHome">
 			</a>
 
 		  <div class="container">
@@ -58,7 +59,7 @@
 
 				<li>
 
-					<a href="ui-preview" id="userinterface" >
+					<a href="uipreview" id="userinterface" >
 						<div class="usericon">
 							<div class="form"></div>
 						</div>
@@ -156,7 +157,7 @@
 			//clicks
 			$("ul#tool-options li a").click(function(){
 				var page = $ (this).attr("href");
-				$("#content").load("demo/" + page + ".html");
+				$("#content").load("previews/" + page + ".html");
 				return false;
 			});
 
