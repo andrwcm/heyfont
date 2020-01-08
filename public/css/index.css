@@ -32,16 +32,12 @@
 
 
 body {
-  min-width: none;
   height: 100%;
-  min-height: nonepx;
   background: url('../assets/heyfont_form.svg') #1f1f23;
   background-repeat: no-repeat;
   background-size: 1513px 1323px;
   background-position:  right -180px;
   font-family: 'Muli', sans-serif;
-  font-size: 16px;
-  color: white;
 }
 
 h1{
@@ -101,6 +97,7 @@ h4{
   font-weight: 300;
   font-size: 25px;
   line-height: 93.3%;
+  color: white;
 }
 
 
