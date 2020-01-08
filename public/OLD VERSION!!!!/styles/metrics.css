@@ -1,0 +1,263 @@
+@import url(//fonts.googleapis.com/css?family=Asap:400,700);
+
+@font-face {
+    font-family: 'Asap', sans-serif;
+}
+
+
+.metrics{
+	background: url(../assets/bg-figures-dos.png) center scroll repeat;
+	background-size: 200px auto;
+	background-color:#f5f5f5;
+	width: 100%;
+	margin: 0px;
+	text-align: center;
+	height: 1000px;
+}
+
+.metrics h3{
+	font-family: 'Asap', sans-serif !important;
+	font-size: 40px;
+	margin:auto;
+	position: relative;
+	top: 80px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #ff2626;
+}
+
+.metrics h3:before{
+	content: url(../assets/arrow.png);
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	margin:auto;
+	top: 40px;
+}
+
+
+/* ---------------------------------------------------------------------- metrics */
+.textMetrics{
+	position: relative;
+	z-index: 99999;
+	color: #313131;
+	position: relative;
+	top: 200px;
+  width: 900px;
+  margin: auto;
+}
+
+section#rule{
+	position: relative;
+	top: 140px;
+}
+
+section#rule .pixels{
+	color: gray;
+	margin: 10px 0px 40px 0px;
+	font-weight: 700;
+	font-size: 30px;
+}
+
+.btnText{
+	box-sizing:boder-box;
+	display: inline-block;
+	padding-top:18px;
+	padding-bottom:18px;
+	padding-left:50px;
+	padding-right:50px;
+	cursor: pointer;
+	border: solid 1px #ff2626;
+	color: #ff2626;
+	margin: 15px;
+	border-radius: 5px;
+	position: relative;
+	text-align: center;
+	top: 0px;
+	height: auto;
+	transition-duration:.5s;
+}
+
+.btnText:hover{
+	background: #ff2626;
+	color: white;
+
+}
+
+.btnTextDos{
+	cursor: pointer;
+	background: #ff2626;
+	display: inline-block;
+	padding-top:18px;
+	padding-bottom:18px;
+	padding-left:50px;
+	padding-right:50px;
+	border: solid 1px #ff2626;
+	color: white;
+	margin: 15px;
+	border-radius: 70px;
+	position: relative;
+	text-transform: uppercase;
+	text-align: center;
+	top: 0px;
+	transition-duration:.5s;
+}
+
+
+
+.btnTextDos:hover{
+	padding-left:60px;
+	padding-right:60px;
+}
+
+.btnTextTres{
+	cursor: pointer;
+	background: #00b174;
+	display: inline-block;
+	padding-top:18px;
+	padding-bottom:18px;
+	padding-left:50px;
+	padding-right:50px;
+	font-weight: 700;
+	box-shadow: 0px 4px 0px #049160, 0px 8px 0px #049160;
+	color: white;
+	margin: 15px;
+	border-radius: 70px;
+	position: relative;
+	text-transform: uppercase;
+	text-align: center;
+	top: 0px;
+	transition-duration:.1s;
+}
+
+.btnTextTres:hover{
+	box-shadow: 0px 2px 0px #049160, 0px 4px 0px #049160;
+	top: 4px;
+}
+
+.btnTextCuatro{
+	cursor: pointer;
+	background: transparent;
+	display: inline-block;
+	padding-top:18px;
+	padding-bottom:18px;
+	padding-left:50px;
+	padding-right:50px;
+	font-weight: 700;
+	border-bottom: 2px solid rgb(40, 39, 64) !important;
+  border-top: 2px solid rgb(40, 39, 64) !important;
+	color:rgb(40, 39, 64);
+	margin: 15px;
+	position: relative;
+	text-transform: uppercase;
+	text-align: center;
+	top: 0px;
+	transition-duration:.1s;
+  z-index: 2;
+}
+
+.btnTextCuatro span{
+  width: 100%;
+  height: 2px;
+  display: block;
+  background: rgb(40, 39, 64);
+  float: left;
+  left:0px;
+  bottom: -2px;
+  position: absolute;
+  transition-duration:.2s;
+  z-index: 1;
+}
+
+.btnTextCuatro p{
+  margin: 0px;
+  position: relative;
+  z-index: 3;
+}
+
+.btnTextCuatro:hover{
+  color: white;
+}
+
+.btnTextCuatro:hover span{
+  width: 100%;
+  height: 58px;
+  display: block;
+  background: rgb(40, 39, 64);
+  float: left;
+  left:0px;
+  bottom: -2px;
+  position: absolute;
+}
+
+
+#textchange{
+	width: 80%;
+	height: 450px;
+	text-align: center;
+	overflow-x:scroll;
+	background: white;
+	border: solid 1px #c6c6c6;
+	margin: auto;
+	padding: 20px;
+
+}
+
+#textchange:first-child{
+  width: 62%;
+  float:left;
+  box-shadow: 0px 0px 12px rgba(0,0,0,.1);
+}
+
+#textchange:last-child{
+  width: 25%;
+  background: transparent;
+  border:none;
+  float:right;
+}
+
+input[type='range'] {
+	-webkit-appearance: none;
+	outline: none;
+	border-radius: 5px;
+	background-color: #dddddd;
+	border: solid 1px #c6c6c6;
+	height: 10px;
+	width: 700px;
+	vertical-align: middle;
+}
+
+input[type='range']::-moz-range-track {
+	-moz-appearance: none;
+	border-radius: 5px;
+	background-color: #dddddd;
+	border: solid 1px #c6c6c6;
+	height: 10px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+	-webkit-appearance: none !important;
+	cursor: move;
+	border-radius: 50%;
+	border: solid 3px #dddddd;
+	box-shadow: 0px 0px 12px rgba(0,0,0,.4);
+	background-color: #ff2626;
+	height: 30px;
+	width: 30px;
+}
+
+input[type='range']::-moz-range-thumb {
+	-moz-appearance: none;
+	border-radius: 20px;
+	background-color: #ff2626;
+	height: 20px;
+	width: 20px;
+}
+
+
+/* ---------------------------------------------------------------------- EDITABLE CONTENT */
+
+[contenteditable="true"]:hover{
+	border: dashed 2px #e55e3f;
+  box-sizing: border-box;
+}

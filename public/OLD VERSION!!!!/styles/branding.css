@@ -1,0 +1,279 @@
+@import url(//fonts.googleapis.com/css?family=Asap:400,700);
+
+@font-face {
+    font-family: 'Asap', sans-serif;
+}
+
+
+.branding{
+	background: url(../assets/white-fig.png) center scroll repeat;
+	background-size: 200px auto;
+	background-color: #0fc587;
+	width: 100%;
+	margin: 0px;
+	text-align: center;
+	height: 2150px;
+	overflow: hidden;
+}
+
+.branding h3{
+	font-family: 'Asap', sans-serif !important;
+	font-size: 40px;
+	margin:auto;
+	position: relative;
+	top: 80px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: white;
+}
+
+.branding h3:before{
+	content: url(../assets/arrow.png);
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	margin:auto;
+	top: 40px;
+}
+
+#body_demo{
+	text-align: center;
+	position: relative;
+}
+
+
+/* ---------------------------------------------------------------------- LETTER */
+
+#body_demo .a4wrap{
+	width: 613px;
+	height:780px;
+	background: white;
+	text-align: center;
+	box-shadow: 0px 30px 60px rgba(0,0,0,.7);
+	margin:150px auto;
+}
+
+#body_demo .letterText{
+	width: 500px;
+	font-size: 17px;
+	text-align: left;
+	position: absolute;
+	color: #424241;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+  height: 670px;
+  overflow: hidden;
+	top: 55px;
+}
+
+#body_demo .letterText p {
+	margin: 15px;
+}
+
+
+/* ---------------------------------------------------------------------- CARDS */
+
+
+
+#body_demo .cards{
+	width: 250px;
+	height: 320px;
+	position: absolute;
+	left: 650px;
+	right: 0px;
+	top: 400px;
+	margin: auto;
+	z-index: 9999;
+}
+
+#body_demo .cards div.front, div.back{
+	display: block;
+	width: 245px;
+	height: 150px;
+	box-shadow: 0px 30px 60px rgba(0,0,0,.7);
+}
+
+#body_demo .cards div.front{
+	background: white;
+	margin-bottom: 10px;
+}
+
+#body_demo .cards div.back{
+	background: #ff2626;
+}
+
+#body_demo .cards div.front span.companyName{
+	font-size: 25px;
+	color: #ff2626;
+	position: relative;
+	top: 55px;
+}
+
+#body_demo .cards div.front span.companyName:before{
+	content: "";
+	display: block;
+	width: 30px;
+	height: 1px;
+	background: #ff2626;
+	position: absolute;
+	right: 0px;
+	left: 0px;
+	margin: auto;
+	top: 40px;
+}
+
+#body_demo .cards div.back span.contact{
+	text-align: left;
+	color: white;
+	position: relative;
+	left: 30px;
+	top: 18px;
+	display: block;
+	height: 110px;
+	overflow: hidden;
+	width: 77%;
+}
+
+#body_demo .cards div.back span.contact p{
+	margin: 5px;
+}
+
+#body_demo .cards div.back span.contact p:nth-child(1){
+	font-size: 20px;
+	font-weight: 700;
+}
+
+#body_demo .cards div.back span.contact p:nth-child(2){
+	font-size: 13px;
+}
+
+#body_demo .cards div.back span.contact p:nth-child(3){
+	font-size: 15px;
+	margin-top: 18px;
+}
+
+#body_demo .cards div.back span.contact p:nth-child(4){
+	font-size: 14px;
+	margin-top: -2px;
+}
+
+
+/* ---------------------------------------------------------------------- SHIRTS*/
+
+#body_demo .shirts{
+	width: 900px;
+	height: 525px;
+	position: relative;
+	margin:auto;
+	top: -180px;
+	overflow: hidden;
+	z-index: 5;
+}
+
+#body_demo .shirts span.white{
+	display: block;
+	float: left;
+  left:20px;
+	position: relative;
+	transform:rotate(-18deg);
+}
+
+#body_demo .shirts span.black{
+	display: block;
+	right: 0px;
+  right:20px;
+	position: absolute;
+	transform:rotate(18deg);
+}
+
+ .text{
+	width: 270px;
+	font-weight: 700;
+	font-size: 70px;
+	left: 0px;
+	right: 0px;
+	top: 150px;
+  overflow: hidden;
+  height: 300px;
+	margin: auto;
+	position: absolute;
+}
+
+ .text p{
+ 	margin: -10px;
+ }
+
+ #body_demo .shirts span.white  .text{
+ 	color: #ff2626;
+ }
+
+  #body_demo .shirts span.black  .text{
+ 	color: rgba(255,244,113,.5);
+ }
+
+ /* ---------------------------------------------------------------------- bag*/
+
+.bag{
+	position: relative;
+	top: -276px;
+	z-index: 3;
+}
+
+.bag .textBag{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	font-size: 65px;
+	top: 420px;
+	width: 200px;
+  padding-top: 20px;
+	height: 190px;
+	display: block;
+  overflow: hidden;
+	color: #ff2626;
+}
+
+.bag .textBag p{
+	margin: -23px;
+}
+
+ /* ---------------------------------------------------------------------- bag*/
+
+ .pencil{
+
+ 	width: 134px;
+ 	height: 600px;
+ 	position: absolute;
+ 	left: -550px;
+ 	right: 0px;
+ 	margin: auto;
+ 	top: 120px;
+ 	z-index: 8;
+ }
+
+  .pencil .textpencil{
+  	display: block;
+  	font-size: 13px;
+  	color: white;
+  	width: 200px;
+  	height: 4px;
+  	position: relative;
+  	letter-spacing: 2px;
+  	left: -40px;
+  	top: 280px;
+  	transform: rotate(-90deg);
+  }
+
+/* ---------------------------------------------------------------------- EDITABLE CONTENT */
+[contenteditable="true"]:hover{
+	border: dashed 2px #e55e3f;
+  box-sizing: border-box;
+}
+
+
+[contenteditable="true"]{
+	border: dashed 2px transparent;
+  box-sizing: border-box;
+}

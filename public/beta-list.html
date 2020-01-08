@@ -18,58 +18,15 @@
 
   <title>Heyfont - Preview google font</title>
 
+
   <link rel="stylesheet" href="css/standardize.css">
   <link rel="stylesheet" href="css/index.css">
 
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="js/actions.js"></script>
   <script type="text/javascript" src="prefixfree.min.js"></script>
+
 
 </head>
 <body class="body page-index clearfix">
-  <div id="content"></div>
-
-	<nav id="navigation">
-			<a href="heyfont.html" class="logoHome">
-			</a>
-
-		  <div class="container">
-			<ul id="preview-options" >
-				<li>
-
-					<a href="plaintext" id="plaintext" class="active-icon">
-						<div class="texticon">
-							<div class="form"></div>
-						</div>
-						Plain text
-					</a>
-				</li>
-
-				<li>
-
-					<a href="branding" id="branding">
-						<div class="brandingicon">
-							<div class="form"></div>
-						</div>
-						Branding
-					</a>
-				</li>
-
-
-				<li>
-
-					<a href="ui-preview" id="userinterface" >
-						<div class="usericon">
-							<div class="form"></div>
-						</div>
-						User Interface
-					</a>
-				</li>
-			</ul>
-
-		  </div>
-
-	</nav>
 
 	<div class="container">
 
@@ -79,21 +36,12 @@
 		</p>
 
 		<h4 class="margin-medium">
-			Preview and test your favorite fonts from google fonts and improve your process
+			Preview and test your favorites fonts from google fonts and improve your process
 		</h4>
 
-		<div class="searchWrap margin-medium">
-			<input type="text" id="userInput" class="typo" placeholder="Write the name of the font you want to preview" >
-			<input type="button" class="SearchIcon" onclick='changeText2()' id="buttonFont">
-		</div>
-
-		<h3 class="what margin-big">
-			What can you do on heyfont?
-		</h3>
-
-		<p class="text-large margin-small">
-			Enjoy different ways to preview google fonts before you use them
-		</p>
+		<a href="#" class="PrimaryButton margin-big">
+			Subscribe
+		</a>
 
 		<div class="bulletsWrap">
 
@@ -139,48 +87,10 @@
 
 	</div>
 
-
 	<footer class="margin-big">
 		<div class="container">
 			Designed and developed by <a href="http://www.soydonandres.co" target="_blank"> www.soydonandres.co</a>
-		</div>
+		</div>	
 	</footer>
 </body>
-
-<!-- js -->
-	<script type="text/javascript" src="js/type.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$("#content").load("previews/plaintext.html");
-
-			//clicks
-			$("ul#tool-options li a").click(function(){
-				var page = $ (this).attr("href");
-				$("#content").load("demo/" + page + ".html");
-				return false;
-			});
-
-		});
-
-		$(function(){
-			$('#userInput').typeahead({
-				name: 'fonts',
-				prefetch: 'https://raw.githubusercontent.com/andrwcm/heyfont/master/public/data/fonts.json',
-				limit: 10
-			});
-		});
-
-	</script>
-
-	<!-- analytics -->
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-67540072-1', 'auto');
-	  ga('send', 'pageview');
-
-	</script>
 </html>

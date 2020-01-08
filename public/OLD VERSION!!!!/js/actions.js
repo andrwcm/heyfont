@@ -50,16 +50,18 @@ $(function() {
 
 //acciones al dar click en el botón GO!
  $(document).ready(function() {
-    $('.SearchIcon').click(function(){
+    $('.btn').click(function(){
         $('body').css('overflow','hidden');
-        $('#content').delay(500).slideDown ("slow");
-        $('#tools').delay(500).fadeIn("slow");
-        $('#userInput').delay(500).addClass('small-input');
+        $("#preloader , #status").fadeIn(0).delay(2000).fadeOut("slow");
+        $('#content').delay(2200).slideDown ("slow");
+        $('#tools').delay(2200).fadeIn("slow");
+        $('#userInput').delay(2200).addClass('small-input');
         $('.tt-dropdown-menu').delay(2200).addClass('top');
         $('.tt-hint').delay(2200).addClass('small-input');
         $('#buttonFont').delay(2200).addClass('small-button');
     });
 });
+
 
 //acciones al dar click en los botones de preview
 $(document).ready(function() {
@@ -72,6 +74,55 @@ $(document).ready(function() {
   });
 });
 
+
+//acciones feedback y menu
+$(document).ready(function() {
+    $('#give').click(function(){
+        $("#overlayForm").slideDown(300);
+    });
+
+    $('.close').click(function(){
+        $('#overlayForm').slideUp(300);
+    });
+
+    $('.heyfont').click(function(){
+        $('#overlayTools').addClass('overlayToolsVisible');
+        $('ul#tool-options').delay(1200).addClass('tool-optionsVisible');
+    });
+
+    $('#overlayTools').click(function(){
+        $('#overlayTools').removeClass('overlayToolsVisible');
+        $('ul#tool-options').removeClass('tool-optionsVisible');
+    });
+
+    //acciones botones opciones preview
+
+    $('ul#tool-options li a#brandbtn').click(function(){
+        $('.heyfont').removeClass('webActive');
+        $('.heyfont').removeClass('metricActive');
+        $('.heyfont').addClass('brandActive');
+    });
+
+    $('ul#tool-options li a#WebBtn').click(function(){
+        $('.heyfont').removeClass('metricActive');
+        $('.heyfont').removeClass('brandActive');
+        $('.heyfont').addClass('webActive');
+    });
+
+    $('ul#tool-options li a#MetricBtn').click(function(){
+        $('.heyfont').removeClass('webActive');
+        $('.heyfont').removeClass('brandActive ');
+        $('.heyfont').addClass('metricActive');
+    });
+
+    $('.primaryButton').click(function(){
+        $('.termsOverlay').slideDown(320);
+    });
+
+    $('.termsOverlay').click(function(){
+        $(this).slideUp(320);
+    });
+});
 
 
 //acciones precarga
@@ -106,7 +157,3 @@ $(document).keypress(function(event) {
         $('.btn').click();
     }
 });
-
-
-
-//acciones plain text previews

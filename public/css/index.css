@@ -1,0 +1,376 @@
+/* fuentes */
+
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,700&display=swap');
+@font-face {
+  font-family: 'Muli', sans-serif;
+}
+
+/* variables colores */
+
+:root {
+  --gray: #363636;
+  --dark-gray: #1F1F23;
+  --light-gray: #7f7f7f;
+  --white: #ffff;
+  --light-blue: #7A8FFF;
+  --dark-blue: #3B4A96;
+}
+
+/* margenes */
+
+.margin-big{
+  margin-top: 86px;
+}
+
+.margin-medium{
+  margin-top: 42px;
+}
+
+.margin-small{
+  margin-top: 24px;
+}
+
+
+body {
+  min-width: none;
+  height: 100%;
+  min-height: nonepx;
+  background: url('../assets/heyfont_form.svg') #1f1f23;
+  background-repeat: no-repeat;
+  background-size: 1513px 1323px;
+  background-position:  right -180px;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+h1{
+  font-size: 0px;
+  display: block;
+  width: 350px;
+  height: 57px;
+}
+
+h1.heyfont{
+  background: url('../assets/heyfont.svg');
+  background-repeat: no-repeat;
+  margin-top: 86px;
+}
+
+h2{
+  font-family: Muli;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 93.3%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.05em;
+  color: #FFFFFF;
+}
+
+
+h3{
+  font-family: Muli;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 93.3%;
+  letter-spacing: -0.05em;
+  color: var(--light-blue);
+
+}
+
+h3.what::after{
+  display: block;
+  content: "";
+  width: 28px;
+  height:28px;
+  position: relative;
+  top: 2px;
+  margin-right: 20px;
+  float: left;
+  background: url('../assets/icon_down.svg') no-repeat;
+  background-position: center;
+  transition: .2s;
+}
+
+h4{
+  font-family: Muli Light;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 93.3%;
+}
+
+
+p.text-jumbo{
+  width: 774px;
+  height: 258px;
+  font-family: Muli;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 107.3%;
+  letter-spacing: -0.05em;
+  color: #FFFFFF;
+}
+
+p.text-large{
+  font-family: Muli Light;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(255,255,255,.3);
+}
+
+p.text-normal{
+  font-family: Muli Light;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.container{
+  width: 1153px;
+  height: auto;
+  margin: auto;
+  text-align: left;
+
+}
+
+/* search */
+
+.searchWrap{
+  width: 830px !important;
+  height: 70px !important;
+}
+
+.searchWrap #userInput{
+  display: block;
+  outline: none;
+  background: #0E0E0F;
+  border: 1px solid var(--light-gray);
+  border-radius: 2px;
+  padding-left: 23px;
+  font-family: Muli Light;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  color: #7F7F7F;
+  width: 100%;
+  height: 100%;
+  transition-duration: .5s;
+}
+
+#userInput.small-input{
+  position: fixed !important;
+  top: 0px !important;
+  float: right !important;
+  font-size: 17px !important;
+  height: 45px !important;
+  width: 350px !important;
+  z-index: 999999999 !important;
+  width: 669px!important;
+  height: 100px !important;
+  right: 0px !important;
+  top: 0px !important;
+  background: #0C0C0C !important;
+  border: none !important;
+}
+
+.searchWrap #userInput:focus{
+  border: 1px solid var(--light-blue);
+  color: white;
+}
+
+.searchWrap .SearchIcon{
+  display: block;
+  width: 21px;
+  width: 21px;
+  background: url('../assets/search.svg');
+  background-color: transparent;
+  float: right;
+  right: 34px;
+  top: -45px;
+  position: relative;
+  z-index: 1;
+}
+
+.searchWrap .SearchIcon.small-button{
+  display: block;
+  width: 21px;
+  width: 21px;
+  position: fixed !important;
+  background: url('../assets/search.svg');
+  background-color: transparent;
+  float: right;
+  right: 40px !important;
+  top: 40px !important;
+  z-index: 99999999999 !important;
+
+}
+
+
+/* button */
+
+.PrimaryButton{
+  display: block;
+  width: 266px;
+  height: 56px;
+  background: #7A8FFF;
+  box-shadow: 0px 14px 34px rgba(122, 143, 255, 0.38);
+  font-family: Muli;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 93.3%;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  margin-bottom: 30px;
+  transition-duration: .5s;
+  transform: translate(0px,0px);
+
+}
+
+.PrimaryButton:hover{
+  transform: translate(0px,-8px);
+  box-shadow: 0px 14px 160px rgba(122, 143, 255, 0.4);
+
+}
+
+
+/* heyfont bullets */
+
+.bullet{
+  width: 520px;
+  height: 302px;
+  background: url('../assets/heyfont_image_bullet.png') #131313;
+  background-size: cover;
+  display: inline-block;
+  margin-right: 50px;
+  margin-top: 60px;
+  padding-left: 53px;
+  padding-top: 83px;
+  padding-bottom: 47px;
+  box-shadow: 0px 34px 64px rgba(0, 0, 0, 0.29);
+  transition-duration: .5s;
+  transform: translate(0px,0px);
+}
+
+.bullet:hover{
+  transform: translate(0px,-20px);
+  box-shadow: 0px 50px 90px rgba(0, 0, 0, 0.4);
+}
+
+.bullet h2.namebullet{
+  display: inline-block;
+  width: 320px;
+  margin-left: 20px;
+}
+
+.bullet .icon{
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  background-size: cover;
+}
+
+.bullet#branding-icon .icon{
+  background: url('../assets/Icons/Bullets/Branding.svg');
+}
+
+.bullet#plain-text-icon .icon{
+  background: url('../assets/Icons/Bullets/Text.svg');
+}
+
+.bullet#download-icon .icon{
+  background: url('../assets/Icons/Bullets/Download.svg');
+}
+
+.bullet#UI-icon .icon{
+  background: url('../assets/Icons/Bullets/UI.svg');
+}
+
+.bullet .description{
+  margin-top: 20px;
+}
+
+.bullet .corner{
+  width: 0px;
+  height: 0px;
+  border-right: 25px solid transparent;
+  border-top: 25px solid var(--light-blue);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: rotate(0deg);
+  transition-duration: .5s;
+}
+
+.bullet:hover .corner{
+   border-right: 45px solid transparent;
+  border-top: 45px solid var(--light-blue);
+}
+
+footer{
+  width: 100%;
+  height: 70px;
+  background: var(--light-blue);
+  padding-top: 30px;
+  overflow: hidden;
+}
+
+footer a{
+  color: black;
+  width: 315px;
+  display: inline-block;
+  transition-duration: .5s;
+}
+
+footer a::before{
+  display: block;
+  content: "";
+  width: 122px;
+  height:91px;
+  position: relative;
+  top: -38px;
+  margin-right: 20px;
+  float: right;
+  background: url('../assets/donandres_logo.svg') no-repeat;
+  background-position: center;
+  transition: .2s;
+  transform: scale(1);
+}
+
+footer a:hover::before{
+  transform: scale(1.1);
+}
+
+footer a
+
+@media(max-width: 800px) {
+  body {
+    font-size: 1em;
+  }
+}
+
+
+/* ---------------------------------------------------------------------- CONTENT */
+#content{
+	display: none;
+	background: #1f1f23;
+	position:fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 999999999;
+	padding-top: 100px;
+	overflow: scroll;
+}

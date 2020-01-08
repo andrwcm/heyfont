@@ -1,0 +1,25 @@
+.hide{
+    display: none;
+}
+.ajaxgif{
+    position: absolute;
+    right: 150px;
+    top: 5px;
+}
+.msg{
+    color: white;
+    font-weight: bold;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 10px;
+    position: absolute;
+    right: -155px;
+    text-transform: uppercase;
+    min-width: 121px;
+}
+.msg_ok{
+    background: #589D05;
+}
+.msg_error{
+    background: red;
+}

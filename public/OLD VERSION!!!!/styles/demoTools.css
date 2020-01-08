@@ -1,0 +1,343 @@
+#tools{
+	background: white;
+	width: 100%;
+	height: 100px;
+	font-family: 'Asap', sans-serif;
+	position: fixed;
+	z-index: 99999999;
+	display: none;
+	top: 0px;
+	border-bottom: 1px #e1e1e1 solid;
+	box-shadow: 0px 0px 4px rgba(0,0,0,.2);
+}
+
+#tools .heyfont{
+	cursor: pointer !important;
+	display: block;
+	background: #ff2626;
+	width: 335px;
+	position: absolute;
+	top: 0px;
+	margin: auto;
+	left: 0px;
+	height: 100%;
+}
+
+.webActive::before{
+	content: "Web preview" !important;
+	display: block !important;
+	position: absolute !important;
+	float: left !important;
+	color: white !important;
+	top: 40px !important;
+	font-size: 17px !important;
+	left: 160px;
+	border-left: 1px solid white;
+	padding-left: 20px;
+}
+.brandActive::before{
+	content: "Branding preview" !important;
+	display: block !important;
+	position: absolute !important;
+	float: left !important;
+	color: white !important;
+	top: 40px !important;
+	font-size: 17px !important;
+	left: 160px;
+	width: 140px !important;
+	border-left: 1px solid white;
+	padding-left: 20px;
+}
+.metricActive::before{
+	content: "Metrics" !important;
+	display: block !important;
+	position: absolute !important;
+	float: left !important;
+	color: white !important;
+	top: 40px !important;
+	font-size: 17px !important;
+	left: 160px;
+	border-left: 1px solid white;
+	padding-left: 20px;
+}
+
+#tools .heyfont img{
+	  width: 60px;
+	  height: auto;
+	  position: relative;
+	  top: 14px;
+		float: left;
+	  left: 70px;
+}
+
+#tools .heyfont .burguer{
+	display: block;
+	width: 30px;
+	height: 3px;
+	background: white;
+	position: relative;
+	top:47px;
+	left: 15px;
+}
+#tools .heyfont .burguer::before{
+	display: block;
+	content: "";
+	width: 30px;
+	height: 3px;
+	background: white;
+	position: relative;
+	top:-7px;
+	transition: .5s;
+}
+
+#tools .heyfont .burguer::after{
+	display: block;
+	content: "";
+	width: 30px;
+	height: 3px;
+	background: white;
+	position: relative;
+	top:4px;
+	transition: .5s;
+}
+
+#tools .heyfont:hover .burguer::before{
+	top:-11px;
+	width: 31px;
+}
+
+#tools .heyfont:hover .burguer::after{
+	top:8px;
+	width: 31px;
+}
+
+span.download{
+	float: left;
+	color: gray;
+	left: 360px;
+	top:30px;
+	position: relative;
+}
+
+span.download a{
+	display: inline-block;
+	text-decoration: none;
+}
+
+span.download a #fontTag{
+	padding-left: 15px;
+	padding-right: 15px;
+	position: relative;
+	left: 7px;
+	height: 30px;
+	border-radius: 4px;
+	padding-top: 10px;
+	background-color: #0fc587;
+	color: white;
+}
+
+span.download a #fontTag::after{
+	content: "";
+	color: white;
+	float: right;
+	position: relative;
+	right: -17px;
+}
+
+
+
+
+/* ---------------------------------------------------------------------- WEB DEMOS UL */
+
+ul.webdemos{
+	background: #0fc587;
+	width: 85%;
+	height: 100px;
+	position:absolute;
+	text-align: center;
+	font-family: 'Asap', sans-serif !important;
+	padding: 0px;
+	top: 326px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	z-index: 7;
+}
+
+ul.webdemos li{
+	cursor: pointer;
+	background: transparent;
+	list-style: none;
+	width: 150px;
+	display:inline-block;
+	margin: 20px 15px;
+	color: white;
+	font-size: 17px;
+	font-family: 'Asap', sans-serif !important;
+	text-align: center;
+	border-radius: 2px;
+	position:relative;app
+	left:20px;
+	float: left;
+	border: solid 1px white;
+	height: 20px;
+	padding: 20px 9px;
+	-webkit-transition-duration:.3s;
+}
+
+ul.webdemos li {
+	text-decoration: none;
+	font-family: 'Asap', sans-serif !important;
+	color:white
+}
+
+ul.webdemos li#labelText{
+	width: auto;
+	border: none;
+}
+
+
+.active-demo{
+	background:white !important;
+	font-family: 'Asap', sans-serif !important;
+	color: white !important;
+	color: #0fc587 !important;
+}
+
+
+/* ----------------------------------------------------------------------  UL TOOLS */
+
+#overlayTools{
+	position: fixed;
+	top:0px;
+	left:0px;
+	background: rgba(0,0,0,.8);
+	visibility: hidden;
+	height: 100%;
+	width: 100%;
+	padding: 0px;
+	z-index: 9999999999999999;
+	transition: .4s;
+}
+
+.overlayToolsVisible{
+	visibility: visible !important;
+}
+
+#overlayTools ul#tool-options{
+	background: white;
+	width: 250px;
+	height: 100%;
+	position: absolute;
+	top: -16px;
+	left: -250px;
+	padding: 0px !important;
+	display: block;
+	transition: .4s;
+}
+
+.tool-optionsVisible{
+	left: 0px !important;
+}
+
+#overlayTools ul#tool-options li{
+	text-align: center;
+	position: relative;
+	z-index: 3;
+
+}
+
+#overlayTools ul#tool-options li #hover{
+	background: rgba(0,0,0,.0);
+	display: block;
+	position: absolute;
+	top: 0px;
+	height: 100%;
+	border-radius: 0px;
+	width: 0%;
+	left: -300px;
+	bottom: 0px;
+	margin: auto;
+	z-index: 1;
+	transition: .4s;
+
+}
+
+#overlayTools ul#tool-options li:hover #hover{
+	left: 0px;
+	width: 100%;
+	background: rgba(0,0,0,.1);
+}
+
+#overlayTools ul#tool-options li a{
+	box-sizing: border-box;
+	text-decoration: none;
+	color: gray;
+	border: none;
+	height: 70px;
+	color: #221c20;
+	display: block;
+	width: 100%;
+	padding-top: 25px;
+	position: relative;
+	box-shadow: none;
+	z-index: 4;
+}
+
+#overlayTools ul#tool-options a.logoHome li {
+	height: 200px;
+	position: relative;
+	top: 20px;
+	border: none;
+}
+
+#overlayTools ul#tool-options a.logoHome li img{
+	width: 70%;
+	position: relative;
+	left: 20px;
+	top: 30px;
+	height: auto;
+}
+
+#overlayTools ul#tool-options a.logoHome li:after{
+	content: "/ home";
+	font-size: 15px;
+	color: #ff2626;
+	display: block;
+	float: right;
+	position: relative;
+	right: 50px;
+	top: 100px;
+}
+
+#overlayTools ul#tool-options li a.active{
+	background: white;
+	border-style: solid!important;
+	border-width: 0px 0px 0px 10px !important;
+	border-color: #ff2626 !important;
+	color: #ff2626;
+	font-weight: 600;
+	box-shadow: 0px 0px  8px rgba(0,0,0,.2) !important;
+}
+
+li.drop-down ul li:hover a{
+	color: white !important;
+}
+
+#overlayTools ul#tool-options p{
+	color: gray;
+	font-size: 17px;
+	position: absolute;
+	text-align: left;
+	bottom: 100px;
+	left: 20px;
+}
+
+#overlayTools ul#tool-options p img{
+	width: 250px;
+	height: auto;
+	position: absolute;
+	left:-30px;
+	right: 0px;
+	margin: auto;
+}

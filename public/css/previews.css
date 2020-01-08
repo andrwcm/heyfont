@@ -1,0 +1,306 @@
+#navigation{
+	position: fixed;
+	width: 100%;
+	height: 100px;
+	left: 0px;
+	top: 0px;
+	background: #141415;
+	z-index: 99999999;
+	display: none;
+	top: 0px;
+}
+
+
+#navigation .logoHome{
+	width: 50px;
+	height: 40px;
+	position: relative;
+	top: 30px;
+	float: left;
+	left: 70px;
+	background: url('../assets/heyfont_icon.svg') no-repeat center ;
+
+}
+
+
+/* ---------------------------------------------------------------------- WEB DEMOS UL */
+
+ul.preview-options{
+	background: #0fc587;
+	width: 85%;
+	height: 100px;
+	position:absolute;
+	text-align: center;
+	font-family: 'Asap', sans-serif !important;
+	padding: 0px;
+	top: 326px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	z-index: 7;
+}
+
+ul.preview-options li{
+	cursor: pointer;
+	background: transparent;
+	list-style: none;
+	width: 150px;
+	display:inline-block;
+	margin: 20px 15px;
+	color: white;
+	font-size: 17px;
+	font-family: 'Asap', sans-serif !important;
+	text-align: center;
+	border-radius: 2px;
+	position:relative;app
+	left:20px;
+	float: left;
+	border: solid 1px white;
+	height: 20px;
+	padding: 20px 9px;
+	-webkit-transition-duration:.3s;
+}
+
+ul.preview-options li {
+	text-decoration: none;
+	font-family: 'Asap', sans-serif !important;
+	color:white
+}
+
+ul.preview-options li#labelText{
+	width: auto;
+	border: none;
+}
+
+
+.active-demo{
+	background:white !important;
+	font-family: 'Asap', sans-serif !important;
+	color: white !important;
+	color: #0fc587 !important;
+}
+
+
+/* ----------------------------------------------------------------------  UL navigation */
+
+
+
+ul#preview-options{
+	width: 470px;
+	margin: 0px;
+	position: absolute;
+	padding: 0px !important;
+	display: block;
+	transition: .4s;
+	top: 30px;
+}
+
+
+
+ul#preview-options li{
+	text-align: left;
+	display: inline-block;
+	position: relative;
+	z-index: 3;
+	display: inline-block;
+	margin-right: 39px;
+	width: auto;
+}
+
+ul#preview-options li a{
+	font-family: Muli;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 93.3%;
+	color: #5A5A5A;
+	text-decoration: none;
+	border: none;
+	display: block;
+	z-index: 4;
+	transition: .5s;
+}
+
+ul#preview-options li a:hover{
+	color: white;
+}
+
+ul#preview-options li a#plaintext::before, a#branding::before, a#userinterface::before {
+	content: "Previewing";
+	display: block;
+	font-family: Muli Light;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 13px;
+	line-height: 93.3%;
+	position: relative;
+	top: 31px;
+	left: 26px;
+	color: rgba(255, 255, 255, 0.0);
+	transition: .5s;
+}
+
+ul#preview-options li a#plaintext.active-icon::before {
+	color: rgba(255, 255, 255, 0.3) !important;
+}
+
+ul#preview-options li a#branding.active-icon::before {
+	color: rgba(255, 255, 255, 0.3) !important;
+}
+
+ul#preview-options li a#userinterface.active-icon::before {
+	color: rgba(255, 255, 255, 0.3) !important;
+}
+
+
+ul#preview-options li a .brandingicon, .usericon, .texticon{
+	display: inline-block;
+	width: 18px;
+	height: 24px;
+	margin-right: 8px;
+	float: left;
+	position: relative;
+	top: -3px;
+}
+
+ul#preview-options li a#plaintext.active-icon{
+	color:white;
+}
+
+ul#preview-options li a#branding.active-icon{
+	color:white;
+}
+
+ul#preview-options li a#userinterface.active-icon{
+	color:white;
+}
+
+ul#preview-options li a#plaintext.active-icon{
+	color:white;
+}
+
+ul#preview-options li a#plaintext.active-icon .texticon::before{
+	background: #7A8FFF;
+}
+
+ul#preview-options li a#branding.active-icon .brandingicon::before{
+	background: #7A8FFF;
+}
+
+ul#preview-options li a#branding.active-icon .brandingicon::after{
+	background: #7A8FFF;
+}
+
+ul#preview-options li a#userinterface.active-icon .usericon::before{
+	background: #7A8FFF;
+}
+
+ul#preview-options li a#plaintext.active-icon .texticon .form{
+	border: solid 1px white;
+}
+
+ul#preview-options li a#branding.active-icon .brandingicon .form{
+	border: solid 1px white;
+}
+
+ul#preview-options li a#userinterface.active-icon .usericon .form{
+	border: solid 1px white;
+}
+
+ul#preview-options li a .brandingicon .form{
+	border:solid 1px #7E7E7E;
+	height: 23px;
+	float: left;
+	background: transparent;
+	width: 8px;
+	z-index: 8;
+	top: -11px;
+	position: relative;
+
+}
+
+ul#preview-options li a .texticon .form{
+	border:solid 1px #7E7E7E;
+	height: 23px;
+	float: left;
+	background: transparent;
+	width: 8px;
+	z-index: 8;
+	top: -16px;
+	position: relative;
+
+}
+
+
+ul#preview-options li a .usericon .form{
+	border:solid 1px #7E7E7E;
+	height: 16px;
+	float: left;
+	background: transparent;
+	width: 15px;
+	z-index: 8;
+	top: -12px;
+	border-radius: 0px 0px 7px 7px;
+	position: relative;
+
+}
+
+ul#preview-options li a .usericon::before{
+	width: 15px;
+	height: 15px;
+	background: #363636;
+	display: block;
+	content: "";
+	border-radius: 50%;
+	left: 0px;
+	top: -4px;
+	position: relative;
+}
+
+ul#preview-options li a .texticon::before{
+	width: 16px;
+	height: 16px;
+	background: #363636;
+	display: block;
+	content: "";
+	border-radius: 50%;
+	left: 2px;
+	position: relative;
+}
+
+
+
+ul#preview-options li a .brandingicon::before{
+	width: 11px;
+	height: 11px;
+	background: #363636;
+	display: block;
+	content: "";
+	border-radius: 50%;
+	left: 2px;
+	position: relative;
+}
+
+ul#preview-options li a .brandingicon::after{
+	width: 11px;
+	height: 11px;
+	background: #363636;
+	display: block;
+	content: "";
+	border-radius: 50%;
+	left: 2px;
+	position: relative;
+}
+
+#content{
+	display: none;
+	background: #1F1F23;
+	position:fixed;
+	top: 100px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	padding-top: 30px;
+	overflow: scroll;
+}

@@ -1,0 +1,492 @@
+@import url(//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet);
+
+@font-face {
+    font-family: 'Lato', sans-serif;
+}
+
+#preloader{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: rgba(255,255,255,.98);
+  	z-index:999999999999999999999;
+}
+
+#preloader #status{
+	width: 100px;
+	height: 113px;
+	position: absolute;
+	margin: auto;
+	top: -100px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+}
+
+a.link{
+	opacity: 0.8;
+	font-weight: 400;
+	top:30px;
+	color: #febd29;
+	position: relative;
+	font-size: 18px;
+	letter-spacing: 0;
+}
+
+#preloader #status img{
+  width: 100%;
+  height: auto;
+}
+
+
+html{
+	height: 100%;
+	margin: auto;
+}
+
+body{
+	background: #3C3C46;
+	height: 100%;
+	font-family: 'Lato', sans-serif;
+	margin: 0px;
+	text-align: center;
+  	left:0px;
+  	position: relative;
+  	transition: .4s;
+}
+
+
+.termsOverlay{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0,0,0,.8);
+	z-index: 6666;
+}
+section#terms{
+	width: 500px;
+	height: 470px;
+	padding: 10px 30px;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	text-align: left;
+	font-weight: 300;
+	right: 0px;
+	left: 0px;
+	margin:auto;
+	background: white;
+	border-radius: 5px;
+	box-shadow: 0px 0px 25px rgba(0,0,0,.8);
+
+}
+
+section#terms h3{
+	font-size: 22px;
+	font-weight: 700;
+	color: #EA4369;
+}
+
+
+section#terms .ButtonSend{
+	cursor: pointer;
+	background: #3C3C46;
+	box-shadow: 0 9px 23px 0 rgba(0,0,0,0.24);
+	color: white;
+	width:auto;
+	font-size: 14px;
+	border: none;
+	height: auto;
+	padding:20px 40px 20px 40px;
+	margin-top: 15px;
+	transition: .4s;
+}
+
+section#terms .ButtonSend:hover{
+	background: #101011;
+}
+
+
+section#container{
+	width: 1180px;
+	height: auto;
+	min-height: 200px;
+	margin: auto;
+	text-align: left;
+	padding-top: 53px;
+}
+
+section#container nav{
+	width: 100%;
+	height: 63px;
+	text-align: left;
+	margin: auto;
+}
+
+section#container nav ul.heyfont-description{
+	width: 100%;
+	padding: 0px;
+	float: left;
+	margin: 0px;
+}
+
+section#container nav ul.heyfont-description li{
+	display: inline-block;
+	list-style: none;
+	position: relative;
+}
+
+section#container nav ul.heyfont-description li a{
+	text-decoration: none;
+	opacity: 0.42;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+}
+
+section#container nav ul.heyfont-description li#heyfont{
+	float: left;
+	width: 105px;
+	height: 63px;
+}
+
+section#container nav ul.heyfont-description li#heyfont img{
+	width: 100%;
+	height: auto;
+}
+
+section#container nav ul.heyfont-description li#heyfont h1{
+	font-size: 0px;
+}
+
+section#container nav ul.heyfont-description li#twitter{
+	float: right;
+	margin-top: 21px;
+}
+
+section#container nav ul.heyfont-description li#twitter::before{
+	display: block;
+	content:url('../assets/new/twitter.svg');
+	float: left;
+	position: absolute;
+	left: -35px;
+}
+
+section#container div#subtitle{
+	margin-top: 59px;
+	width: 502px;
+	height: auto;
+	text-align: left;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 22px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+}
+
+section#container div#subtitle h2{
+	font-size: 0px;
+}
+
+section#container div#subtitle p{
+	margin-top: 5px;
+}
+
+section#container div#description {
+	margin-top: 32px;
+	width: 570px;
+	font-family: 'Lato', sans-serif;
+	font-size: 17px;
+	color: rgba(255,255,255,.7);
+	letter-spacing: 2;
+	font-weight: 300;
+	line-height: 24px;
+}
+
+section#container div#description a{
+	color: white;
+	font-weight: 400;
+}
+
+section#container div#buttons{
+	margin-top: 53px;
+	height: 70px;
+}
+
+section#container div#buttons a .primaryButton{
+	display: inline-block;
+	float: left;
+	font-weight: 400;
+	border: none;
+	outline: none;
+	text-decoration: none;
+	background-image: -webkit-linear-gradient(left, #FFC426 3%, #EA4369 98%);
+	background-image: -o-linear-gradient(left, #FFC426 3%, #EA4369 98%);
+	background-image: linear-gradient(to right, #FFC426 3%, #EA4369 98%);
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	color: white;
+	margin-right: 24px;
+	font-weight: 400;
+	letter-spacing: 0;
+	display: block;
+	padding-bottom: 18px;
+	padding-top: 18px;
+	padding-left: 32px;
+	padding-right: 32px;
+	box-shadow: 0px 22px 19px -15px rgba(0,0,0,.24);
+	margin-top: 0px;
+	text-align: center;
+	transition: .2s;
+
+}
+
+section#container div#buttons a .primaryButton:hover{
+	background-image: -webkit-linear-gradient(top right, #FFC426 0%, #EA4369 100%);
+	background-image: -o-linear-gradient(top right, #FFC426 0%, #EA4369 100%);
+	background-image: linear-gradient(to bottom left, #FFC426 0%, #EA4369 100%);
+	box-shadow: 0px 15px 23px -15px rgba(0,0,0,.24);
+	margin-top: 2px;
+}
+
+section#container div#buttons a .secundaryButton{
+	display: inline-block;
+	border: none;
+	outline: none;
+	font-weight: 400;
+	text-decoration: none;
+	background: #3C3C46;
+	border: 1px solid rgba(255,255,255,0.1);
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	color: rgba(255,255,255,0.90);
+	font-weight: 400;
+	letter-spacing: 0;
+	display: block;
+	padding-bottom: 14px;
+	padding-top: 15px;
+	padding-left: 55px;
+	padding-right: 55px;
+	box-shadow: 0px 22px 19px -15px rgba(0,0,0,.24);
+	text-align: center;
+	top: 0px;
+	position: relative;
+	transition: .2s;
+}
+
+section#container div#buttons a{
+	text-decoration: none;
+}
+
+section#container div#buttons a .secundaryButton:hover{
+	top: 2px;
+	box-shadow: 0px 15px 19px -15px rgba(0,0,0,.24);
+}
+
+.preview{
+	width: 700px;
+	overflow: hidden;
+	height: 591px;
+	float: right;
+	display: inline-block;
+	right:0px;
+	position: absolute;
+	top: 160px;
+}
+
+.preview img{
+	width: auto;
+	float: left;
+	height: 100%
+}
+
+section#team{
+	width: 100%;
+	height: auto;
+	margin:80px auto 0px;
+	padding-bottom: 112px;
+	padding-top: 30px;
+	background-image: -webkit-linear-gradient(left, #FFC426 3%, #EA4369 98%);
+	background-image: -o-linear-gradient(left, #FFC426 3%, #EA4369 98%);
+	background-image: linear-gradient(to right, #FFC426 3%, #EA4369 98%);
+}
+
+section#team h3{
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	font-size: 35px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	margin-bottom: 100px;
+}
+
+section#team h3::before{
+	content: "";
+	display: block;
+	width: 100px;
+	height: 2px;
+	background: #2A2A2A;
+	position: relative;
+	left:0px;
+	top: 65px;
+}
+
+section#team  ul.team_info{
+	padding: 0px !important;
+	list-style: none;
+	height: auto;
+	width: auto;
+}
+
+section#team  ul.team_info li{
+	display: inline-block;
+	width: 200px;
+	margin-right:50px;
+}
+
+section#team  ul.team_info li a{
+	color: white;
+	text-decoration: none;
+}
+
+section#team  ul.team_info li a #avatar{
+	width: 120px;
+	height: 120px;
+	overflow: hidden;
+	margin: auto;
+	border-radius: 50%;
+}
+
+section#team  ul.team_info li a #avatar img{
+	width: 101%;
+	height: auto;
+	margin: auto;
+}
+
+section#team  ul.team_info li a p.name{
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+	font-size: 22px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	margin: 20px auto;
+	text-align: center;
+}
+
+section#team  ul.team_info li a p.description{
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+	text-align: center;
+	font-size: 20px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+}
+
+
+@media (max-width: 1180px) {
+  	section#container{
+		width: 90%;
+	}
+
+	.preview{
+		width:100%;
+		overflow: hidden;
+		height:500px !important;
+		float: none;
+		margin:40px auto -60px;
+		display: block;
+		right:none;
+		position: relative;
+		top: 20px !important;
+	}
+
+		.preview img{
+		width: 100%;
+		float: none;
+		margin:auto;
+		height: auto;
+	}
+}
+
+
+@media (max-width: 880px) {
+  	section#container{
+		width: 90%;
+	}
+
+	.preview{
+		width: 100%;
+		overflow: hidden;
+		height: 591px;
+		float: none;
+		display: block;
+		right:0px;
+		position: relative;
+		top: 160px;
+	}
+
+	.preview img{
+		width: 150%;
+		float: none;
+		margin:auto;
+		height: auto;
+	}
+
+	section#container div#description {
+		margin-top: 32px auto 0px;
+		width: 95%;
+		font-family: 'Lato', sans-serif;
+		font-size: 17px;
+		color: rgba(255,255,255,.7);
+		letter-spacing: 2;
+		font-weight: 300;
+		line-height: 24px;
+	}
+
+	section#container div#subtitle{
+		width: 80%;
+		font-size:17px;
+	}
+
+	section#container div#subtitle h2{
+		width: 90%;
+	}
+
+	section#container div#subtitle h2 img{
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media (max-width: 530px) {
+	section#container div#buttons{
+		margin-top: 53px;
+		height:200px;
+	}
+	section#container div#buttons a .primaryButton, .secundaryButton{
+		width: 100%;
+		margin:25px auto;
+	}
+
+	section#team  ul.team_info{
+		padding: 0px !important;
+		list-style: none;
+		height: auto;
+		width: 90%;
+		margin:auto;
+		text-align: center;
+	}
+
+	section#team  ul.team_info li{
+	display: inline-block;
+	width: 200px;
+	margin-top:50px;
+}
+}
+
+
+
+
