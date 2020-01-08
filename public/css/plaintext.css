@@ -328,7 +328,7 @@ ul.sizes li.button-size{
   height: 15px;
   border-radius: 50%;
   display:inline-block;
-  margin-right: 21%;
+  margin-right: 20%;
   margin-top: -7px;
   top: -10px;
   position: relative;
@@ -346,7 +346,7 @@ ul.sizes li.button-size.active-size{
 ul.sizes .wrapper li.button-size:last-child{
   margin-right:-1px !important;
   position: relative;
-  right: -1px;
+  right: -3px;
 }
 
 ul.sizes li p{
