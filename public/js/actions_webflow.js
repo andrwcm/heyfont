@@ -1,5 +1,3 @@
-
-
 (function( $ ) {
   $.fn.google_fonts = function(options) {
   	var defaults = {
@@ -30,27 +28,10 @@
 
     function changeText2(){
     var userInput = document.getElementById('userInput').value;
-      $("#content").google_fonts({fontname: $('#userInput').val()});
+      $("#change-font").google_fonts({fontname: $('#userInput').val()});
 
 }
 
-
-
-
-//acciones al dar click en los botones de preview
-$(document).ready(function() {
-  $('ul#tool-options li a').click(function(){
-      $("#preloader , #status").fadeIn(0).delay(2000).fadeOut("slow");
-      $('ul#tool-options li a').removeClass('active');
-      $('#overlayTools').removeClass('overlayToolsVisible');
-      $('ul#tool-options').removeClass('tool-optionsVisible');
-      $(this).addClass('active');
-  });
-});
-
-
-
-});
 
 
 $(document).ready(function(){
