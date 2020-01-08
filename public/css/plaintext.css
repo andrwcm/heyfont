@@ -220,7 +220,7 @@ ul.aligment{
   width: 150px;
   position: relative;
   margin-left: 20px;
-  top: -5px;
+  top: 6px;
 }
 
 ul.aligment li.button-align{
@@ -282,7 +282,7 @@ ul.sizes{
   height: 30px;
   padding-left: 10px;
   padding-right: 20px;
-	margin-top: 5px;
+	margin-top: 0px;
   position: relative;
 }
 
@@ -325,8 +325,9 @@ ul.sizes li.button-size{
   height: 15px;
   border-radius: 50%;
   display:inline-block;
-  margin-right: 22%;
+  margin-right: 21%;
   margin-top: -7px;
+  top: -10px;
   position: relative;
   font-size: 13px;
   font-family: 'Asap', sans-serif;
@@ -347,7 +348,7 @@ ul.sizes .wrapper li.button-size:last-child{
 
 ul.sizes li p{
   position: relative;
-  top: -35px;
+  top: -22px;
 }
 
 /* ------------------------------ background color */
