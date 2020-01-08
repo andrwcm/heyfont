@@ -70,13 +70,13 @@
     font-size: 11px;
 }
 #container-preview #textchange.mediumSize{
-    font-size: 15px;
+    font-size: 19px;
 }
 #container-preview #textchange.largeSize{
-    font-size: 30px;
+    font-size: 32px;
 }
 #container-preview #textchange.xxlSize{
-    font-size: 45px;
+    font-size: 55px;
 }
 
 /* --------- text align */
