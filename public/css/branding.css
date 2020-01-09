@@ -146,6 +146,7 @@ input[type="file" i] {
    position: relative;
    top: 7px;
    text-align: left;
+   height: 35px;
  }
 
 
