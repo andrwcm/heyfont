@@ -3,111 +3,15 @@
 <head>
 	<title>Heyfont</title>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script src="http://files.codepedia.info/uploads/iScripts/html2canvas.js"></script>
 
-	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
-	<link rel="stylesheet" href="css/bootstrap.min.css" />
-
-
-	<style type="text/css">
-	html{
-		height: 100%;
-	}
-	body{
-		margin: auto;
-		height: 100%;
-	}
-	.bfh-selectbox-options{
-		width: 200px !important;
-	}
-	.header{
-		position: fixed;
-		width: 100%;
-		height: 50px;
-		top:0px;
-		z-index: 99999;
-		background: red;
-	}
-
-	#home, #brand{
-		width: 100%;
-		height: 160%;
-		background: gray;
-	}
-
-	.foo{
-		width: 100%;
-		height: 50px;
-		background: green;
-		bottom: 0px;
-		position: fixed;
-	}
-
-	#select select {
-	   background: transparent;
-	   width: 600px;
-	   padding: 5px;
-	   font-size: 16px;
-	   line-height: 1;
-	   border: 0;
-	   border-radius: 0;
-	   height: 55px;
-	   -webkit-appearance: none;
-	   }
-
-	   #select select option{
-	   	height: 20px;
-	   }
-
-	   #select {
-	   width: 600px;
-	   height:55px;
-	   overflow: hidden;
-	   background: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-128.png) no-repeat right #ddd;
-	   background-size: 40px;
-	   border: 1px solid #ccc;
-	   }
-	</style>
 
 </head>
 
 <body>
-	<div class="header">
-		<h1>Tittle</h1>
-	</div>
 
 
-	<section data-role="page" id="home">
 
-		<div role="main" class="ui-content">
-			<h1>Heyfonts	</h1>
-
-
-        	<div id="select"></div>
-
-        	<div id="select-dos"></div>
-
-
-			<a href="#brand">
-				<input type="button" class="btn" value="GO!" onclick='changeText2()' id="buttonFont">
-			</a>
-			
-				<div class="foo">
-					<h2>footer</h2>
-				</div>
-			
-		</div>
-
-	</section>
-
-
-	<section data-role="page" id="brand">
-		<div role="main" class="ui-content" id="branding">
-			<section id="brandinpreview" style="background: red; display: block;">
-
-				<h1>Branding preview</h1>
 
 				<form id="form1" runat="server">
 					<input type='file' id="imgInp" />
@@ -117,110 +21,11 @@
 					<img id="card" src="#" alt="your image" />
 				</form>
 
-			</section>
-		</div>
-
-		<a id="btn-Preview-Image" href="#">Preview button</a>
-	    <a id="btn-Convert-Html2Image" href="#">Download</a>
-	    <br/>
-	    <h3>Preview :</h3>
-	    <div id="previewImage">
-	    </div>
-
-
-		<div class="foo">
-			<h2>Branding</h2>
-		</div>
-	</section>
-	<script>
-		$(document).ready(function(){
-
-			
-		var element = $("#branding"); // global variable
-		var getCanvas; // global variable
-		 
-		    $("#btn-Preview-Image").on('click', function () {
-		         html2canvas(element, {
-		         onrendered: function (canvas) {
-		                $("#previewImage").append(canvas);
-		                getCanvas = canvas;
-		             }
-		         });
-		    });
-
-			$("#btn-Convert-Html2Image").on('click', function () {
-		    var imgageData = getCanvas.toDataURL("image/png");
-		    // Now browser starts downloading it instead of just showing it
-		    var newData = imgageData.replace(/^data:image\/png/, "data:application/octet-stream");
-		    $("#btn-Convert-Html2Image").attr("download", "your_pic_name.png").attr("href", newData);
-			});
-
-		});
-
-	</script>
-
 </body>
-	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
 	<script src="js/loadimage.js"></script>
 
-	
-	<script type="text/javascript">
-		$.ajax({
-		  method: 'get',
-		  url: 'https://www.googleapis.com/webfonts/v1/webfonts',
-		  data: {
-		    key: 'AIzaSyCAWk9AE4mJyOn7-bN3ZG8jYKYaYjIcRew'
-		  }
-		})
-		.done(function(response) {
-		  var list = response.items;
-		  var select = document.createElement('select');
 
-		  list.forEach(function(font) {
-		    var _option = document.createElement('option');
-		    _option.value = font.family;
-		    _option.text = font.family;
 
-		    select.add(_option);
-		  })
 
-		  var el = document.getElementById('select');
-		  el.appendChild(select);
-			})
-		.fail(function(error) {
-		  // mostrar algo en caso de un error
-		})
-
-	</script>
-
-	<script type="text/javascript">
-		$.ajax({
-		  method: 'get',
-		  url: 'https://www.googleapis.com/webfonts/v1/webfonts',
-		  data: {
-		    key: 'AIzaSyCAWk9AE4mJyOn7-bN3ZG8jYKYaYjIcRew'
-		  }
-		})
-		.done(function(response) {
-		  var list = response.items;
-		  var select = document.createElement('select');
-
-		  list.forEach(function(font) {
-		    var _option = document.createElement('option');
-		    _option.value = font.family;
-		    _option.text = font.family;
-
-		    select.add(_option);
-		  })
-
-		  var el = document.getElementById('select-dos');
-		  el.appendChild(select);
-			})
-		.fail(function(error) {
-		  // mostrar algo en caso de un error
-		})
-
-	</script>
-
-	
 </html>

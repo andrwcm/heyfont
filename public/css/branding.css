@@ -1,279 +1,226 @@
-@import url(//fonts.googleapis.com/css?family=Asap:400,700);
+/* fuentes */
 
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,700&display=swap');
 @font-face {
-    font-family: 'Asap', sans-serif;
+  font-family: 'Muli', sans-serif;
 }
 
 
-.branding{
-	background: url(../assets/white-fig.png) center scroll repeat;
-	background-size: 200px auto;
-	background-color: #0fc587;
+
+.metrics{
+	background-color:#1F1F23;
 	width: 100%;
 	margin: 0px;
 	text-align: center;
-	height: 2150px;
-	overflow: hidden;
-}
-
-.branding h3{
-	font-family: 'Asap', sans-serif !important;
-	font-size: 40px;
-	margin:auto;
-	position: relative;
-	top: 80px;
-	font-weight: 600;
-	text-transform: uppercase;
-	color: white;
-}
-
-.branding h3:before{
-	content: url(../assets/arrow.png);
-	position: absolute;
-	left: 0px;
-	right: 0px;
-	margin:auto;
-	top: 40px;
-}
-
-#body_demo{
-	text-align: center;
-	position: relative;
+	height: 1000px;
+  padding-bottom: 150px;
+  overflow-y: scroll;
+  box-sizing: border-box;
 }
 
 
-/* ---------------------------------------------------------------------- LETTER */
-
-#body_demo .a4wrap{
-	width: 613px;
-	height:780px;
-	background: white;
-	text-align: center;
-	box-shadow: 0px 30px 60px rgba(0,0,0,.7);
-	margin:150px auto;
-}
-
-#body_demo .letterText{
-	width: 500px;
-	font-size: 17px;
-	text-align: left;
-	position: absolute;
-	color: #424241;
-	left: 0px;
-	right: 0px;
-	margin: auto;
-  height: 670px;
+#container-preview{
+  width: 1153px;
+  height: auto;
+  padding-bottom: 20px;
+  margin: auto;
+  text-align: left;
+  background:white;
+  border-radius: 0px 0px 6px 6px;
+  display: block;
   overflow: hidden;
-	top: 55px;
+  position: relative;
+  top: 50px;
+  box-sizing: border-box;
+  transition: .4s;
 }
 
-#body_demo .letterText p {
-	margin: 15px;
+#container-preview #textchange{
+  width: 100%;
+  margin: auto;
+  margin-bottom: 30px;
+  text-align: left;
+  background:transparent;
+  border-radius: 6px;
+  font-size: 16px;
+  color: black;
+  display: block;
+  height: auto;
+  outline: none !important;
+  transition: .4s;
 }
 
 
-/* ---------------------------------------------------------------------- CARDS */
-
-
-
-#body_demo .cards{
-	width: 250px;
-	height: 320px;
-	position: absolute;
-	left: 650px;
-	right: 0px;
-	top: 400px;
-	margin: auto;
-	z-index: 9999;
-}
-
-#body_demo .cards div.front, div.back{
-	display: block;
-	width: 245px;
-	height: 150px;
-	box-shadow: 0px 30px 60px rgba(0,0,0,.7);
-}
-
-#body_demo .cards div.front{
-	background: white;
-	margin-bottom: 10px;
-}
-
-#body_demo .cards div.back{
-	background: #ff2626;
-}
-
-#body_demo .cards div.front span.companyName{
-	font-size: 25px;
-	color: #ff2626;
-	position: relative;
-	top: 55px;
-}
-
-#body_demo .cards div.front span.companyName:before{
-	content: "";
-	display: block;
-	width: 30px;
+span.divider{
+	width: 150%;
 	height: 1px;
-	background: #ff2626;
-	position: absolute;
-	right: 0px;
-	left: 0px;
 	margin: auto;
-	top: 40px;
-}
-
-#body_demo .cards div.back span.contact{
-	text-align: left;
-	color: white;
-	position: relative;
-	left: 30px;
-	top: 18px;
-	display: block;
-	height: 110px;
-	overflow: hidden;
-	width: 77%;
-}
-
-#body_demo .cards div.back span.contact p{
-	margin: 5px;
-}
-
-#body_demo .cards div.back span.contact p:nth-child(1){
-	font-size: 20px;
-	font-weight: 700;
-}
-
-#body_demo .cards div.back span.contact p:nth-child(2){
-	font-size: 13px;
-}
-
-#body_demo .cards div.back span.contact p:nth-child(3){
-	font-size: 15px;
-	margin-top: 18px;
-}
-
-#body_demo .cards div.back span.contact p:nth-child(4){
-	font-size: 14px;
-	margin-top: -2px;
-}
-
-
-/* ---------------------------------------------------------------------- SHIRTS*/
-
-#body_demo .shirts{
-	width: 900px;
-	height: 525px;
-	position: relative;
-	margin:auto;
-	top: -180px;
-	overflow: hidden;
-	z-index: 5;
-}
-
-#body_demo .shirts span.white{
-	display: block;
+	background:rgba(0,0,0,.2);
+	display:block;
 	float: left;
-  left:20px;
-	position: relative;
-	transform:rotate(-18deg);
-}
-
-#body_demo .shirts span.black{
-	display: block;
-	right: 0px;
-  right:20px;
-	position: absolute;
-	transform:rotate(18deg);
-}
-
- .text{
-	width: 270px;
-	font-weight: 700;
-	font-size: 70px;
 	left: 0px;
-	right: 0px;
-	top: 150px;
-  overflow: hidden;
-  height: 300px;
-	margin: auto;
-	position: absolute;
-}
-
- .text p{
- 	margin: -10px;
- }
-
- #body_demo .shirts span.white  .text{
- 	color: #ff2626;
- }
-
-  #body_demo .shirts span.black  .text{
- 	color: rgba(255,244,113,.5);
- }
-
- /* ---------------------------------------------------------------------- bag*/
-
-.bag{
 	position: relative;
-	top: -276px;
-	z-index: 3;
+	left: -90px;
 }
 
-.bag .textBag{
-	position: absolute;
-	left: 0px;
-	right: 0px;
-	margin: auto;
-	font-size: 65px;
-	top: 420px;
-	width: 200px;
-  padding-top: 20px;
-	height: 190px;
-	display: block;
+/* ---------------------------------------------------------------------- metrics */
+
+
+section#uploadOptions{
+	width: 1153px;
+  height: 120px;
+  padding-bottom: 20px;
+  margin: auto;
+  text-align: left;
+  background:white;
+  border-radius: 6px 6px 0px 0px ;
+  display: flex;
   overflow: hidden;
-	color: #ff2626;
-}
-
-.bag .textBag p{
-	margin: -23px;
-}
-
- /* ---------------------------------------------------------------------- bag*/
-
- .pencil{
-
- 	width: 134px;
- 	height: 600px;
- 	position: absolute;
- 	left: -550px;
- 	right: 0px;
- 	margin: auto;
- 	top: 120px;
- 	z-index: 8;
- }
-
-  .pencil .textpencil{
-  	display: block;
-  	font-size: 13px;
-  	color: white;
-  	width: 200px;
-  	height: 4px;
-  	position: relative;
-  	letter-spacing: 2px;
-  	left: -40px;
-  	top: 280px;
-  	transform: rotate(-90deg);
-  }
-
-/* ---------------------------------------------------------------------- EDITABLE CONTENT */
-[contenteditable="true"]:hover{
-	border: dashed 2px #e55e3f;
+  top: 49px;
+  position: relative;
+  padding-left: 58px;
+  padding-top: 27px;
+  padding-right: 58px;
   box-sizing: border-box;
 }
 
+.uploadWrapper {
+  width: 290px;
+  height: 68px;
+}
 
-[contenteditable="true"]{
-	border: dashed 2px transparent;
-  box-sizing: border-box;
+.uploadWrapper .placeholder{
+  width: 87px;
+  height: 68px;
+  background: #F3F3F3;
+  border-radius: 3px;
+  float: left;
+  margin-right: 15px;
+  position: relative;
+}
+
+.uploadWrapper .placeholder .placeholderIcon{
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  height: auto !important;
+  margin: auto;
+  top: 0px;
+  bottom: 0px;
+  width: 33px;
+}
+
+.uploadWrapper p.description{
+  font-weight: 200;
+  font-size: 12px;
+  color: #707070;
+  font-family: 'Muli', sans-serif;
+  position: relative;
+  top:-5px;
+}
+
+.logoButton{
+  color: transparent !important;
+}
+
+input[type="file" i] {
+  width: 0.1px!important;
+  height: 0.1px!important;
+  opacity: 0 !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  background: transparent !important;
+  z-index: -1;
+}
+
+ label[for="logoUpload"] {
+   font-size: 17px;
+   font-weight: 600;
+   font-family: 'Muli', sans-serif;
+   color: #7A8FFF;
+   display: inline-block;
+   transition: all .5s;
+   cursor: pointer;
+   width: 178px;
+   overflow: hidden;
+   position: relative;
+   top: 7px;
+   text-align: left;
+ }
+
+
+ .blackWhite{
+   width: 100%;
+   height: 227px;
+   background: red;
+ }
+
+ .blackWhite .black, .white{
+   float: left;
+   display: inline-block;
+   width: 50%;
+   height: 100%;
+   text-align: center;
+   vertical-align: middle;
+   position: relative;
+ }
+
+.blackWhite .black{
+  background: #111111;
+}
+
+.black > .brand span{
+  font-size: 32px;
+  text-align: center;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 42%;
+  color: white;
+  margin: auto;
+}
+
+.brand{
+  display: flex;
+  background: red;
+  width: 70%;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  top: 40%;
+}
+
+.white > .brand span{
+  font-size: 32px;
+  text-align: center;
+  position: absolute;
+  display: inline-block;
+  float: left;
+  right: 0px;
+  top: 42%;
+  color: black;
+  margin: auto;
+}
+
+.black > .logoWhiteBlack{
+  text-align: center;
+  position: absolute;
+  display: inline-block;
+  float: left;
+  right: 0px;
+  top: 42%;
+  color: white;
+  margin: auto;
+}
+
+.blackWhite .white{
+  background: white;
+}
+
+.logoWhiteBlack{
+  width: 60px;
+  height: auto !important;
 }

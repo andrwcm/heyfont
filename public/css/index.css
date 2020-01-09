@@ -410,5 +410,5 @@ footer a
 	height: 100%;
 	z-index: 99;
 	padding-top: 100px;
-	overflow: scroll;
+	overflow: scroll !important;
 }
