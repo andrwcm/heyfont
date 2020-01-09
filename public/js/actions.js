@@ -43,7 +43,7 @@ $(function() {
 
     function changeText2(){
     var userInput = document.getElementById('userInput').value;
-      $("#textchange").google_fonts({fontname: $('#userInput').val()});
+      $("#content").google_fonts({fontname: $('#userInput').val()});
 
 }
 
