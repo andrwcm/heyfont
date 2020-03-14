@@ -108,7 +108,7 @@ ul#preview-options li{
 }
 
 ul#preview-options li a{
-	font-family: Muli;
+	font-family: 'Muli', sans-serif;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 17px;

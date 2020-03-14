@@ -71,7 +71,7 @@
 
 body {
   height: 100%;
-  background: url('../assets/heyfont_form.svg') #1f1f23;
+  background: url('../assets/heyfont_form.svg') #111111;
   background-repeat: no-repeat;
   background-size: 1513px 1323px;
   background-position:  right -180px;
@@ -92,7 +92,7 @@ h1.heyfont{
 }
 
 h2{
-  font-family: Muli;
+  font-family: 'Muli', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 50px;
@@ -105,7 +105,7 @@ h2{
 
 
 h3{
-  font-family: Muli;
+  font-family: 'Muli', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
@@ -130,7 +130,7 @@ h3.what::after{
 }
 
 h4{
-  font-family: Muli Light;
+  font-family: 'Muli', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 25px;
@@ -142,7 +142,7 @@ h4{
 p.text-jumbo{
   width: 774px;
   height: 258px;
-  font-family: Muli;
+  font-family: 'Muli', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 80px;
@@ -152,7 +152,7 @@ p.text-jumbo{
 }
 
 p.text-large{
-  font-family: Muli Light;
+  font-family: 'Muli', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
@@ -161,7 +161,7 @@ p.text-large{
 }
 
 p.text-normal{
-  font-family: Muli Light;
+  font-family: 'Muli', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -189,10 +189,10 @@ p.text-normal{
   display: block;
   outline: none;
   background:   #0E0E0F !important;
-  border: 1px solid #5B6BB2;
+  border: 1px solid rgba(255,255,255,.2);
   border-radius: 2px;
   padding-left: 23px;
-  font-family: Muli Light;
+  font-family: 'Muli', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -200,7 +200,8 @@ p.text-normal{
   color: #7F7F7F;
   width: 830px;
   height: 70px;
-  box-shadow: 0px 30px 60px -20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 30px 60px -20px rgba(0, 0, 0, 0.8);
+  transition-duration: .5s;
 
 }
 
@@ -262,7 +263,7 @@ p.text-normal{
   height: 56px;
   background: #7A8FFF;
   box-shadow: 0px 14px 34px rgba(122, 143, 255, 0.38);
-  font-family: Muli;
+  font-family: 'Muli', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -402,7 +403,7 @@ footer a
 /* ---------------------------------------------------------------------- CONTENT */
 #content{
 	display: none;
-	background: #1f1f23;
+	background: #111111;
 	position:fixed;
 	top: 0px;
 	left: 0px;
