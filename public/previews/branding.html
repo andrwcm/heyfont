@@ -7,6 +7,12 @@
 
 	  <title>Heyfont - Branding Preview </title>
 
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+	  <script type="text/javascript" src="../js/actions.js"></script>
+	  <script type="text/javascript" src="../prefixfree.min.js"></script>
+		<script type="text/javascript" src="https://circletype.labwire.ca/dist/circletype.min.js"></script>
+
+
 	</head>
 
 	<body>
@@ -25,40 +31,100 @@
 					<p class="description">Only the icon, without word mark <br>.PNG file or .SVG</p>
 				</div>
 
+				<input id="textInput" type="text" placeholder="Write the name of the company" class="nameImput"/>
+
 			</section>
 
 
 
 			<div id="container-preview" >
+
 				<section class="textMetrics">
 
-					<div id="textchange" class="change1 ">
+					<div id="textchange" class="change1">
 						<div class="blackWhite">
+
 							<div class="white">
 								<div class="brand">
 									<img id="logo" src="assets/Heyfont_logo_placeholder.svg" alt="your image" class="logoWhiteBlack"/>
-									<span>Heyfont</span>
+									<span id="name1">Heyfont</span>
 								</div>
 							</div>
+
 							<div class="black">
 								<div class="brand">
-									<img id="logo" src="assets/Heyfont_logo_placeholder.svg" alt="your image" class="logoWhiteBlack"/>
-									<span>Heyfont</span>
+									<img id="logo" src="assets/Heyfont_logo_placeholder.svg" alt="your image" class="logoWhiteBlack whiteFilter"/>
+									<span id="name2">Heyfont</span>
 								</div>
+							</div>
+
+						</div>
+
+						<div class="mockups">
+
+							<div class="cards">
+								<div class="cardWrapper">
+										<img id="logo" src="assets/Heyfont_logo_placeholder.svg" alt="your image" class="logoCard"/>
+										<div class="CardInfo">
+											<span class="nameCard" id="name5">Heyfont</span>
+											<br>
+											<br>
+											<br>
+											<br>
+											<span contenteditable="true" class="UserName"><b style="font-size: 12px;">Jane Doe Jackson</b></span>
+											<span contenteditable="true" class="datainfo phone">(+57 1) 317 5027302</span>
+											<span contenteditable="true" class="datainfo mail">email@company.com</span>
+											<span contenteditable="true" class="datainfo address">New York</span>
+										</div>
+								</div>
+							</div>
+
+							<div class="t-shirt">
+									<div class="white-shirt">
+										<span class="texture-shirt"></span>
+										<img id="logo" src="assets/Heyfont_logo_placeholder.svg" alt="your image" class="logo-shirt"/>
+										<span contenteditable="true" class="nameShirt" id="name3">Heyfont</span>
+									</div>
+
+									<div class="black-shirt">
+										<span class="texture-shirt"></span>
+										<img id="logo" src="assets/Heyfont_logo_placeholder.svg" alt="your image" class="logo-shirt whiteFilter"/>
+										<span contenteditable="true" class="nameShirt" id="name4">Heyfont</span>
+									</div>
 							</div>
 						</div>
 
-						<img id="logo" src="#" alt="your image"/>
-						<img id="letter" src="#" alt="your image"/>
-						<img id="card" src="#" alt="your image"/>
+						<div class="frame">
+							<div class="container">
+
+								<div class="toteBag">
+									<img id="logo" src="assets/Heyfont_logo_placeholder.svg" alt="your image" class="logoTote"/>
+									<span contenteditable="true" class="fontTote">We go beyond</span>
+								</div>
+
+								<div class="picture">
+									<img id="logo" src="assets/Heyfont_logo_placeholder.svg" alt="your image" class="logoPic whiteFilter"/>
+									<span  class="quote" id="quote">This is An amazing quote for the week&nbsp;&nbsp;--- </span>
+								</div>
+
+							</div>
+
+						</div>
+
 					</div>
 
 				</section>
 
 			</div>
+
 		</div>
+
+
 	</body>
 	<script type="text/javascript">
+
+		new CircleType(document.getElementById('quote'));
+
 		function readURL() {
 			//	rehide the image and remove its current "src",
 			//	this way if the new image doesn't load,
@@ -92,5 +158,37 @@
 
 		$("#logoUpload").change(readURL);
 
+
+		$(document).ready(function(){
+    $("#name").click(function() {
+            $("#name_display").html( $("#name").val() );
+    });
+		});
+
 	</script>
+
+	<script>
+		var textInputElement = document.getElementById('textInput');
+		name1Element = document.getElementById('name1');
+		name2Element = document.getElementById('name2');
+		name3Element = document.getElementById('name3');
+		name4Element = document.getElementById('name4');
+		name5Element = document.getElementById('name5');
+		name6Element = document.getElementById('name6');
+		name7Element = document.getElementById('name7');
+		textInputElement.addEventListener('keyup', function(){
+			var text = textInputElement.value;
+			name1Element.innerHTML = text;
+			name2Element.innerHTML = text;
+			name3Element.innerHTML = text;
+			name4Element.innerHTML = text;
+			name5Element.innerHTML = text;
+			name6Element.innerHTML = text;
+			name7Element.innerHTML = text;
+		});
+	</script>
+
+
+
+
 </html>

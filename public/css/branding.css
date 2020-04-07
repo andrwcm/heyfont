@@ -8,7 +8,7 @@
 
 
 .metrics{
-	background-color:#1F1F23;
+	background-color:#161617;
 	width: 100%;
 	margin: 0px;
 	text-align: center;
@@ -21,8 +21,7 @@
 
 #container-preview{
   width: 1153px;
-  height: auto;
-  padding-bottom: 20px;
+  height: 1150px;
   margin: auto;
   text-align: left;
   background:white;
@@ -149,6 +148,24 @@ input[type="file" i] {
    height: 35px;
  }
 
+section#uploadOptions .nameImput{
+  width: 520px;
+  height: 70px;
+  background: #F3F3F3;
+  font-family: 'Muli', sans-serif;
+  padding-left: 25px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  float: right;
+  right: 0px;
+  position: absolute;
+  right: 20px;
+}
+
+section#uploadOptions .nameImput::placeholder {
+  color: #7F7F7F;
+}
 
  .blackWhite{
    width: 100%;
@@ -173,15 +190,16 @@ input[type="file" i] {
 .black > .brand span{
   font-size: 32px;
   text-align: left;
+  flex-direction: row;
   color: white;
-  margin: auto;
-  width: 300px;
-  float: left;
+  margin: auto auto auto 18px;
+  width: min-content;
+  white-space: nowrap;
 }
 
 .brand{
-  display: flex;
-  width: 70%;
+  display: inline-flex;
+  width: min-content;
   padding-left: 10px;
   padding-right: 10px;
   position: absolute;
@@ -189,15 +207,17 @@ input[type="file" i] {
   right: 0px;
   margin: auto;
   top: 40%;
+  text-align: center;
 }
 
 .white > .brand span{
   font-size: 32px;
   text-align: left;
+  flex-direction: row;
   color: black;
-  margin: auto;
-  width: 300px;
-  float: left;
+  margin: auto auto auto 18px;
+  width: min-content;
+  white-space: nowrap;
 }
 
 .black > .logoWhiteBlack{
@@ -211,6 +231,11 @@ input[type="file" i] {
   margin: auto;
 }
 
+.black .brand img{
+  mix-blend-mode: lighten;
+}
+
+
 .blackWhite .white{
   background: white;
 }
@@ -219,4 +244,265 @@ input[type="file" i] {
   width: 60px !important;
   height: auto !important;
   display: inline-block;
+}
+
+.whiteFilter{
+  filter: grayscale(100%) brightness(70%) invert(100%) contrast(90%) !important;
+}
+
+.mockups{
+  width: 100%;
+  height: 405px;
+}
+
+div.t-shirt, div.cards {
+  width: 576px;
+  height: 405px;
+  display: inline-block;
+  float: left;
+}
+
+ .cards{
+  background: url('../assets/branding/heyfont_business_card.jpg');
+  background-size: cover;
+  position: relative;
+}
+
+.t-shirt{
+  background: url('../assets/branding/forms_1.svg'), white;
+  background-size: 300px 350px;
+  background-repeat: no-repeat;
+  background-position: 290px -90px;
+  z-index: 99999999999;
+  position: relative;
+}
+
+.white-shirt, .black-shirt {
+  width: 430px;
+  height: 428px;
+  position: relative;
+}
+
+.white-shirt{
+  background: url('../assets/branding/heyfont_shirt.png');
+  background-size: cover;
+  float: left;
+  left: -100px;
+  top: -50px;
+  position: relative;
+  transform: rotate(18deg);
+}
+
+.black-shirt{
+  background: url('../assets/branding/heyfont_shirt_black.png');
+  background-size: cover;
+  background-position: -8px -8px;
+  position: relative;
+  float: right;
+  right: -20px;
+  top: -300px;
+  transform: rotate(-9deg);
+}
+
+.texture-shirt{
+  background: url('../assets/branding/heyfont_shirt_texture.png');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  float: left;
+  z-index: 999;
+  position: relative;
+  mix-blend-mode: multiply;
+}
+
+.black-shirt .texture-shirt{
+  transform: rotate(-3deg);
+  width: 408px;
+  height: 410px;
+  top: 3px;
+  left: 4px;
+  opacity: 0.6;
+  background-repeat: no-repeat;
+  mix-blend-mode: normal !important;
+}
+
+.logo-shirt{
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 100px;
+  width: 87px;
+  max-height: 86px;
+  margin: auto;
+  }
+
+.black-shirt .logo-shirt{
+  transform: rotate(-6deg) !important;
+  left: -22px !important;
+}
+
+.white-shirt span.nameShirt{
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 190px;
+  max-width: 200px;
+  height: auto;
+  margin: auto;
+  font-size: 35px;
+  text-align: center;
+  word-wrap:break-word;
+}
+
+.black-shirt span.nameShirt{
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 190px;
+  max-width: 200px;
+  margin: auto;
+  font-size: 35px;
+  color: rgba(255, 255, 255, .4);
+  text-align: center;
+  word-wrap:break-word;
+  transform: rotate(-6deg);
+}
+
+.black-shirt img{
+  mix-blend-mode: lighten;
+}
+
+
+
+.cards .cardWrapper{
+  width: 247px;
+  height: 150px;
+  position: absolute;
+  left: -45px;
+  right: 0px;
+  top: -35px;
+  bottom: 0px;
+  margin: auto;
+  padding: 15px 15px 15px 20px;
+  box-sizing: border-box;
+  transform: rotate(-26deg);
+  mix-blend-mode: multiply;
+}
+
+.cards .cardWrapper .logoCard{
+  width: 40px !important;
+  max-height: 40px !important;
+  float: left;
+  display: block;
+}
+
+.cards .cardWrapper span{
+  display: block;
+  font-size: 11px;
+}
+
+.cards .cardWrapper span.nameCard{
+  position: relative;
+  top: 9px;
+  float: left;
+  font-size: 19px;
+  margin-left: 9px;
+}
+
+
+.frame{
+  width: 100%;
+  height: 523px;
+  background: url('../assets/branding/heyfont_tote-frame.jpg');
+  background-size: cover;
+  position: relative;
+}
+
+
+.container{
+  display: block;
+  margin: auto;
+  position: relative;
+  left: 0px;
+  right: 0px;
+  top: 160px;
+  bottom: 0px;
+  width: 650px;
+  height: 320px;
+}
+
+.container .toteBag{
+  width: 281px;
+  height: 150px;
+  position: absolute;
+  float: left;
+  display: inline-block;
+  left: 42px;
+  top: 90px;
+  transform: rotate(-12deg);
+  overflow: hidden;
+}
+
+.container .toteBag .logoTote{
+  width: auto;
+  height: 146px !important;
+  float: left;
+  position: relative;
+  left: -45px;
+}
+
+
+.container .toteBag .fontTote{
+  font-size: 40px;
+  width: 130px;
+  display: block;
+  font-weight: bolder;
+  position: relative;
+  top: 35px;
+  float: left;
+  left: -30px;
+  color: #343b5d;
+  line-height: 32px;
+}
+
+.container .toteBag img{
+  mix-blend-mode: lighten;
+}
+
+.picture{
+  width: 195px;
+  height: 130px;
+  display: block;
+  float: right;
+  right: 83px;
+  top: 76px;
+  position: relative;
+}
+
+.picture .logoPic{
+  position: absolute;
+  top: 0px;
+  display: block !important;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  width: 40px;
+  max-height: 40px;
+}
+
+.picture .quote{
+  font-size: 14px;
+  color: white;
+  opacity: .8;
+  display: block;
+  width: 110px;
+  height: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: -87px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
 }
