@@ -13,6 +13,8 @@
 	margin: 0px;
 	text-align: center;
 	height: 1000px;
+  position: relative;
+  top: -30px;
   padding-bottom: 150px;
   overflow-y: scroll;
   box-sizing: border-box;
