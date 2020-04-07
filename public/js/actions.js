@@ -136,7 +136,3 @@ $(document).ready(function() {
     $('ul#preview-options li a#branding').removeClass('active-icon');
    });
 });
-
-
-
-// actions branding

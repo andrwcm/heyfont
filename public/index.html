@@ -154,6 +154,11 @@
 <!-- js -->
 	<script type="text/javascript" src="js/type.js"></script>
 	<script type="text/javascript">
+
+    if ($(window).width() < 400 ) {
+        $("input[type='text']").attr("placeholder","pippo");
+    }
+    
 		$(document).ready(function() {
 			$("#content").load("previews/plaintext.html");
 

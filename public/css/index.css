@@ -175,7 +175,6 @@ p.text-normal{
   height: auto;
   margin: auto;
   text-align: left;
-
 }
 
 /* search */
@@ -398,6 +397,170 @@ footer a
   body {
     font-size: 1em;
   }
+}
+
+
+@media(max-width: 1140px) {
+  .bullet{
+    width: 100%;
+  }
+
+  .container{
+    width: 70%;
+  }
+
+  .searchWrap{
+    width: 100%;
+    height: 70px !important;
+    margin-bottom: 150px;
+  }
+
+  .searchWrap #userInput{
+    width: 700px !important;
+  }
+
+  .searchWrap .SearchIcon{
+    right: 160px;
+    top: 25px;
+  }
+
+  p.text-jumbo {
+    width: 90%;
+    font-size: 60px;
+    height: 198px;
+  }
+
+  .margin-big {
+    margin-top: 56px;
+  }
+
+  h4 {
+    font-size: 19px;
+  }
+
+}
+
+
+@media(max-width: 830px) {
+  .searchWrap{
+    width: 100%;
+    height: 70px !important;
+    margin-bottom: 70px;
+  }
+
+  .searchWrap #userInput{
+    width: 500px !important;
+  }
+
+  .searchWrap .SearchIcon{
+    right: 350px;
+    top: 25px;
+  }
+
+  p.text-jumbo {
+    font-size: 50px;
+    height: 150px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  body{
+    background-position: right -500px;
+  }
+
+  h1 {
+    width: 220px;
+    height: 36px;
+  }
+
+  h1.heyfont {
+    background-size: cover;
+  }
+
+
+}
+
+
+@media(max-width: 618px) {
+
+  .container{
+    width: 90%;
+  }
+
+  .searchWrap{
+    width: 100%;
+    height: 70px !important;
+    margin-bottom: 50px;
+  }
+
+  .searchWrap #userInput{
+    width: 310px !important;
+  }
+
+  .searchWrap .SearchIcon{
+    right: 550px;
+    top: 25px;
+  }
+
+  p.text-jumbo {
+    font-size: 35px;
+    height: 90px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  h4 {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+  body{
+    background-position: right -700px;
+  }
+
+  h1 {
+    width: 220px;
+    height: 36px;
+  }
+
+  h2 {
+    font-family: 'Muli', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 93.3%;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.05em;
+    color: #FFFFFF;
+  }
+
+  .bullet {
+    width: 100%;
+    height: 280px;
+  }
+
+  .bullet h2.namebullet {
+    display: inline-block;
+    width: 250px;
+    margin-left: 10px;
+}
+
+  h1.heyfont {
+    background-size: cover;
+  }
+
+  p.text-large {
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+
 }
 
 
