@@ -433,7 +433,7 @@ div.t-shirt, div.cards {
   height: 320px;
 }
 
-.container .toteBag{
+.container-tote .toteBag{
   width: 281px;
   height: 150px;
   position: absolute;
@@ -445,7 +445,7 @@ div.t-shirt, div.cards {
   overflow: hidden;
 }
 
-.container .toteBag .logoTote{
+.container-tote .toteBag .logoTote{
   width: 146px;
   height: 146px !important;
   float: left;
@@ -454,7 +454,7 @@ div.t-shirt, div.cards {
 }
 
 
-.container .toteBag .fontTote{
+.container-tote .toteBag .fontTote{
   font-size: 40px;
   width: 130px;
   height: 68px;
@@ -468,7 +468,7 @@ div.t-shirt, div.cards {
   line-height: 32px;
 }
 
-.container .toteBag img{
+.container-tote .toteBag img{
   mix-blend-mode: lighten;
 }
 
