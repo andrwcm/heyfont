@@ -401,6 +401,11 @@ footer a
 
 
 @media(max-width: 1140px) {
+
+  span.twitter-typeahead {
+    width: 100% !important;
+  }
+
   .bullet{
     width: 100%;
   }
@@ -410,19 +415,19 @@ footer a
   }
 
   .searchWrap{
-    width: 100%;
+    width: 100% !important;
     height: 70px !important;
     margin-bottom: 150px;
   }
 
   .searchWrap #userInput{
-    width: 700px !important;
+    width: 100% !important;
   }
 
-  .searchWrap .SearchIcon{
-    right: 160px;
-    top: 25px;
-  }
+  .searchWrap .SearchIcon {
+    right: 20px;
+    top: -44px;
+}
 
   p.text-jumbo {
     width: 90%;
@@ -449,13 +454,13 @@ footer a
   }
 
   .searchWrap #userInput{
-    width: 500px !important;
+    width: 100% !important;
   }
 
-  .searchWrap .SearchIcon{
-    right: 350px;
-    top: 25px;
-  }
+  .searchWrap .SearchIcon {
+    right: 30px;
+    top: -50;
+}
 
   p.text-jumbo {
     font-size: 50px;
@@ -490,18 +495,18 @@ footer a
   }
 
   .searchWrap{
-    width: 100%;
+    width: 100% !important;
     height: 70px !important;
     margin-bottom: 50px;
   }
 
   .searchWrap #userInput{
-    width: 310px !important;
+    width: 100% !important;
   }
 
   .searchWrap .SearchIcon{
-    right: 550px;
-    top: 25px;
+    right: 20px;
+    top: -45px;
   }
 
   p.text-jumbo {
@@ -561,6 +566,46 @@ footer a
   }
 
 
+}
+
+
+@media(max-width: 450px) {
+  .bullet .icon {
+    width: 53px;
+    height: 53px;
+    background-size: cover !important;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .bullet {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    height: auto;
+    margin-right: 0px !important;
+  }
+
+  .bullet h2.namebullet {
+    width: 70%;
+  }
+  h3 {
+    font-size: 20px;
+  }
+
+  h3.what::after {
+    width: 12px;
+    height: 20px;
+    background-size: cover !important;
+    margin-right: 10px;
+  }
+
+  p.text-jumbo {
+    font-size: 35px;
+    height: 120px;
+}
 }
 
 
