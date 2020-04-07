@@ -421,7 +421,7 @@ div.t-shirt, div.cards {
 }
 
 
-.container{
+.container-tote{
   display: block;
   margin: auto;
   position: relative;
@@ -463,7 +463,7 @@ div.t-shirt, div.cards {
   position: relative;
   top: 45px;
   float: left;
-  left: -50px;
+  left: -20px;
   color: #343b5d;
   line-height: 32px;
 }
