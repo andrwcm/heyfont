@@ -605,7 +605,10 @@ footer a
   p.text-jumbo {
     font-size: 35px;
     height: 120px;
-}
+  }
+  .tt-suggestion {
+    height: 35px;
+  }
 }
 
 
