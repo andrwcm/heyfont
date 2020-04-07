@@ -446,7 +446,7 @@ div.t-shirt, div.cards {
 }
 
 .container .toteBag .logoTote{
-  width: auto;
+  width: 146px;
   height: 146px !important;
   float: left;
   position: relative;
@@ -457,12 +457,13 @@ div.t-shirt, div.cards {
 .container .toteBag .fontTote{
   font-size: 40px;
   width: 130px;
+  height: 68px;
   display: block;
   font-weight: bolder;
   position: relative;
-  top: 35px;
+  top: 45px;
   float: left;
-  left: -30px;
+  left: -50px;
   color: #343b5d;
   line-height: 32px;
 }
