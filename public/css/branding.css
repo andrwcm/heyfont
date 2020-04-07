@@ -249,7 +249,7 @@ section#uploadOptions .nameImput::placeholder {
 }
 
 .whiteFilter{
-  filter: grayscale(100%) brightness(70%) invert(100%) contrast(90%) !important;
+  filter: grayscale(100%) brightness(90%) invert(100%) contrast(90%) !important;
 }
 
 .mockups{
