@@ -29,14 +29,14 @@ function changeFontSize(target) {
   var computedStyle = window.getComputedStyle
         ? getComputedStyle(demo) // Standards
         : demo.currentStyle;     // Old IE
-
+  
   var fontSize;
 
   if (computedStyle) { // This will be true on nearly all browsers
-
+    
     fontSize = parseFloat(computedStyle && computedStyle.fontSize);
 
-    if (target == document.getElementById("increaseFont")) { fontSize += 5; }
+    if (target == document.getElementById("increaseFont")) { fontSize += 5; } 
     else if (target == document.getElementById("decreaseFont")) { fontSize -= 5;}
       demo.style.fontSize = fontSize + "px";
       style.innerHTML = "input[type=range]::-webkit-slider-runnable-track { background: linear-gradient(90deg,#3fa2bf "
