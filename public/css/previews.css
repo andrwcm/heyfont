@@ -17,9 +17,107 @@
 	position: relative;
 	top: 30px;
 	float: left;
-	left: 70px;
+	left: 40px;
 	background: url('../assets/heyfont_icon.svg') no-repeat center ;
 
+}
+
+.btnMenu{
+	width:25px;
+	height: 40px;
+	background: transparent;
+	position: relative;
+	top: 15px;
+	left: 00px;
+	text-align: center;
+	padding: 14px 0px 0px 0px !important;
+	cursor: pointer;
+	display: none;
+}
+
+.btnMenu li{
+	list-style: none;
+	display: block;
+	margin: 0px auto 3px auto;
+	height: 2px;
+	width: 100%;
+	margin-bottom:4px;
+	position: relative;
+	left: 0px;
+	background: #7A8FFF;
+}
+
+@media(max-width: 1437px) {
+	ul#preview-options {
+    margin-left: 60px !important;
+	}
+}
+
+
+@media(max-width: 1140px) {
+	ul#preview-options {
+    margin-left:0px !important;
+	}
+
+	.small-input{
+	  max-width: 450px !important;
+	}
+}
+
+
+@media(max-width: 1050px) {
+	ul#preview-options {
+    margin-left:0px !important;
+	}
+
+	.small-input{
+	  max-width: 350px !important;
+	}
+}
+
+
+@media(max-width: 960px) {
+
+	.btnMenu{
+		display: block !important;
+	}
+
+	#navigation {
+    height: 70px;
+	}
+
+	.small-input{
+	  max-width: 65%!important;
+		max-height: 70px !important;
+	}
+
+
+	ul#preview-options {
+	    width: 100% !important;
+			background: rgb(20, 20, 21) !important;
+	    position: fixed !important;
+	    left: 0px;
+	    top: 70px !important;
+			overflow: hidden !important;
+			height: 0px;
+	}
+
+	ul#preview-options li {
+    display: block !important;
+    margin-bottom: 40px;
+		padding-left: 50px !important;
+		margin-top: 20px;
+	}
+
+	#navigation .logoHome {
+		width: 37px !important;
+		height: 28px !important;
+    position: relative;
+    top: 25px;
+    float: left;
+		background-size: cover !important;
+    left: 61px;
+	}
 }
 
 
