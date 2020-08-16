@@ -49,6 +49,7 @@
   height: auto;
   outline: none !important;
   transition: .4s;
+  padding: 0px;
 }
 
 
@@ -258,7 +259,7 @@ section#uploadOptions .nameImput::placeholder {
 }
 
 div.t-shirt, div.cards {
-  width: 576px;
+  width: 566px;
   height: 405px;
   display: inline-block;
   float: left;
