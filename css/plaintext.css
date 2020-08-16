@@ -51,8 +51,8 @@
   transition: .4s;
 }
 
-#padding{
-  padding: 50px;
+.padding{
+  padding: 50px !important;
 }
 
 /* --------- transform */
