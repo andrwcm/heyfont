@@ -31,6 +31,7 @@
   top: 50px;
   box-sizing: border-box;
   transition: .4s;
+  padding: 50px;
 }
 
 #container-preview #textchange{
